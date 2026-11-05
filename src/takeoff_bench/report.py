@@ -20,6 +20,7 @@ FIELDS = [
     "repeat",
     "status",
     "score",
+    "tle_miou",
     "precision",
     "recall",
     "f1",
@@ -77,6 +78,11 @@ def score_runs(
                     row.update(
                         {
                             "score": result.get("score"),
+                            "tle_miou": (
+                                result.get("matched_iou_sum", 0) / result["n_gt"]
+                                if result.get("n_gt")
+                                else None
+                            ),
                             "precision": result.get("precision"),
                             "recall": result.get("recall"),
                             "f1": result.get("f1"),
@@ -118,6 +124,7 @@ def summarize(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "n": len(scored),
                 "runs": len(group),
                 "score": mean(values) if values else None,
+                "tle_miou": _mean(scored, "tle_miou"),
                 "sd": pstdev(values) if len(values) > 1 else None,
                 "precision": _mean(scored, "precision"),
                 "recall": _mean(scored, "recall"),
@@ -133,17 +140,18 @@ def format_report(summary: list[dict[str, Any]], title: str = "Results") -> str:
     lines = [
         f"# {title}",
         "",
-        "| Model | Family | n | Score | SD | Precision | Recall | Count ratio | Parsed | Errors |",
-        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
+        "| Model | Family | n | Score | TLE mIoU | SD | Precision | Recall | Count ratio | Parsed | Errors |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for row in summary:
         lines.append(
-            "| {model} | {family} | {n} | {score} | {sd} | {precision} | {recall} | "
+            "| {model} | {family} | {n} | {score} | {tle} | {sd} | {precision} | {recall} | "
             "{ratio} | {parsed} | {errors} |".format(
                 model=row["model_id"],
                 family=row["family"],
                 n=row["n"],
                 score=_fmt(row["score"], 3),
+                tle=_fmt(row["tle_miou"], 3),
                 sd=_fmt(row["sd"], 3),
                 precision=_fmt(row["precision"], 3),
                 recall=_fmt(row["recall"], 3),

@@ -206,7 +206,9 @@ either.
 The report includes the mean, standard deviation across repeats, precision,
 recall, count ratio, parse rate, and error count per model and family. Provider
 errors are excluded from the mean and counted separately; parse errors are
-scored as zero but reported in `scores.csv`.
+scored as zero but reported in `scores.csv`. `TLE mIoU` is the matched-IoU sum
+divided by the ground-truth count, the metric the TLE leaderboard reports, and
+is included for comparison with the published numbers.
 
 ## Files
 
