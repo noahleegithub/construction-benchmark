@@ -164,6 +164,45 @@ def format_report(summary: list[dict[str, Any]], title: str = "Results") -> str:
     return "\n".join(lines)
 
 
+def print_dataframe(summary: list[dict[str, Any]]) -> None:
+    import pandas as pd
+
+    frame = pd.DataFrame(summary)
+    if frame.empty:
+        print("No scored runs.")
+        return
+    frame = frame.rename(
+        columns={
+            "model_id": "Model",
+            "family": "Family",
+            "n": "n",
+            "runs": "Runs",
+            "score": "Score",
+            "tle_miou": "TLE mIoU",
+            "sd": "SD",
+            "precision": "Precision",
+            "recall": "Recall",
+            "count_ratio": "Count ratio",
+            "parsed": "Parsed",
+            "errors": "Errors",
+        }
+    )
+    frame["_overall"] = frame["Family"].eq("ALL")
+    frame = frame.sort_values(
+        ["_overall", "Family", "Score"], ascending=[False, True, False]
+    ).drop(columns="_overall")
+    with pd.option_context(
+        "display.max_rows", None, "display.width", 220, "display.max_columns", None
+    ):
+        print(
+            frame.to_string(
+                index=False,
+                float_format=lambda value: f"{value:.3f}",
+                na_rep="-",
+            )
+        )
+
+
 def score_and_report(
     workspace: Path,
     runs_path: Path | None = None,
@@ -180,7 +219,7 @@ def score_and_report(
     summary = summarize(rows)
     text = format_report(summary)
     out_path.write_text(text, encoding="utf-8")
-    print(text)
+    print_dataframe(summary)
     return summary
 
 

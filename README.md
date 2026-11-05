@@ -253,6 +253,36 @@ but no expected geometry for them, and five area tasks target regions that
 cannot be identified unambiguously from the page annotations. See
 `study/DATA_NOTES.md`.
 
+## TAMU AI gateway
+
+The CLI reads `.env` from the repository root and from the workspace. Copy the
+template and fill in the key:
+
+```bash
+cp .env.example .env
+chmod 600 .env
+# edit .env: TAMU_API_KEY=...
+uv run takeoff-bench models
+```
+
+`models` calls `GET /v1/models` and prints the available ids. Put the id you
+want in `TAMU_MODEL`, then run:
+
+```bash
+uv run takeoff-bench -C study run \
+  --models "$PWD/models.tamu.yaml" --item t-b9c-net-room-areas --limit 1
+```
+
+`models.tamu.yaml` points at `${TAMU_GATEWAY_URL}` and reads
+`TAMU_API_KEY`; both come from `.env`. The run scores automatically and prints
+a pandas table. Use `--no-report` to skip scoring, or `score` to print it
+again later.
+
+Cloudflare Access is a separate layer from the API key. If `models` returns
+`HTTP 401` with a Cloudflare Access page, set `CF_ACCESS_CLIENT_ID` and
+`CF_ACCESS_CLIENT_SECRET` in `.env` to a service token, or run from a network
+the Access policy allows.
+
 ## Limitations
 
 - One page per item. Tiling for large sheets is not implemented.

@@ -84,10 +84,15 @@ class OracleProvider(Provider):
 
 class OpenAICompatProvider(Provider):
     def __init__(self, config: dict[str, Any]):
-        self.model = config["model"]
-        self.base_url = config.get("base_url", "https://api.openai.com/v1").rstrip("/")
+        self.model = os.path.expandvars(config["model"])
+        if not self.model:
+            raise ValueError("model id is empty; set the model in models.yaml or .env")
+        self.base_url = os.path.expandvars(
+            config.get("base_url", "https://api.openai.com/v1")
+        ).rstrip("/")
         self.api_key_env = config.get("api_key_env", "OPENAI_API_KEY")
-        self.temperature = float(config.get("temperature", 0))
+        temperature = config.get("temperature", 0)
+        self.temperature = None if temperature is None else float(temperature)
         self.max_tokens = int(config.get("max_tokens", 8000))
         self.token_param = config.get("token_param", "max_tokens")
         self.detail = config.get("detail", "high")
@@ -95,6 +100,7 @@ class OpenAICompatProvider(Provider):
         self.input_cost = config.get("input_cost_per_mtok")
         self.output_cost = config.get("output_cost_per_mtok")
         self.extra = dict(config.get("extra", {}))
+        self.extra_headers = dict(config.get("extra_headers", {}))
 
         key = os.environ.get(self.api_key_env)
         if not key:
@@ -123,18 +129,26 @@ class OpenAICompatProvider(Provider):
                     ],
                 },
             ],
-            "temperature": self.temperature,
             self.token_param: self.max_tokens,
             **self.extra,
         }
+        if self.temperature is not None:
+            payload["temperature"] = self.temperature
         data = json.dumps(payload).encode("utf-8")
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}",
+        }
+        client_id = os.environ.get("CF_ACCESS_CLIENT_ID")
+        client_secret = os.environ.get("CF_ACCESS_CLIENT_SECRET")
+        if client_id and client_secret:
+            headers["CF-Access-Client-Id"] = client_id
+            headers["CF-Access-Client-Secret"] = client_secret
+        headers.update(self.extra_headers)
         request = urllib.request.Request(
             f"{self.base_url}/chat/completions",
             data=data,
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {self.api_key}",
-            },
+            headers=headers,
             method="POST",
         )
 
@@ -187,6 +201,29 @@ class OpenAICompatProvider(Provider):
             usage=usage,
             cost_usd=cost,
         )
+
+
+def list_models(
+    base_url: str,
+    api_key: str,
+    extra_headers: dict[str, str] | None = None,
+    timeout: float = 30,
+) -> list[dict[str, Any]]:
+    """List model ids from an OpenAI-compatible endpoint."""
+    headers = {"Authorization": f"Bearer {api_key}"}
+    headers.update(extra_headers or {})
+    request = urllib.request.Request(f"{base_url.rstrip('/')}/models", headers=headers)
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:300]
+        raise ValueError(f"HTTP {exc.code} from /models: {body}") from exc
+    except urllib.error.URLError as exc:
+        raise ValueError(f"could not reach {base_url}: {exc}") from exc
+
+    data = payload.get("data", payload if isinstance(payload, list) else [])
+    return [entry for entry in data if isinstance(entry, dict) and entry.get("id")]
 
 
 def build_provider(name: str, config: dict[str, Any] | None = None) -> Provider:

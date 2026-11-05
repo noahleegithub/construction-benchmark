@@ -6,7 +6,8 @@ import argparse
 import sys
 from pathlib import Path
 
-from . import __version__, demo, overlay, report, runner
+from . import __version__, config, demo, overlay, report, runner
+from .providers import list_models
 from .render import render_pdf_page
 from .schema import ItemError, load_items
 
@@ -56,6 +57,10 @@ def build_parser() -> argparse.ArgumentParser:
     check = sub.add_parser("check", help="validate items.csv and ground truth")
     check.set_defaults(func=cmd_check)
 
+    models_parser = sub.add_parser("models", help="list models from the configured gateway")
+    models_parser.add_argument("--base-url")
+    models_parser.set_defaults(func=cmd_models)
+
     run_parser = sub.add_parser("run", help="run models over selected items")
     run_parser.add_argument("--models", default="models.yaml")
     run_parser.add_argument("--repeats", type=int, default=1)
@@ -65,6 +70,10 @@ def build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument("--force", action="store_true")
     run_parser.add_argument("--dpi", type=int, default=150)
     run_parser.add_argument("--max-side", type=int, default=2400)
+    run_parser.add_argument("--iou-threshold", type=float, default=0.5)
+    run_parser.add_argument(
+        "--no-report", action="store_true", help="skip scoring after the run"
+    )
     run_parser.add_argument(
         "--provider",
         help="override every model's provider (stub or oracle for offline runs)",
@@ -138,6 +147,22 @@ def cmd_check(args) -> int:
     return 0
 
 
+def cmd_models(args) -> int:
+    import pandas as pd
+
+    base_url, api_key, headers = config.gateway_settings()
+    if args.base_url:
+        base_url = args.base_url.rstrip("/")
+    if not api_key:
+        raise SystemExit("TAMU_API_KEY is not set; add it to .env or export it")
+    entries = list_models(base_url, api_key, headers)
+    frame = pd.DataFrame(
+        [{"id": entry["id"], "owned_by": entry.get("owned_by", "")} for entry in entries]
+    )
+    print(frame.to_string(index=False))
+    return 0
+
+
 def cmd_run(args) -> int:
     workspace: Path = args.workspace
     runner.run(
@@ -153,6 +178,12 @@ def cmd_run(args) -> int:
         provider_override=args.provider,
         runs_path=workspace / args.runs,
     )
+    if not args.no_report:
+        report.score_and_report(
+            workspace,
+            runs_path=workspace / args.runs,
+            iou_threshold=args.iou_threshold,
+        )
     return 0
 
 
@@ -207,6 +238,7 @@ def cmd_render(args) -> int:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    config.load_env(config.REPO_ROOT / ".env", Path(args.workspace) / ".env")
     try:
         return args.func(args)
     except (ItemError, FileNotFoundError, ValueError) as exc:

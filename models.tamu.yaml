@@ -1,0 +1,10 @@
+models:
+  - id: tamu-gpt
+    provider: openai
+    model: ${TAMU_MODEL}
+    base_url: ${TAMU_GATEWAY_URL}
+    api_key_env: TAMU_API_KEY
+    temperature: null          # omit temperature; required by some reasoning models
+    max_tokens: 8000
+    token_param: max_completion_tokens
+    detail: high
