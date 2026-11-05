@@ -75,6 +75,7 @@ def build_parser() -> argparse.ArgumentParser:
     score = sub.add_parser("score", help="score runs and write report.md")
     score.add_argument("--runs", default="runs.jsonl")
     score.add_argument("--out", default="report.md")
+    score.add_argument("--iou-threshold", type=float, default=0.5)
     score.set_defaults(func=cmd_score)
 
     overlay_parser = sub.add_parser("overlay", help="draw ground truth and a prediction")
@@ -161,6 +162,7 @@ def cmd_score(args) -> int:
         workspace,
         runs_path=workspace / args.runs,
         out_path=workspace / args.out,
+        iou_threshold=args.iou_threshold,
     )
     return 0
 

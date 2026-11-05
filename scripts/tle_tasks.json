@@ -1,0 +1,95 @@
+{
+  "tasks": [
+    {
+      "task_id": "t-280-net-room-areas",
+      "family": "net-room-areas",
+      "pdf": "area-extraction/t-280-net-room-areas/t-280-net-room-areas.pdf",
+      "page": 1,
+      "question": "Trace the **net floor area of every room** on the plan.",
+      "convention": "Every enclosed, named or numbered space counts as a room, including corridors, closets, and restrooms. Do not trace the building outline, wall assemblies, shafts that are not occupiable, or areas outside the building.\n\nReturn **one closed polygon per room**.\n\n- **Boundary** \u2014 run the ring along the **inside face of the walls enclosing the room**. Net area excludes wall thickness, so the ring must sit on the room side of each wall, not on its centerline.\n- **Shape fidelity** \u2014 follow the drawn edge. Do not replace an irregular region with its bounding\n  box, and do not merge two neighbouring regions into one polygon.\n- **Vertices** \u2014 put a vertex at every corner and every change of direction. Approximate a\n  curved edge with enough short segments that the polygon visibly follows the curve.\n- **Separate regions** \u2014 regions that do not touch are separate lines, each with its own `label`.\n- **Outer ring only** \u2014 trace the outside boundary. Do not emit inner rings for holes such as\n  columns, shafts, or islands; a hole is not a separate polygon either.\n- **Scoring** \u2014 each polygon is matched to the expert polygon it overlaps by\n  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,\n  or box-shaped will not match.",
+      "output_type": "polygons",
+      "gt_rule": "region",
+      "expected_count": 443,
+      "difficulty": "hard",
+      "short_title": "Trace net floor area of every room"
+    },
+    {
+      "task_id": "t-43e-net-room-areas",
+      "family": "net-room-areas",
+      "pdf": "area-extraction/t-43e-net-room-areas/t-43e-net-room-areas.pdf",
+      "page": 1,
+      "question": "Trace the **net floor area of every room** on the plan.",
+      "convention": "Every enclosed, named or numbered space counts as a room, including corridors, closets, and restrooms. Do not trace the building outline, wall assemblies, or areas outside the building.\n\nReturn **one closed polygon per room**.\n\n- **Boundary** \u2014 run the ring along the **inside face of the walls enclosing the room**. Net area excludes wall thickness, so the ring must sit on the room side of each wall, not on its centerline.\n- **Shape fidelity** \u2014 follow the drawn edge. Do not replace an irregular region with its bounding\n  box, and do not merge two neighbouring regions into one polygon.\n- **Vertices** \u2014 put a vertex at every corner and every change of direction. Approximate a\n  curved edge with enough short segments that the polygon visibly follows the curve.\n- **Separate regions** \u2014 regions that do not touch are separate lines, each with its own `label`.\n- **Outer ring only** \u2014 trace the outside boundary. Do not emit inner rings for holes such as\n  columns, shafts, or islands; a hole is not a separate polygon either.\n- **Scoring** \u2014 each polygon is matched to the expert polygon it overlaps by\n  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,\n  or box-shaped will not match.",
+      "output_type": "polygons",
+      "gt_rule": "region",
+      "expected_count": 8,
+      "difficulty": "medium",
+      "short_title": "Trace net floor area of every room"
+    },
+    {
+      "task_id": "t-4f1-door-threshold-areas",
+      "family": "door-threshold-areas",
+      "pdf": "area-extraction/t-4f1-door-threshold-areas/t-4f1-door-threshold-areas.pdf",
+      "page": 1,
+      "question": "Trace the **threshold area of every door** on the plan \u2014 the patch of floor inside the door opening itself.",
+      "convention": "Every door opening in the plan counts, including doors in interior partitions and exterior doors. Do not trace the door leaf, its swing arc, the rooms on either side, or openings with no door.\n\nReturn **one closed polygon per door opening**.\n\n- **Boundary** \u2014 run the ring across the **opening between the two jambs**, spanning the full wall thickness, so the polygon is a small rectangle sitting inside the wall.\n- **Shape fidelity** \u2014 follow the drawn edge. Do not replace an irregular region with its bounding\n  box, and do not merge two neighbouring regions into one polygon.\n- **Vertices** \u2014 put a vertex at every corner and every change of direction. Approximate a\n  curved edge with enough short segments that the polygon visibly follows the curve.\n- **Separate regions** \u2014 regions that do not touch are separate lines, each with its own `label`.\n- **Outer ring only** \u2014 trace the outside boundary. Do not emit inner rings for holes such as\n  columns, shafts, or islands; a hole is not a separate polygon either.\n- **Scoring** \u2014 each polygon is matched to the expert polygon it overlaps by\n  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,\n  or box-shaped will not match.",
+      "output_type": "polygons",
+      "gt_rule": "door_polygon",
+      "expected_count": 104,
+      "difficulty": "hard",
+      "short_title": "Trace the threshold area of every door"
+    },
+    {
+      "task_id": "t-6bb-building-footprint",
+      "family": "building-footprint",
+      "pdf": "area-extraction/t-6bb-building-footprint/t-6bb-building-footprint.pdf",
+      "page": 1,
+      "question": "Trace the **footprint of the building** on the plan.",
+      "convention": "The footprint is the enclosed extent of the building as one region. Do not trace individual rooms, and do not include site paving, walks, driveways, or landscape outside the building. Trace a separate polygon only if the sheet clearly shows more than one detached building.\n\nReturn **one closed polygon per building**.\n\n- **Boundary** \u2014 run the ring along the **outside face of the exterior walls**, following every jog and recess in the perimeter.\n- **Shape fidelity** \u2014 follow the drawn edge. Do not replace an irregular region with its bounding\n  box, and do not merge two neighbouring regions into one polygon.\n- **Vertices** \u2014 put a vertex at every corner and every change of direction. Approximate a\n  curved edge with enough short segments that the polygon visibly follows the curve.\n- **Separate regions** \u2014 regions that do not touch are separate lines, each with its own `label`.\n- **Outer ring only** \u2014 trace the outside boundary. Do not emit inner rings for holes such as\n  columns, shafts, or islands; a hole is not a separate polygon either.\n- **Scoring** \u2014 each polygon is matched to the expert polygon it overlaps by\n  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,\n  or box-shaped will not match.",
+      "output_type": "polygons",
+      "gt_rule": "largest_footprint",
+      "expected_count": 1,
+      "difficulty": "easy",
+      "short_title": "Trace the building footprint on the plan"
+    },
+    {
+      "task_id": "t-b9c-net-room-areas",
+      "family": "net-room-areas",
+      "pdf": "area-extraction/t-b9c-net-room-areas/t-b9c-net-room-areas.pdf",
+      "page": 1,
+      "question": "Trace the **net floor area of every room** on the plan.",
+      "convention": "Every enclosed, named or numbered space counts as a room, including corridors, closets, and restrooms. Do not trace the building outline, wall assemblies, or areas outside the building.\n\nReturn **one closed polygon per room**.\n\n- **Boundary** \u2014 run the ring along the **inside face of the walls enclosing the room**. Net area excludes wall thickness, so the ring must sit on the room side of each wall, not on its centerline.\n- **Shape fidelity** \u2014 follow the drawn edge. Do not replace an irregular region with its bounding\n  box, and do not merge two neighbouring regions into one polygon.\n- **Vertices** \u2014 put a vertex at every corner and every change of direction. Approximate a\n  curved edge with enough short segments that the polygon visibly follows the curve.\n- **Separate regions** \u2014 regions that do not touch are separate lines, each with its own `label`.\n- **Outer ring only** \u2014 trace the outside boundary. Do not emit inner rings for holes such as\n  columns, shafts, or islands; a hole is not a separate polygon either.\n- **Scoring** \u2014 each polygon is matched to the expert polygon it overlaps by\n  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,\n  or box-shaped will not match.",
+      "output_type": "polygons",
+      "gt_rule": "region",
+      "expected_count": 88,
+      "difficulty": "hard",
+      "short_title": "Trace net floor area of every room"
+    },
+    {
+      "task_id": "t-classroom-net-areas",
+      "family": "net-room-areas",
+      "pdf": "area-extraction/t-classroom-net-areas/t-classroom-net-areas.pdf",
+      "page": 1,
+      "question": "Extract the net area of every classroom identified by the double diagonal hatch pattern. Include half of each door threshold in the classroom area.",
+      "convention": "Return one closed polygon per classroom, following the inside face of the classroom walls and including half of each threshold at each door opening. Exclude other rooms, corridors, wall thickness, and unrelated hatched areas.",
+      "output_type": "polygons",
+      "gt_rule": "region",
+      "expected_count": 83,
+      "difficulty": "medium",
+      "short_title": "Extract net area of every hatched classroom"
+    },
+    {
+      "task_id": "t-corridor-net-area",
+      "family": "corridor-net-area",
+      "pdf": "area-extraction/t-corridor-net-area/t-corridor-net-area.pdf",
+      "page": 1,
+      "question": "Trace the **net area of the corridor** on the plan.",
+      "convention": "The corridor is the enclosed circulation path connecting the residential units, elevator lobby, and stairwells. Follow the interior faces of the walls bounding the corridor. Exclude unit interiors (foyers, living spaces, bedrooms, bathrooms), elevator shafts, stairwells, electrical rooms, tenant storage, and other enclosed service rooms.\n\nReturn **one closed polygon per corridor region**.\n\n- **Boundary** \u2014 run the ring along the **inside face of the walls enclosing the corridor**. Net area excludes wall thickness, so the ring must sit on the corridor side of each wall, not on its centerline.\n- **Shape fidelity** \u2014 follow the drawn edge. Do not replace an irregular region with its bounding box, and do not merge distinct separated regions.\n- **Vertices** \u2014 put a vertex at every corner and change of direction.\n- **Outer ring only** \u2014 trace the boundary. Do not emit inner rings for holes such as elevator banks or shafts; a hole is not a separate polygon either.\n- **Scoring** \u2014 each polygon is matched to the expert ground truth polygon it overlaps by intersection-over-union (IoU).",
+      "output_type": "polygons",
+      "gt_rule": "largest_region",
+      "expected_count": 1,
+      "difficulty": "medium",
+      "short_title": "Trace the corridor net area on the plan"
+    }
+  ]
+}

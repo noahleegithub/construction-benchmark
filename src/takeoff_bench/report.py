@@ -33,7 +33,12 @@ FIELDS = [
 ]
 
 
-def score_runs(workspace: Path, runs_path: Path) -> list[dict[str, Any]]:
+def score_runs(
+    workspace: Path,
+    runs_path: Path,
+    *,
+    iou_threshold: float = 0.5,
+) -> list[dict[str, Any]]:
     items = {item.item_id: item for item in load_items(workspace)}
     rows: list[dict[str, Any]] = []
 
@@ -60,7 +65,11 @@ def score_runs(workspace: Path, runs_path: Path) -> list[dict[str, Any]]:
                 row["error"] = str(record.get("parse_error") or "no parsed output")[:300]
             else:
                 try:
-                    result = score_item(record["parsed"], load_gt(workspace, item))
+                    result = score_item(
+                        record["parsed"],
+                        load_gt(workspace, item),
+                        iou_threshold=iou_threshold,
+                    )
                 except Exception as exc:  # noqa: BLE001 - a bad item must not stop the batch
                     row["status"] = "score_error"
                     row["error"] = f"{type(exc).__name__}: {exc}"[:300]
@@ -151,12 +160,14 @@ def score_and_report(
     workspace: Path,
     runs_path: Path | None = None,
     out_path: Path | None = None,
+    *,
+    iou_threshold: float = 0.5,
 ) -> list[dict[str, Any]]:
     runs_path = runs_path or workspace / "runs.jsonl"
     out_path = out_path or workspace / "report.md"
     if not runs_path.exists():
         raise FileNotFoundError(runs_path)
-    rows = score_runs(workspace, runs_path)
+    rows = score_runs(workspace, runs_path, iou_threshold=iou_threshold)
     write_scores(rows, workspace / "scores.csv")
     summary = summarize(rows)
     text = format_report(summary)

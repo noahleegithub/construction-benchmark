@@ -221,6 +221,36 @@ report.md      aggregate table
 or scorer change can be evaluated against archived outputs without new API
 calls.
 
+## Importing the public TLE assets
+
+The public TLE bundle (`1_pdfs`, `2_togal_predictions`, `3_model_predictions`)
+contains drawing PDFs, vendor predictions, and archived model answers, but not
+the task manifests that hold expert ground truth. `scripts/import_tle.py`
+recovers the subset whose expected geometry is present in the vendor's page
+annotations, and `scripts/validate_tle_import.py` checks the recovery against
+the published per-run tp/fp/fn counts.
+
+```bash
+python scripts/import_tle.py \
+  --bundle "data/tle_raw/TLE-prod [dont-delete]" --out study
+
+python scripts/validate_tle_import.py \
+  --workspace study --bundle "data/tle_raw/TLE-prod [dont-delete]"
+
+python scripts/replay_tle_runs.py \
+  --workspace study --bundle "data/tle_raw/TLE-prod [dont-delete]"
+
+uv run takeoff-bench -C study score --iou-threshold 0.3
+```
+
+Seven area items are recoverable this way (net room areas, door thresholds,
+corridor, building footprint). The validation reproduces tp/fp/fn exactly on
+124 of 132 archived runs, with a median mean-IoU difference of 0.00 to 0.01.
+The other 26 tasks are not imported: the bundle has wall and symbol predictions
+but no expected geometry for them, and five area tasks target regions that
+cannot be identified unambiguously from the page annotations. See
+`study/DATA_NOTES.md`.
+
 ## Limitations
 
 - One page per item. Tiling for large sheets is not implemented.

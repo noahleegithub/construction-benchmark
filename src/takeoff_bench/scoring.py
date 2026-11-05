@@ -273,6 +273,7 @@ def _score_geometry(pred, truth, iou_threshold: float) -> dict[str, Any]:
         "mean_iou_matched": (
             sum(matched_ious) / len(matched_ious) if matched_ious else None
         ),
+        "matched_iou_sum": sum(matched_ious),
         "iou_threshold": iou_threshold,
     }
 

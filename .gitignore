@@ -7,3 +7,6 @@ runs.jsonl
 scores.csv
 report.md
 demo/
+data/
+study/
+*.zip
