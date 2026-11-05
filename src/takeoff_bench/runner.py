@@ -86,9 +86,20 @@ def run(
                 continue
 
             model_key = model["id"]
+            model_config_hash = hashlib.sha256(
+                json.dumps(model, sort_keys=True).encode("utf-8")
+            ).hexdigest()[:16]
             prompt_hash = hashlib.sha256(
                 "\n".join(
-                    [system, user, str(model.get("model", model_key)), str(dpi), str(max_side)]
+                    [
+                        system,
+                        user,
+                        str(model.get("model", model_key)),
+                        provider_name,
+                        model_config_hash,
+                        str(dpi),
+                        str(max_side),
+                    ]
                 ).encode("utf-8")
             ).hexdigest()
 
@@ -128,6 +139,7 @@ def run(
                     "model": model.get("model", model_key),
                     "repeat": repeat,
                     "prompt_hash": prompt_hash,
+                    "model_config_hash": model_config_hash,
                     "image_sha256": image_sha,
                     "image_size": list(image_size),
                     "dpi": dpi,
