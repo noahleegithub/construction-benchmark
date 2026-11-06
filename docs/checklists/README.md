@@ -23,6 +23,7 @@ row per check point.
 | `architecture-design-verification-checklist.json` | Machine-readable English records |
 | `tle-comparison.md` | Comparison of the checklist with the TLE benchmark |
 | `tle-comparison.csv` | Per-item evidence classification used in that comparison |
+| `benchmark-task-design.md` | Proposal for checklist-derived difficult benchmark tasks |
 
 ## Consolidation
 
