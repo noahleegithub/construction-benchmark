@@ -7,7 +7,7 @@ architecture, consolidated from the 2025-07-01 policy draft and the
 **135 checklist items · 453 checkpoints.**
 
 The Korean source is authoritative. Items retain their original numbering.
-A bilingual CSV and a machine-readable JSON file sit beside this document.
+An English CSV and a machine-readable JSON file sit beside this document.
 
 The 2025-07-01 draft and the 2025-07-09 release contain the same 135 item texts.
 The draft's 490 checkpoint fragments all appear in the release's 453 consolidated
@@ -1855,8 +1855,8 @@ checkpoints; the difference is line wrapping, not omitted content.
 ## Appendix A. Deduction classification
 
 Each checklist item carries a deduction applied to the verification score when
-the item is not met. The table below is translated from the `감점분류표` sheet
-common to both source workbooks (`당초` = existing, `변경` = proposed).
+the item is not met. The table below is translated from the deduction classification sheet common to
+both source workbooks (Existing = rate before the change; Proposed = rate after).
 
 | Classification | Criterion | Existing | Proposed |
 |---|---|---:|---:|

@@ -7,8 +7,8 @@ consolidated into one review document.
 
 | File | Role | Date |
 |---|---|---|
-| `source/design-verification-architecture-250701-policy.xlsx` | Policy draft (`방침용`) | 2025-07-01 |
-| `source/design-verification-architecture-250709-release.xlsx` | Distribution release (`배포용`) | 2025-07-09 |
+| `design-verification-architecture-250701-policy.xlsx` | Policy draft — deleted after translation | 2025-07-01 |
+| `design-verification-architecture-250709-release.xlsx` | Distribution release — deleted after translation | 2025-07-09 |
 
 Both workbooks cover the same 135 checklist items. The 2025-07-09 release is
 used as the base because it consolidates line-wrapped checkpoint text into one
@@ -19,8 +19,8 @@ row per check point.
 | File | Contents |
 |---|---|
 | `architecture-design-verification-checklist.md` | Readable checklist, one section per item, with checkboxes |
-| `architecture-design-verification-checklist.csv` | Bilingual table (English + Korean) for review and analysis |
-| `architecture-design-verification-checklist.json` | Machine-readable bilingual records |
+| `architecture-design-verification-checklist.csv` | English table for review and analysis |
+| `architecture-design-verification-checklist.json` | Machine-readable English records |
 
 ## Consolidation
 
@@ -43,8 +43,7 @@ row per check point.
 Technical English, with a fixed glossary for Korean construction terms
 (design verification, check point, net area, fire compartment, direct stair,
 refuge area, piloti, and so on). Numbers, dimensions, drawing codes, article
-numbers and references are preserved verbatim. The Korean text is kept in the
-CSV and JSON alongside the translation.
+numbers and references are preserved verbatim.
 
 The Korean source is authoritative. This translation has not been certified by
 the issuing organization; verify critical clauses against the workbook before
@@ -52,7 +51,7 @@ using them in a contract or approval submission.
 
 ## Deduction basis
 
-The `감점분류표` (deduction classification) sheet is reproduced as Appendix A of
+The deduction classification sheet is reproduced as Appendix A of
 the Markdown document, with the existing and proposed rates.
 
 ## Use in this repository
@@ -64,6 +63,6 @@ questions, failure taxonomies and task families.
 
 ## Rights
 
-The source workbooks were supplied by the user. They are kept locally under
-`source/` and are gitignored; check the issuing organization's redistribution
-terms before publishing them or a derived translation outside this project.
+The Korean source workbooks were deleted after translation; no source file is
+retained in this repository. Check the issuing organization's redistribution
+terms before publishing the translation outside this project.

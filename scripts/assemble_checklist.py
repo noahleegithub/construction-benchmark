@@ -56,7 +56,15 @@ CATEGORY = {
     "단순오류": "Simple error",
     "기타제안": "Other recommendation",
 }
-DISCIPLINE = {"건축": "Architecture"}
+DISCIPLINE = {
+    "건축": "Architecture",
+    "토목": "Civil",
+    "구조": "Structural",
+    "전기": "Electrical",
+    "조경": "Landscape",
+    "기계": "Mechanical",
+    "소방": "Fire protection",
+}
 DRAWING = {
     "단위세대 평면도": "Dwelling unit floor plan",
     "동평면도": "Building floor plan",
@@ -131,8 +139,8 @@ DRAWING = {
 DEDUCTION_TABLE = """## Appendix A. Deduction classification
 
 Each checklist item carries a deduction applied to the verification score when
-the item is not met. The table below is translated from the `감점분류표` sheet
-common to both source workbooks (`당초` = existing, `변경` = proposed).
+the item is not met. The table below is translated from the deduction classification sheet common to
+both source workbooks (Existing = rate before the change; Proposed = rate after).
 
 | Classification | Criterion | Existing | Proposed |
 |---|---|---:|---:|
@@ -204,7 +212,10 @@ def main() -> int:
         row = {
             "id": item_id,
             "grade": item["code"],
-            "discipline": DISCIPLINE.get(item["discipline"], item["discipline"]),
+            "discipline": " / ".join(
+                DISCIPLINE.get(part.strip()) or part.strip()
+                for part in item["discipline"].split("\n")
+            ),
             "area": " / ".join(AREA.get(part) or part for part in area_ko),
             "drawing": " / ".join(
                 DRAWING.get(part.strip()) or part.strip()
@@ -219,14 +230,6 @@ def main() -> int:
             "subcategory": SUBCATEGORY.get(item["subcategory"], item["subcategory"]),
             "category": CATEGORY.get(item["category"], item["category"]),
             "deduction": item["deduction"],
-            "item_ko": item["item"],
-            "checkpoints_ko": item["checkpoints"],
-            "comments_ko": item["comments"],
-            "other_ko": item["other"],
-            "basis_ko": item["basis"],
-            "stage_ko": item["stage"],
-            "subcategory_ko": item["subcategory"],
-            "category_ko": item["category"],
         }
         rows.append(row)
 
@@ -255,14 +258,6 @@ def main() -> int:
                 "subcategory",
                 "category",
                 "deduction",
-                "checklist_item_ko",
-                "checkpoints_ko",
-                "additional_comment_ko",
-                "other_ko",
-                "basis_ko",
-                "verification_stage_ko",
-                "subcategory_ko",
-                "category_ko",
             ]
         )
         for row in rows:
@@ -282,14 +277,6 @@ def main() -> int:
                     row["subcategory"],
                     row["category"],
                     row["deduction"],
-                    row["item_ko"],
-                    " || ".join(row["checkpoints_ko"]),
-                    row["comments_ko"],
-                    row["other_ko"],
-                    row["basis_ko"],
-                    row["stage_ko"],
-                    row["subcategory_ko"],
-                    row["category_ko"],
                 ]
             )
 
@@ -324,7 +311,7 @@ def markdown(rows: list[dict]) -> str:
         f"**{len(rows)} checklist items · {total_points} checkpoints.**",
         "",
         "The Korean source is authoritative. Items retain their original numbering.",
-        "A bilingual CSV and a machine-readable JSON file sit beside this document.",
+        "An English CSV and a machine-readable JSON file sit beside this document.",
         "",
         "The 2025-07-01 draft and the 2025-07-09 release contain the same 135 item texts.",
         "The draft's 490 checkpoint fragments all appear in the release's 453 consolidated",
