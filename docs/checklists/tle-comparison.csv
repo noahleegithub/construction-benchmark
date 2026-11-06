@@ -1,0 +1,136 @@
+id,area,checklist_item,evidence_type,tle_primitive
+1,Title block and general sheets,Consistency with prior plans such as the district unit plan,coordination,none
+2,Title block and general sheets,Provision of dwelling units for the housing vulnerable in rental housing,rule,none
+3,Site planning,Appropriateness of gate post planning at the main site entrance,dimension,drawing-qa
+4,Site planning,Appropriateness of vehicle access planning at the site entrance,dimension,drawing-qa
+5,Site planning,Appropriateness of planning for children's school-vehicle stops,dimension,drawing-qa
+6,Site planning,Installation of falling-object protection at entrances,dimension,drawing-qa
+7,Site planning / Auxiliary welfare facilities,Fall-prevention planning for above-ground structures,dimension,drawing-qa
+8,Site planning,Prohibition of structures in front of lower-floor dwelling units,dimension,drawing-qa
+9,Site planning,Confirmation of the outdoor elevator installation plan,dimension,drawing-qa
+10,Site planning,Plan to secure access lanes for moving trucks,dimension,drawing-qa
+11,Site planning,Installation of traffic safety facilities around the underground parking ramp,dimension,drawing-qa
+12,Site planning,Underground parking ramp layout plan,dimension,drawing-qa
+13,Site planning,Underground interference in urban construction planning,coordination,none
+14,Site planning,Site planning in consideration of earth retaining and excavation,rule,none
+15,Site planning,Appropriateness of the stormwater handling plan,rule,none
+16,Site planning,Confirmation of level markings and suitability at level differences,dimension,drawing-qa
+17,Site planning,Appropriateness of neighborhood living facility planning,rule,none
+18,Site planning,"Confirmation of slopes (gradient, pitch) by location",dimension,drawing-qa
+19,Site planning,Confirmation of drawing consistency between disciplines at key locations,coordination,none
+20,Site planning,Ensuring equity with adjacent sites in the same district,rule,none
+21,Site planning,Confirmation of whether fire compartment drawings have been prepared,coordination,none
+22,Site planning,Confirmation of the final area calculation table,area,area-extraction
+23,Apartment buildings,Design standard for common-area floor finishes,detail,structured-detail-extraction
+24,Apartment buildings,Finishes specified for stairwell walls and baseboards,detail,structured-detail-extraction
+25,Apartment buildings,Confirmation of finishes in the basement EV hall and connecting passage,detail,structured-detail-extraction
+26,Apartment buildings,Confirmation of the ceiling finish standard for seasonal storage,detail,structured-detail-extraction
+27,Apartment buildings,Confirmation of the ceiling finish standard for elevator halls,detail,structured-detail-extraction
+28,Apartment buildings,Verify bathroom wall waterproofing finish criteria,detail,structured-detail-extraction
+29,Apartment buildings,Verify finish criteria at kitchen cabinet installation areas,detail,structured-detail-extraction
+30,Apartment buildings,Secure fire-resistive structure in the wall beside the unit entrance fire door frame,detail,structured-detail-extraction
+31,Apartment buildings,Verify unit entrance door performance,rule,none
+32,Apartment buildings,Plan flanking resilient layer for inter-floor noise,detail,structured-detail-extraction
+33,Apartment buildings,Apply Grade 2 inter-floor noise technology,rule,none
+34,Apartment buildings,Verify adequacy of unit bathroom door planning,dimension,drawing-qa
+35,Apartment buildings,Plan same-storey piping space for system bathroom,dimension,drawing-qa
+36,Apartment buildings,Review bathroom ceiling insulation and condensation,detail,structured-detail-extraction
+37,Apartment buildings,Verify adequacy of bathroom shower stall planning,dimension,drawing-qa
+38,Apartment buildings,Verify adequacy of tile planning at dissimilar-material joints,detail,structured-detail-extraction
+39,Apartment buildings,Minimize masonry walls,area,area-extraction
+40,Apartment buildings,Reinforcement plan for living room lightweight partition,detail,structured-detail-extraction
+41,Apartment buildings,Verify adequacy of main apartment floor plan,area,area-extraction
+42,Apartment buildings,Secure clearance between kitchen cooktop and wall,dimension,drawing-qa
+43,Apartment buildings,Secure clearance between sink drainboard and cooktop,dimension,drawing-qa
+44,Apartment buildings,Verify kitchen lighting switch location,point,image-search
+45,Apartment buildings,Review kitchen drain location,dimension,drawing-qa
+46,Apartment buildings,Review adequacy of small window sizes,dimension,drawing-qa
+47,Apartment buildings,Verify adequacy of laundry room door planning,dimension,drawing-qa
+48,Apartment buildings,Verify adequacy of balcony washing machine installation planning,dimension,drawing-qa
+49,Apartment buildings,Condensation prevention plan for non-expanded balcony,rule,none
+50,Apartment buildings,Comply with balcony drain pipe design criteria,dimension,drawing-qa
+51,Apartment buildings,Verify balcony door opening direction,dimension,drawing-qa
+52,Apartment buildings,Verify ABS resin vent planning,detail,structured-detail-extraction
+53,Apartment buildings,Comply with outdoor unit room design criteria,dimension,drawing-qa
+54,Apartment buildings,Comply with downward evacuation opening design criteria,dimension,drawing-qa
+55,Apartment buildings,Compliance with refuge area installation criteria,area,area-extraction
+56,Apartment buildings,Compliance with installation criteria for fire doors and exterior windows in refuge areas,rule,none
+57,Apartment buildings,Review of adequacy of insulation planning for dwelling units and piloti,detail,structured-detail-extraction
+58,Apartment buildings,"Verification of insulation planning by location, including exterior insulation",detail,structured-detail-extraction
+59,Apartment buildings,Verification of condensation reinforcement at exterior-wall pipe shaft (PD) locations,detail,structured-detail-extraction
+60,Apartment buildings,Condensation reinforcement planning inside pipe shafts (PD),detail,structured-detail-extraction
+61,Apartment buildings,Compliance with zero-energy Grade 5 insulation planning,rule,none
+62,Apartment buildings,Compliance with regional glazing design criteria,rule,none
+63,Apartment buildings,Fixing stability of kitchen upper cabinets,rule,none
+64,Apartment buildings,Verification of installation criteria for built-in furniture and equipment in integrated public rental housing,rule,none
+65,Apartment buildings,Securing the safety of the entrance shoe cabinet,dimension,drawing-qa
+66,Apartment buildings,Verification of entrance shoe cabinet planning,dimension,drawing-qa
+67,Apartment buildings,Verification of floor level planning for units for the mobility-impaired,dimension,drawing-qa
+68,Apartment buildings,Bathroom and entrance planning for units for the mobility-impaired,dimension,drawing-qa
+69,Apartment buildings,Review of basement drainage planning,rule,none
+70,Apartment buildings,Verification of elevator lobby space planning,area,area-extraction
+71,Apartment buildings,Condensation reduction in stairwells and EV halls,rule,none
+72,Apartment buildings,Planning for directing condensation and refrigerant condensate,rule,none
+73,Apartment buildings,Separation planning between electrical/generator rooms and residential towers,coordination,none
+74,Apartment buildings,Compliance with direct stair installation criteria,dimension,drawing-qa
+75,Apartment buildings,Verification of special evacuation stair installation criteria,dimension,drawing-qa
+76,Apartment buildings,Adequate residential tower floor planning for corridor-access apartments,area,area-extraction
+77,Apartment buildings,Verification of stormwater planning adequacy for corridor-access apartments,rule,none
+78,Apartment buildings,Review of elevator lobby window design in stair-access apartments,dimension,drawing-qa
+79,Apartment buildings,Vibration and noise mitigation planning for units adjacent to elevator shafts,rule,none
+80,Apartment buildings,Verification of mailbox installation criteria compliance,point,image-search
+81,Apartment buildings,Braille block planning within the apartment complex,point,image-search
+82,Apartment buildings,Omit vestibule space at roof access,coordination,none
+83,Apartment buildings,Verify stormwater downspout planning criteria,dimension,drawing-qa
+84,Apartment buildings,Comply with exterior wall molding design criteria,detail,structured-detail-extraction
+85,Apartment buildings,Install vertical crack-inducing joints,detail,structured-detail-extraction
+86,Apartment buildings,Accessible entrance door clearance planning,dimension,drawing-qa
+87,Apartment buildings,Comply with design criteria for fire protection smoke control systems (smoke control dampers),detail,structured-detail-extraction
+88,Apartment buildings,E/V sump pit installation,dimension,drawing-qa
+89,Apartment buildings,Comply with wall criteria for EPS/TPS rooms in common areas,detail,structured-detail-extraction
+90,Apartment buildings,Verify stormwater drain material,detail,structured-detail-extraction
+91,Apartment buildings,Water sill and railing planning at stairwell ribbon windows,dimension,drawing-qa
+92,Apartment buildings,Review adequacy of roof finish and slope,detail,structured-detail-extraction
+93,Apartment buildings,Slab thickness and floor-to-floor height planning,dimension,drawing-qa
+94,Apartment buildings,Show all dwelling units and key sections,coordination,none
+95,Apartment buildings,Review adequacy of in-unit curtain box planning,dimension,drawing-qa
+96,Apartment buildings,Comply with finish criteria at kitchen cabinet-to-tile junctions,detail,structured-detail-extraction
+97,Apartment buildings,Attach condensation prevention notice,coordination,none
+98,Apartment buildings,Verify condensation-reduction material specifications,detail,structured-detail-extraction
+99,Apartment buildings,Comply with design criteria for basement and above-grade residential tower entrance doors,dimension,drawing-qa
+100,Apartment buildings,Verify window installation criteria for E/V halls,dimension,drawing-qa
+101,Apartment buildings,Insect screen planning for E/V machine room AL windows,point,image-search
+102,Apartment buildings,Verify installation criteria for finger-pinch prevention devices,point,image-search
+103,Underground parking / Apartment buildings,Comply with waterproofing method criteria for underground parking garages,detail,structured-detail-extraction
+104,Underground parking,Install drainage board at parking garage level-change locations,detail,structured-detail-extraction
+105,Underground parking,Verify planning of the underground parking ramp entry section,dimension,drawing-qa
+106,Underground parking,Verify planning of the underground parking ramp end section,dimension,drawing-qa
+107,Underground parking,Review adequacy of underground parking ramp planning,dimension,drawing-qa
+108,Underground parking,Fire compartmentation and fire shutter installation in underground parking garages,detail,structured-detail-extraction
+109,Underground parking,Review adequacy of ramp entry and exit planning for the underground parking garage,dimension,drawing-qa
+110,Underground parking,Compliance with parking layout criteria for the underground parking garage,area,area-extraction
+111,Apartment buildings / Underground parking,Review adequacy of parking planned inside apartment PIT levels,area,area-extraction
+112,Apartment buildings / Underground parking,Review adequacy of accessible parking zone planning,area,area-extraction
+113,Underground parking,Review adequacy of flat-plate underground parking garage planning,detail,structured-detail-extraction
+114,Underground parking,Review adequacy of safety facilities and graphics for the underground parking garage,point,image-search
+115,Underground parking,Confirmation of trench and sump planning in the underground parking garage,detail,structured-detail-extraction
+116,Underground parking,Compliance with criteria for the number of sumps,point,image-search
+117,Underground parking,Compliance with floor finish criteria for the underground parking garage,detail,structured-detail-extraction
+118,Underground parking,Confirmation of floor finish planning for outdoor stair towers,detail,structured-detail-extraction
+119,Underground parking,Measures to prevent stormwater inflow below ventilation openings,rule,none
+120,Underground parking,Review adequacy of parking planning for EV charging facilities,point,image-search
+121,Underground parking,Planning of underground parking garage ventilation openings and PIT ventilation windows,area,area-extraction
+122,Auxiliary welfare facilities,Compliance with installation criteria for worker rest facilities,area,area-extraction
+123,Auxiliary welfare facilities,Compliance with planning criteria for the security office,area,area-extraction
+124,Auxiliary welfare facilities,Compliance with installation criteria for the community care center,area,area-extraction
+125,Auxiliary welfare facilities,Compliance with planning criteria for the daycare center,area,area-extraction
+126,Auxiliary welfare facilities,Confirmation of safety planning for the daycare center,rule,none
+127,Auxiliary welfare facilities,Review of barrier-free planning for auxiliary welfare facilities,dimension,drawing-qa
+128,Auxiliary welfare facilities,Planning of accessible toilets in auxiliary welfare facilities,dimension,drawing-qa
+129,Auxiliary welfare facilities,Confirmation of wind lobby planning criteria for auxiliary welfare facilities,dimension,drawing-qa
+130,Auxiliary welfare facilities,Confirmation of window planning criteria for auxiliary welfare facilities,dimension,drawing-qa
+131,Auxiliary welfare facilities,Compliance with railing installation criteria for auxiliary welfare facilities,dimension,drawing-qa
+132,Auxiliary welfare facilities,Confirmation of adequacy of door planning for auxiliary welfare facilities,dimension,drawing-qa
+133,Auxiliary welfare facilities,Application of fire compartment separation to facilities facing the underground parking garage,detail,structured-detail-extraction
+134,Auxiliary welfare facilities,Compliance with ceiling frame criteria for auxiliary welfare facilities,detail,structured-detail-extraction
+135,Auxiliary welfare facilities,Confirmation of stormwater handling planning for auxiliary welfare facilities,rule,none

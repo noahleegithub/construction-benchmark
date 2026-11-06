@@ -21,6 +21,8 @@ row per check point.
 | `architecture-design-verification-checklist.md` | Readable checklist, one section per item, with checkboxes |
 | `architecture-design-verification-checklist.csv` | English table for review and analysis |
 | `architecture-design-verification-checklist.json` | Machine-readable English records |
+| `tle-comparison.md` | Comparison of the checklist with the TLE benchmark |
+| `tle-comparison.csv` | Per-item evidence classification used in that comparison |
 
 ## Consolidation
 
