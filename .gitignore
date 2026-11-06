@@ -11,3 +11,4 @@ demo/
 data/
 study/
 *.zip
+docs/checklists/source/*.xlsx
