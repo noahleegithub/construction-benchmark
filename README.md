@@ -80,6 +80,7 @@ uv run takeoff-bench -C ./study run --family room-areas --limit 5 --repeats 3
 
 ```bash
 uv run takeoff-bench -C ./study score
+uv run takeoff-bench -C ./study usage
 uv run takeoff-bench -C ./study overlay --item room-101 --model frontier-a
 ```
 
@@ -230,11 +231,19 @@ runs, and `Fail=0`, which counts provider and parse failures as zero. Completion
 is part of the result: a model that answers 5 of 8 tasks is not compared as if
 it answered all 8. `TLE mIoU` is shown only for geometry items.
 
+Every run records `prompt_tokens`, `completion_tokens`, and `total_tokens` from
+the provider response. `usage.csv` and `usage_report.md` aggregate those by
+model and task. USD cost is recorded only when the model config supplies
+`input_cost_per_mtok` and `output_cost_per_mtok`; otherwise the cost column is
+blank, because token price differs by provider and should not be guessed.
+
 ## Files
 
 ```
 runs.jsonl     one JSON object per request/response
 scores.csv     one row per run, with metrics and status
+usage.csv      one row per model and task: tokens, cost, score
+usage_report.md per-task usage table
 report.md      aggregate table
 .cache/        rendered page images (safe to delete)
 ```

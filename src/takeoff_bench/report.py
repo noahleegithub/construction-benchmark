@@ -35,7 +35,25 @@ FIELDS = [
     "measure_error",
     "evidence_rate",
     "abstained",
+    "prompt_tokens",
+    "completion_tokens",
+    "total_tokens",
+    "cost_usd",
     "error",
+]
+
+USAGE_FIELDS = [
+    "model_id",
+    "item_id",
+    "family",
+    "runs",
+    "scored",
+    "completion",
+    "prompt_tokens",
+    "completion_tokens",
+    "total_tokens",
+    "cost_usd",
+    "score",
 ]
 
 
@@ -63,6 +81,22 @@ def score_runs(
                 "status": "scored",
                 "error": "",
             }
+            usage = record.get("usage") or {}
+            prompt_tokens = usage.get("prompt_tokens")
+            completion_tokens = usage.get("completion_tokens")
+            total_tokens = usage.get("total_tokens")
+            if total_tokens is None and isinstance(prompt_tokens, (int, float)) and isinstance(
+                completion_tokens, (int, float)
+            ):
+                total_tokens = prompt_tokens + completion_tokens
+            row.update(
+                {
+                    "prompt_tokens": prompt_tokens,
+                    "completion_tokens": completion_tokens,
+                    "total_tokens": total_tokens,
+                    "cost_usd": record.get("cost_usd"),
+                }
+            )
             if record.get("error"):
                 row["status"] = "error"
                 row["error"] = str(record["error"])[:300]
@@ -157,11 +191,116 @@ def summarize(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "measurement_accuracy": _mean(scored, "measurement_accuracy"),
                 "measure_error": _mean(scored, "measure_error"),
                 "evidence_rate": _mean(scored, "evidence_rate"),
+                "prompt_tokens": _sum(group, "prompt_tokens"),
+                "completion_tokens": _sum(group, "completion_tokens"),
+                "total_tokens": _sum(group, "total_tokens"),
+                "cost_usd": _sum(group, "cost_usd"),
                 "parsed": len(scored) / attempted if attempted else None,
                 "errors": attempted - len(scored),
             }
         )
     return summary
+
+
+def task_usage(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Aggregate token usage and cost by model and benchmark item."""
+    groups: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        groups[(row["model_id"], row["item_id"], row["family"])].append(row)
+
+    usage = []
+    for (model_id, item_id, family), group in sorted(groups.items()):
+        scored = [row for row in group if row["status"] == "scored"]
+        values = [row["score"] for row in scored if isinstance(row.get("score"), (int, float))]
+        runs = len(group)
+        usage.append(
+            {
+                "model_id": model_id,
+                "item_id": item_id,
+                "family": family,
+                "runs": runs,
+                "scored": len(scored),
+                "completion": len(scored) / runs if runs else None,
+                "prompt_tokens": _sum(group, "prompt_tokens"),
+                "completion_tokens": _sum(group, "completion_tokens"),
+                "total_tokens": _sum(group, "total_tokens"),
+                "cost_usd": _sum(group, "cost_usd"),
+                "score": mean(values) if values else None,
+            }
+        )
+    return usage
+
+
+def write_usage(usage: list[dict[str, Any]], path: Path) -> None:
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=USAGE_FIELDS)
+        writer.writeheader()
+        for row in usage:
+            writer.writerow({field: row.get(field, "") for field in USAGE_FIELDS})
+
+
+def format_usage(usage: list[dict[str, Any]], title: str = "Per-task usage") -> str:
+    lines = [
+        f"# {title}",
+        "",
+        "| Model | Task | Family | Runs | Scored | Input tok | Output tok | Total tok | Cost USD | Score |",
+        "|---|---|---|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for row in usage:
+        lines.append(
+            "| {model} | {item} | {family} | {runs} | {scored} | {prompt} | {completion} | "
+            "{total} | {cost} | {score} |".format(
+                model=row["model_id"],
+                item=row["item_id"],
+                family=row["family"],
+                runs=row["runs"],
+                scored=row["scored"],
+                prompt=_fmt(row["prompt_tokens"], 0),
+                completion=_fmt(row["completion_tokens"], 0),
+                total=_fmt(row["total_tokens"], 0),
+                cost=_fmt(row["cost_usd"], 4),
+                score=_fmt(row["score"], 3),
+            )
+        )
+    lines.append("")
+    return "\n".join(lines)
+
+
+def print_usage_dataframe(usage: list[dict[str, Any]]) -> None:
+    import pandas as pd
+
+    frame = pd.DataFrame(usage)
+    if frame.empty:
+        print("No usage records.")
+        return
+    frame = frame.rename(
+        columns={
+            "model_id": "Model",
+            "item_id": "Task",
+            "family": "Family",
+            "runs": "Runs",
+            "scored": "Scored",
+            "completion": "Comp.",
+            "prompt_tokens": "Input tok",
+            "completion_tokens": "Output tok",
+            "total_tokens": "Total tok",
+            "cost_usd": "Cost USD",
+            "score": "Score",
+        }
+    )
+    for column in ("Input tok", "Output tok", "Total tok"):
+        frame[column] = pd.to_numeric(frame[column], errors="coerce").astype("Int64")
+    frame["Cost USD"] = pd.to_numeric(frame["Cost USD"], errors="coerce")
+    with pd.option_context(
+        "display.max_rows", None, "display.width", 220, "display.max_columns", None
+    ):
+        print(
+            frame.to_string(
+                index=False,
+                float_format=lambda value: f"{value:.3f}",
+                na_rep="-",
+            )
+        )
 
 
 def format_report(summary: list[dict[str, Any]], title: str = "Results") -> str:
@@ -270,8 +409,11 @@ def score_and_report(
         raise FileNotFoundError(runs_path)
     rows = score_runs(workspace, runs_path, iou_threshold=iou_threshold)
     write_scores(rows, workspace / "scores.csv")
+    usage = task_usage(rows)
+    write_usage(usage, workspace / "usage.csv")
+    (workspace / "usage_report.md").write_text(format_usage(usage), encoding="utf-8")
     summary = summarize(rows)
-    text = format_report(summary)
+    text = format_report(summary) + "\n" + format_usage(usage)
     out_path.write_text(text, encoding="utf-8")
     print_dataframe(summary)
     return summary
@@ -280,6 +422,11 @@ def score_and_report(
 def _mean(rows: list[dict[str, Any]], key: str) -> float | None:
     values = [row[key] for row in rows if isinstance(row.get(key), (int, float))]
     return mean(values) if values else None
+
+
+def _sum(rows: list[dict[str, Any]], key: str) -> float | None:
+    values = [row[key] for row in rows if isinstance(row.get(key), (int, float))]
+    return sum(values) if values else None
 
 
 def _fmt(value: float | None, digits: int) -> str:

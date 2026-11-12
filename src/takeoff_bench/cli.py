@@ -87,6 +87,10 @@ def build_parser() -> argparse.ArgumentParser:
     score.add_argument("--iou-threshold", type=float, default=0.5)
     score.set_defaults(func=cmd_score)
 
+    usage = sub.add_parser("usage", help="show per-task token usage and cost")
+    usage.add_argument("--runs", default="runs.jsonl")
+    usage.set_defaults(func=cmd_usage)
+
     overlay_parser = sub.add_parser("overlay", help="draw ground truth and a prediction")
     overlay_parser.add_argument("--item", required=True)
     overlay_parser.add_argument("--model", required=True)
@@ -195,6 +199,18 @@ def cmd_score(args) -> int:
         out_path=workspace / args.out,
         iou_threshold=args.iou_threshold,
     )
+    return 0
+
+
+def cmd_usage(args) -> int:
+    workspace: Path = args.workspace
+    rows = report.score_runs(workspace, workspace / args.runs)
+    usage = report.task_usage(rows)
+    report.write_usage(usage, workspace / "usage.csv")
+    (workspace / "usage_report.md").write_text(
+        report.format_usage(usage), encoding="utf-8"
+    )
+    report.print_usage_dataframe(usage)
     return 0
 
 

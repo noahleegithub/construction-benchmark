@@ -191,7 +191,11 @@ class OpenAICompatProvider(Provider):
         usage = body.get("usage") or {}
         usage["finish_reason"] = choice.get("finish_reason")
         cost = None
-        if self.input_cost is not None and self.output_cost is not None:
+        for candidate in (body.get("cost"), usage.get("cost"), usage.get("total_cost")):
+            if isinstance(candidate, (int, float)):
+                cost = float(candidate)
+                break
+        if cost is None and self.input_cost is not None and self.output_cost is not None:
             cost = (
                 usage.get("prompt_tokens", 0) / 1e6 * float(self.input_cost)
                 + usage.get("completion_tokens", 0) / 1e6 * float(self.output_cost)
