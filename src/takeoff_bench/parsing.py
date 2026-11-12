@@ -106,6 +106,39 @@ def coerce_prediction(value: Any, output_type: str) -> dict[str, Any]:
             )
         return {"type": "quantities", "items": items}
 
+    if output_type == "compliance":
+        entries = _entries(value, "instances")
+        instances = []
+        for entry in entries:
+            if not isinstance(entry, dict):
+                raise ValueError(f"bad compliance instance: {entry!r}")
+            if not isinstance(entry.get("measure"), (int, float)):
+                raise ValueError(f"compliance instance has no numeric measure: {entry!r}")
+            verdict = str(entry.get("verdict", "")).strip().lower()
+            if verdict not in ("pass", "fail", "indeterminate"):
+                raise ValueError(f"bad compliance verdict: {verdict!r}")
+            evidence = entry.get("evidence") or {}
+            region = evidence.get("region")
+            if not (
+                isinstance(region, list)
+                and len(region) == 4
+                and all(isinstance(v, (int, float)) for v in region)
+            ):
+                raise ValueError(f"compliance instance has no region: {entry!r}")
+            instances.append(
+                {
+                    "id": str(entry.get("id", "")),
+                    "measure": float(entry["measure"]),
+                    "unit": str(entry.get("unit", "mm")),
+                    "verdict": verdict,
+                    "evidence": {
+                        "sheet": str(evidence.get("sheet", "")),
+                        "region": [float(v) for v in region],
+                    },
+                }
+            )
+        return {"type": "compliance", "instances": instances}
+
     raise ValueError(f"unknown output_type: {output_type}")
 
 

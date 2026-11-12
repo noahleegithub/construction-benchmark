@@ -61,6 +61,7 @@ class StubProvider(Provider):
             "count": {"count": 0},
             "text": {"answer": ""},
             "quantities": {"line_items": []},
+            "compliance": {"instances": []},
         }[item.output_type]
         return ProviderResult(
             text=json.dumps(out),

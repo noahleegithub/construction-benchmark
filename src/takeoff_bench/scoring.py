@@ -21,7 +21,7 @@ import difflib
 import re
 from typing import Any, cast
 
-from shapely.geometry import LineString, Polygon
+from shapely.geometry import LineString, Polygon, box
 from shapely.validation import make_valid
 
 DEFAULT_IOU_THRESHOLD = 0.5
@@ -60,6 +60,8 @@ def score_item(
         return score_quantities(
             prediction, gt, tolerance=quantity_tolerance
         )
+    if kind == "compliance":
+        return score_compliance(prediction, gt)
     raise ValueError(f"unknown ground-truth type: {kind}")
 
 
@@ -222,6 +224,179 @@ def score_quantities(
         ),
         "tolerance": tolerance,
     }
+
+
+def score_compliance(
+    prediction: dict[str, Any],
+    gt: dict[str, Any],
+    *,
+    measure_tolerance_mm: float | None = None,
+    evidence_iou: float = 0.5,
+    region_tolerance: float = 0.02,
+) -> dict[str, Any]:
+    """Score per-instance measurement, verdict and evidence for a rule check.
+
+    Ground-truth instances are the required findings (for a failure-only task,
+    only the noncompliant doors). Predictions are matched by explicit id when
+    both sides carry one, otherwise by evidence-region IoU.
+    """
+    truth = gt.get("instances", [])
+    pred = prediction.get("instances", [])
+    criteria = gt.get("criteria") or {}
+    tolerance = measure_tolerance_mm
+    if tolerance is None:
+        tolerance = float(criteria.get("measure_tolerance_mm", 50.0))
+
+    pairs: list[tuple[float, int, int]] = []
+    for i, candidate in enumerate(pred):
+        for j, target in enumerate(truth):
+            pid = str(candidate.get("id", "")).strip()
+            tid = str(target.get("id", "")).strip()
+            if pid and tid and pid == tid:
+                pairs.append((2.0, i, j))
+                continue
+            p_box = _evidence_box(candidate)
+            t_box = _evidence_box(target)
+            if p_box is None or t_box is None:
+                continue
+            if _regions_match(p_box, t_box, evidence_iou, region_tolerance):
+                pairs.append((_region_affinity(p_box, t_box), i, j))
+    pairs.sort(key=lambda item: (-item[0], item[1], item[2]))
+
+    used_pred: set[int] = set()
+    used_gt: set[int] = set()
+    matches: dict[int, int] = {}
+    for _, i, j in pairs:
+        if i in used_pred or j in used_gt:
+            continue
+        used_pred.add(i)
+        used_gt.add(j)
+        matches[j] = i
+
+    per_instance: list[dict[str, Any]] = []
+    verdict_scores: list[float] = []
+    measurement_scores: list[float] = []
+    evidence_scores: list[float] = []
+    errors: list[float] = []
+    abstained = sum(1 for item in pred if item.get("verdict") == "indeterminate")
+
+    for j, target in enumerate(truth):
+        gt_measure = float(target["measure"])
+        gt_verdict = str(target.get("verdict", "fail"))
+        i = matches.get(j)
+        if i is None:
+            verdict_scores.append(0.0)
+            measurement_scores.append(0.0)
+            evidence_scores.append(0.0)
+            per_instance.append({"id": target.get("id"), "matched": False, "score": 0.0})
+            continue
+
+        candidate = pred[i]
+        measure_delta = abs(float(candidate["measure"]) - gt_measure)
+        measure_score = max(0.0, 1.0 - measure_delta / tolerance) if tolerance else 0.0
+        verdict_score = 1.0 if candidate.get("verdict") == gt_verdict else 0.0
+        ev_score = _evidence_score(candidate, target, evidence_iou, region_tolerance)
+        composite = 0.4 * verdict_score + 0.4 * measure_score + 0.2 * ev_score
+        verdict_scores.append(verdict_score)
+        measurement_scores.append(measure_score)
+        evidence_scores.append(ev_score)
+        errors.append(measure_delta)
+        per_instance.append(
+            {
+                "id": target.get("id"),
+                "matched": True,
+                "truth": gt_measure,
+                "predicted": float(candidate["measure"]),
+                "verdict": candidate.get("verdict"),
+                "measure_delta_mm": measure_delta,
+                "score": composite,
+            }
+        )
+
+    n_gt = len(truth)
+    tp = len(matches)
+    fp = len(pred) - tp
+    fn = n_gt - tp
+    precision = tp / len(pred) if pred else 0.0
+    recall = tp / n_gt if n_gt else 0.0
+    score = sum(item["score"] for item in per_instance) / n_gt if n_gt else 0.0
+
+    return {
+        "score": score,
+        "precision": precision,
+        "recall": recall,
+        "f1": _f1(precision, recall),
+        "n_pred": len(pred),
+        "n_gt": n_gt,
+        "count_ratio": len(pred) / n_gt if n_gt else None,
+        "tp": tp,
+        "fp": fp,
+        "fn": fn,
+        "verdict_accuracy": sum(verdict_scores) / n_gt if n_gt else 0.0,
+        "measure_error": sum(errors) / len(errors) if errors else None,
+        "measurement_accuracy": (
+            sum(measurement_scores) / n_gt if n_gt else 0.0
+        ),
+        "evidence_rate": sum(evidence_scores) / n_gt if n_gt else 0.0,
+        "abstained": abstained,
+        "instances": per_instance,
+    }
+
+
+def _evidence_box(instance: dict[str, Any]) -> Polygon | None:
+    region = (instance.get("evidence") or {}).get("region")
+    if not (
+        isinstance(region, list)
+        and len(region) == 4
+        and all(isinstance(value, (int, float)) for value in region)
+    ):
+        return None
+    xs = sorted([float(region[0]), float(region[2])])
+    ys = sorted([float(region[1]), float(region[3])])
+    return box(xs[0], ys[0], xs[1], ys[1])
+
+
+def _evidence_score(
+    candidate: dict[str, Any],
+    target: dict[str, Any],
+    evidence_iou: float,
+    region_tolerance: float = 0.02,
+) -> float:
+    candidate_sheet = str((candidate.get("evidence") or {}).get("sheet", ""))
+    target_sheet = str((target.get("evidence") or {}).get("sheet", ""))
+    if candidate_sheet != target_sheet:
+        return 0.0
+    p_box = _evidence_box(candidate)
+    t_box = _evidence_box(target)
+    if p_box is None or t_box is None:
+        return 0.5
+    if _regions_match(p_box, t_box, evidence_iou, region_tolerance):
+        return 1.0
+    if _centroid_distance(p_box, t_box) <= 0.03:
+        return 0.5
+    return 0.0
+
+
+def _centroid_distance(a: Polygon, b: Polygon) -> float:
+    return a.centroid.distance(b.centroid)
+
+
+def _regions_match(
+    a: Polygon, b: Polygon, evidence_iou: float, tolerance: float
+) -> bool:
+    if _iou(a, b) >= evidence_iou:
+        return True
+    if a.contains(b.centroid) or b.contains(a.centroid):
+        return True
+    return _centroid_distance(a, b) <= tolerance
+
+
+def _region_affinity(a: Polygon, b: Polygon) -> float:
+    if _iou(a, b) >= 0.5:
+        return 1.0 + _iou(a, b)
+    if a.contains(b.centroid) or b.contains(a.centroid):
+        return 1.0
+    return max(0.0, 1.0 - _centroid_distance(a, b))
 
 
 def _score_geometry(pred, truth, iou_threshold: float) -> dict[str, Any]:

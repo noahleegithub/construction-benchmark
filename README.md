@@ -96,7 +96,7 @@ Use it before trusting any aggregate number.
 | `page` | 1-based page number |
 | `question` | the instruction shown to the model |
 | `convention` | the measurement convention for this item, in one or two sentences |
-| `output_type` | `polygons`, `polylines`, `points`, `count`, `text`, or `quantities` |
+| `output_type` | `polygons`, `polylines`, `points`, `count`, `text`, `quantities`, or `compliance` |
 | `gt` | ground-truth JSON path relative to the workspace |
 | `notes` | optional; not sent to the model |
 
@@ -158,6 +158,24 @@ Quantities:
 }
 ```
 
+Compliance (for a failure-only audit, ground truth lists only the failures):
+
+```json
+{
+  "type": "compliance",
+  "criteria": {"clear_width_mm": 900, "measure_tolerance_mm": 50},
+  "instances": [
+    {
+      "id": "D-01",
+      "measure": 850,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {"sheet": "A1-13A", "region": [0.10, 0.20, 0.12, 0.22]}
+    }
+  ]
+}
+```
+
 ## models.yaml
 
 ```yaml
@@ -202,13 +220,15 @@ either.
 - **Text.** Normalized exact match; a similarity ratio is reported alongside.
 - **Quantities.** Labels are matched after normalization; each ground-truth
   line scores `max(0, 1 - relative_error)`, and a missing line scores 0.
+- **Compliance.** Instances are matched by `id` when both sides carry one,
+  otherwise by evidence region. Each matched instance scores `0.4 * verdict +
+  0.4 * measurement + 0.2 * evidence`; a miss scores 0. Measurement tolerance
+  comes from `criteria.measure_tolerance_mm`.
 
-The report includes the mean, standard deviation across repeats, precision,
-recall, count ratio, parse rate, and error count per model and family. Provider
-errors are excluded from the mean and counted separately; parse errors are
-scored as zero but reported in `scores.csv`. `TLE mIoU` is the matched-IoU sum
-divided by the ground-truth count, the metric the TLE leaderboard reports, and
-is included for comparison with the published numbers.
+The report shows attempted runs, scored runs, completion, the mean over scored
+runs, and `Fail=0`, which counts provider and parse failures as zero. Completion
+is part of the result: a model that answers 5 of 8 tasks is not compared as if
+it answered all 8. `TLE mIoU` is shown only for geometry items.
 
 ## Files
 

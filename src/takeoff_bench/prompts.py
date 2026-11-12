@@ -28,6 +28,11 @@ SCHEMAS = {
         '{"line_items": [{"label": "<label>", "value": <number>, '
         '"unit": "<unit>"}]}'
     ),
+    "compliance": (
+        '{"instances": [{"id": "optional-id", "measure": <number>, '
+        '"unit": "mm", "verdict": "pass|fail|indeterminate", '
+        '"evidence": {"sheet": "<sheet id>", "region": [x0, y0, x1, y1]}}]}'
+    ),
 }
 
 NOTES = {
@@ -49,6 +54,11 @@ NOTES = {
     "quantities": (
         "Emit one line item per distinct label. Use the unit named in the "
         "question; do not convert units."
+    ),
+    "compliance": (
+        "Measure the clear opening between the jambs, not the door leaf. "
+        "Emit one record per noncompliant instance only when the question asks "
+        "for failures; cite the sheet and a bounding box around the opening."
     ),
 }
 

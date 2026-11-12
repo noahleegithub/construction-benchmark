@@ -30,6 +30,11 @@ FIELDS = [
     "fn",
     "n_pred",
     "n_gt",
+    "verdict_accuracy",
+    "measurement_accuracy",
+    "measure_error",
+    "evidence_rate",
+    "abstained",
     "error",
 ]
 
@@ -79,8 +84,9 @@ def score_runs(
                         {
                             "score": result.get("score"),
                             "tle_miou": (
-                                result.get("matched_iou_sum", 0) / result["n_gt"]
-                                if result.get("n_gt")
+                                result["matched_iou_sum"] / result["n_gt"]
+                                if result.get("matched_iou_sum") is not None
+                                and result.get("n_gt")
                                 else None
                             ),
                             "precision": result.get("precision"),
@@ -92,6 +98,11 @@ def score_runs(
                             "fn": result.get("fn"),
                             "n_pred": result.get("n_pred"),
                             "n_gt": result.get("n_gt"),
+                            "verdict_accuracy": result.get("verdict_accuracy"),
+                            "measurement_accuracy": result.get("measurement_accuracy"),
+                            "measure_error": result.get("measure_error"),
+                            "evidence_rate": result.get("evidence_rate"),
+                            "abstained": result.get("abstained"),
                         }
                     )
             rows.append(row)
@@ -115,22 +126,39 @@ def summarize(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     summary = []
     for (model_id, family), group in sorted(groups.items()):
         scored = [row for row in group if row["status"] == "scored"]
-        errors = sum(1 for row in group if row["status"] == "error")
+        attempted = len(group)
         values = [row["score"] for row in scored if isinstance(row.get("score"), (int, float))]
+        score_all = (
+            sum(
+                row["score"] if row["status"] == "scored" and isinstance(row.get("score"), (int, float)) else 0.0
+                for row in group
+            )
+            / attempted
+            if attempted
+            else None
+        )
         summary.append(
             {
                 "model_id": model_id,
                 "family": family,
                 "n": len(scored),
-                "runs": len(group),
+                "runs": attempted,
+                "attempted": attempted,
+                "scored": len(scored),
+                "completion": len(scored) / attempted if attempted else None,
                 "score": mean(values) if values else None,
+                "score_all": score_all,
                 "tle_miou": _mean(scored, "tle_miou"),
                 "sd": pstdev(values) if len(values) > 1 else None,
                 "precision": _mean(scored, "precision"),
                 "recall": _mean(scored, "recall"),
                 "count_ratio": _mean(scored, "count_ratio"),
-                "parsed": len(scored) / len(group) if group else None,
-                "errors": errors,
+                "verdict_accuracy": _mean(scored, "verdict_accuracy"),
+                "measurement_accuracy": _mean(scored, "measurement_accuracy"),
+                "measure_error": _mean(scored, "measure_error"),
+                "evidence_rate": _mean(scored, "evidence_rate"),
+                "parsed": len(scored) / attempted if attempted else None,
+                "errors": attempted - len(scored),
             }
         )
     return summary
@@ -140,23 +168,27 @@ def format_report(summary: list[dict[str, Any]], title: str = "Results") -> str:
     lines = [
         f"# {title}",
         "",
-        "| Model | Family | n | Score | TLE mIoU | SD | Precision | Recall | Count ratio | Parsed | Errors |",
-        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+        "| Model | Family | Att. | Scored | Comp. | Score | Fail=0 | TLE mIoU | Prec. | Rec. | Verdict | Meas. err | Evidence | Errors |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for row in summary:
         lines.append(
-            "| {model} | {family} | {n} | {score} | {tle} | {sd} | {precision} | {recall} | "
-            "{ratio} | {parsed} | {errors} |".format(
+            "| {model} | {family} | {attempted} | {scored} | {completion} | {score} | "
+            "{score_all} | {tle} | {precision} | {recall} | {verdict} | {measure} | "
+            "{evidence} | {errors} |".format(
                 model=row["model_id"],
                 family=row["family"],
-                n=row["n"],
+                attempted=row["attempted"],
+                scored=row["scored"],
+                completion=_fmt(row["completion"], 2),
                 score=_fmt(row["score"], 3),
+                score_all=_fmt(row["score_all"], 3),
                 tle=_fmt(row["tle_miou"], 3),
-                sd=_fmt(row["sd"], 3),
                 precision=_fmt(row["precision"], 3),
                 recall=_fmt(row["recall"], 3),
-                ratio=_fmt(row["count_ratio"], 2),
-                parsed=_fmt(row["parsed"], 2),
+                verdict=_fmt(row.get("verdict_accuracy"), 3),
+                measure=_fmt(row.get("measure_error"), 1),
+                evidence=_fmt(row.get("evidence_rate"), 3),
                 errors=row["errors"],
             )
         )
@@ -175,15 +207,20 @@ def print_dataframe(summary: list[dict[str, Any]]) -> None:
         columns={
             "model_id": "Model",
             "family": "Family",
-            "n": "n",
-            "runs": "Runs",
+            "attempted": "Att.",
+            "scored": "Scored",
+            "completion": "Comp.",
             "score": "Score",
+            "score_all": "Fail=0",
             "tle_miou": "TLE mIoU",
             "sd": "SD",
             "precision": "Precision",
             "recall": "Recall",
             "count_ratio": "Count ratio",
-            "parsed": "Parsed",
+            "verdict_accuracy": "Verdict",
+            "measurement_accuracy": "Meas. acc",
+            "measure_error": "Meas. err",
+            "evidence_rate": "Evidence",
             "errors": "Errors",
         }
     )
@@ -191,8 +228,25 @@ def print_dataframe(summary: list[dict[str, Any]]) -> None:
     frame = frame.sort_values(
         ["_overall", "Family", "Score"], ascending=[False, True, False]
     ).drop(columns="_overall")
+    columns = [
+        "Model",
+        "Family",
+        "Att.",
+        "Scored",
+        "Comp.",
+        "Score",
+        "Fail=0",
+        "TLE mIoU",
+        "Precision",
+        "Recall",
+        "Verdict",
+        "Meas. err",
+        "Evidence",
+        "Errors",
+    ]
+    frame = frame[[column for column in columns if column in frame.columns]]
     with pd.option_context(
-        "display.max_rows", None, "display.width", 220, "display.max_columns", None
+        "display.max_rows", None, "display.width", 260, "display.max_columns", None
     ):
         print(
             frame.to_string(

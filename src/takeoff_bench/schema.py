@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-OUTPUT_TYPES = ("polygons", "polylines", "points", "count", "text", "quantities")
+OUTPUT_TYPES = ("polygons", "polylines", "points", "count", "text", "quantities", "compliance")
 
 REQUIRED_COLUMNS = (
     "item_id",
@@ -136,6 +136,17 @@ def validate_gt(item_id: str, gt: dict[str, Any], output_type: str) -> None:
         for entry in entries:
             if not isinstance(entry, dict) or "label" not in entry or "value" not in entry:
                 raise ItemError(f"{item_id}: each quantity needs 'label' and 'value'")
+    elif kind == "compliance":
+        criteria = gt.get("criteria")
+        if not isinstance(criteria, dict):
+            raise ItemError(f"{item_id}: compliance gt needs a 'criteria' object")
+        if not isinstance(criteria.get("clear_width_mm"), (int, float)):
+            raise ItemError(f"{item_id}: criteria.clear_width_mm must be numeric")
+        entries = gt.get("instances")
+        if not isinstance(entries, list) or not entries:
+            raise ItemError(f"{item_id}: compliance gt needs a non-empty 'instances' list")
+        for entry in entries:
+            _check_compliance_instance(item_id, entry)
 
 
 def _check_points(item_id: str, entry: dict[str, Any]) -> None:
@@ -145,3 +156,31 @@ def _check_points(item_id: str, entry: dict[str, Any]) -> None:
     for point in points:
         if not (isinstance(point, list) and len(point) == 2):
             raise ItemError(f"{item_id}: each point must be [x, y]")
+
+
+def _check_compliance_instance(item_id: str, entry: Any) -> None:
+    if not isinstance(entry, dict):
+        raise ItemError(f"{item_id}: each compliance instance must be an object")
+    if not isinstance(entry.get("id"), str) or not entry["id"].strip():
+        raise ItemError(f"{item_id}: each compliance instance needs a non-empty 'id'")
+    if not isinstance(entry.get("measure"), (int, float)):
+        raise ItemError(f"{item_id}: compliance instance {entry['id']!r} needs numeric 'measure'")
+    if not isinstance(entry.get("unit"), str) or not entry["unit"]:
+        raise ItemError(f"{item_id}: compliance instance {entry['id']!r} needs a 'unit'")
+    if entry.get("verdict") not in ("pass", "fail", "indeterminate"):
+        raise ItemError(
+            f"{item_id}: compliance instance {entry['id']!r} has invalid verdict "
+            f"{entry.get('verdict')!r}"
+        )
+    evidence = entry.get("evidence")
+    if not isinstance(evidence, dict):
+        raise ItemError(f"{item_id}: compliance instance {entry['id']!r} needs 'evidence'")
+    if not isinstance(evidence.get("sheet"), str) or not evidence["sheet"]:
+        raise ItemError(f"{item_id}: compliance evidence needs a 'sheet'")
+    region = evidence.get("region")
+    if not (
+        isinstance(region, list)
+        and len(region) == 4
+        and all(isinstance(v, (int, float)) for v in region)
+    ):
+        raise ItemError(f"{item_id}: compliance evidence needs region [x0,y0,x1,y1]")
