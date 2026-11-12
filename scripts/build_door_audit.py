@@ -106,6 +106,7 @@ def main() -> None:
     for index, row in enumerate(rows, start=1):
         row["sample_id"] = f"F{index:02d}" if row["kind"] == "fail" else f"P{index - len(failures):02d}"
         row["crop_file"] = f"crops/{row['sample_id']}.png"
+        row["borderline"] = abs(row["width_mm"] - CLEAR_WIDTH_MM) <= 20
 
     font = load_font(18)
     small = load_font(14)
@@ -179,6 +180,7 @@ def main() -> None:
             "width_in",
             "width_mm",
             "verdict",
+            "borderline",
             "x0",
             "y0",
             "x1",
@@ -199,6 +201,7 @@ def main() -> None:
                     "width_in": f"{row['width_in']:.2f}",
                     "width_mm": f"{row['width_mm']:.1f}",
                     "verdict": row["kind"],
+                    "borderline": "yes" if row["borderline"] else "no",
                     "x0": f"{row['bbox'][0]:.6f}",
                     "y0": f"{row['bbox'][1]:.6f}",
                     "x1": f"{row['bbox'][2]:.6f}",
@@ -215,6 +218,7 @@ def main() -> None:
             "sample_id": row["sample_id"],
             "source_index": row["source_index"],
             "width_mm": round(row["width_mm"], 1),
+            "borderline": row["borderline"],
             "bbox": [round(value, 6) for value in row["bbox"]],
         }
         for row in rows
@@ -233,6 +237,9 @@ def main() -> None:
         "1. the red/green box sits on the door opening, not the leaf or swing;\n"
         "2. the measured width is the clear opening between jambs;\n"
         "3. the verdict matches the 900 mm rule.\n\n"
+        "Rows marked `borderline=yes` are within 20 mm of the threshold; most "
+        "failures are 35.00 in (889 mm), so a small scale or jamb-convention "
+        "error flips the verdict. Resolve those first.\n\n"
         "Record the checked width in `audit_width_mm`, the checked verdict in "
         "`audit_verdict`, and any discrepancy in `audit_notes`. Do not edit the "
         "derived columns in place; they are the comparison baseline.\n",
