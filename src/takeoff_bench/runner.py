@@ -48,6 +48,8 @@ def run(
     max_side: int = 2400,
     provider_override: str | None = None,
     runs_path: Path | None = None,
+    variant: str = "baseline",
+    cache_bust: bool = False,
 ) -> int:
     items = load_items(workspace)
     if family:
@@ -71,7 +73,8 @@ def run(
 
     for item in items:
         system = prompts.SYSTEM
-        user = prompts.build_prompt(item)
+        user = prompts.build_prompt(item, variant)
+        prompt_sha256 = hashlib.sha256(f"{system}\n{user}".encode("utf-8")).hexdigest()
         image_png, image_size = _render(item, workspace, cache_dir, dpi, max_side)
         image_sha = hashlib.sha256(image_png).hexdigest()
         gt = load_gt(workspace, item)
@@ -105,19 +108,27 @@ def run(
 
             for repeat in range(repeats):
                 index += 1
-                key = (item.item_id, model_key, repeat, prompt_hash)
+                key = (item.item_id, model_key, repeat, prompt_hash, variant)
                 if key in done:
                     print(f"[{index}/{total}] skip {item.item_id} {model_key} r{repeat}")
                     continue
 
                 print(f"[{index}/{total}] {item.item_id} {model_key} r{repeat}")
+                started_at = datetime.now(timezone.utc).isoformat()
+                cache_nonce = uuid.uuid4().hex if cache_bust else None
+                request_text = user
+                if cache_nonce:
+                    request_text = (
+                        f"{user}\n\nRequest id: {cache_nonce}. Ignore this identifier."
+                    )
                 result = provider.complete(
                     system=system,
-                    user=user,
+                    user=request_text,
                     image_png=image_png,
                     item=item,
                     gt=gt,
                 )
+                completed_at = datetime.now(timezone.utc).isoformat()
 
                 parsed = None
                 parse_error = None
@@ -138,12 +149,24 @@ def run(
                     "provider": provider_name,
                     "model": model.get("model", model_key),
                     "repeat": repeat,
+                    "prompt_variant": variant,
                     "prompt_hash": prompt_hash,
+                    "prompt_sha256": prompt_sha256,
+                    "cache_nonce": cache_nonce,
                     "model_config_hash": model_config_hash,
+                    "max_tokens": model.get("max_tokens"),
+                    "temperature": model.get("temperature"),
+                    "temperature_sent": result.temperature_sent,
+                    "seed": model.get("seed"),
+                    "detail": model.get("detail"),
+                    "token_param": model.get("token_param"),
                     "image_sha256": image_sha,
                     "image_size": list(image_size),
                     "dpi": dpi,
                     "max_side": max_side,
+                    "scheduled_position": index - 1,
+                    "started_at": started_at,
+                    "completed_at": completed_at,
                     "raw": result.text,
                     "parsed": parsed,
                     "parse_error": parse_error,
@@ -151,6 +174,9 @@ def run(
                     "latency_ms": result.latency_ms,
                     "usage": result.usage,
                     "cost_usd": result.cost_usd,
+                    "response_id": result.response_id,
+                    "model_returned": result.model_returned,
+                    "system_fingerprint": result.system_fingerprint,
                 }
                 with runs_path.open("a", encoding="utf-8") as handle:
                     handle.write(json.dumps(record, ensure_ascii=False) + "\n")
@@ -162,8 +188,8 @@ def run(
     return written
 
 
-def _existing_keys(path: Path) -> set[tuple[str, str, int, str]]:
-    keys: set[tuple[str, str, int, str]] = set()
+def _existing_keys(path: Path) -> set[tuple[str, str, int, str, str]]:
+    keys: set[tuple[str, str, int, str, str]] = set()
     if not path.exists():
         return keys
     with path.open(encoding="utf-8") as handle:
@@ -179,6 +205,7 @@ def _existing_keys(path: Path) -> set[tuple[str, str, int, str]]:
                         record["model_id"],
                         int(record.get("repeat", 0)),
                         record["prompt_hash"],
+                        record.get("prompt_variant", "baseline"),
                     )
                 )
     return keys

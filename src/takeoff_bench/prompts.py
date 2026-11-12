@@ -63,15 +63,64 @@ NOTES = {
 }
 
 
-def build_prompt(item: Item) -> str:
+VARIANTS = (
+    "baseline",
+    "schema_first",
+    "compressed",
+    "schema_first_compressed",
+    "control_drop_constraints",
+)
+
+
+def _compact(text: str) -> str:
+    return " ".join(text.split())
+
+
+def _control_note(note: str, output_type: str) -> str:
+    if output_type != "polygons":
+        return note
+    return note.replace(
+        " Do not merge adjacent instances and do not substitute a bounding box.", ""
+    ).replace(" Include every instance on the sheet.", "")
+
+
+def build_prompt(item: Item, variant: str = "baseline") -> str:
+    if variant not in VARIANTS:
+        raise ValueError(f"unknown prompt variant {variant!r}")
     schema = SCHEMAS[item.output_type]
     note = NOTES[item.output_type]
     convention = item.convention or "No additional convention given."
-    return (
-        f"Task: {item.question}\n\n"
-        f"Convention: {convention}\n\n"
-        f"{note}\n\n"
+    if variant == "control_drop_constraints":
+        note = _control_note(note, item.output_type)
+        convention = _control_note(convention, item.output_type)
+    elif not variant.startswith("control"):
+        pass
+
+    coordinates = (
         "Coordinates are normalized to the page: x and y are in [0, 1], the "
-        "origin is the top-left corner, x increases right, y increases down.\n\n"
-        f"Return exactly this JSON shape:\n{schema}"
+        "origin is the top-left corner, x increases right, y increases down."
     )
+    if variant in ("baseline", "control_drop_constraints"):
+        return (
+            f"Task: {item.question}\n\n"
+            f"Convention: {convention}\n\n"
+            f"{note}\n\n"
+            f"{coordinates}\n\n"
+            f"Return exactly this JSON shape:\n{schema}"
+        )
+
+    if variant == "schema_first":
+        return (
+            f"Return exactly this JSON shape:\n{schema}\n\n"
+            f"Task: {item.question}\n\n"
+            f"Convention: {convention}\n\n"
+            f"{note}\n\n"
+            f"{coordinates}"
+        )
+
+    compressed_body = _compact(
+        f"Task: {item.question} Convention: {convention} {note} {coordinates}"
+    )
+    if variant == "compressed":
+        return f"{compressed_body}\n\nReturn exactly this JSON shape:\n{schema}"
+    return f"Return exactly this JSON shape:\n{schema}\n\n{compressed_body}"

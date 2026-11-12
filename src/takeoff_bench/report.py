@@ -18,6 +18,7 @@ FIELDS = [
     "family",
     "model_id",
     "repeat",
+    "prompt_variant",
     "status",
     "score",
     "tle_miou",
@@ -78,6 +79,7 @@ def score_runs(
                 "family": item.family,
                 "model_id": record["model_id"],
                 "repeat": record.get("repeat", 0),
+                "prompt_variant": record.get("prompt_variant", "baseline"),
                 "status": "scored",
                 "error": "",
             }

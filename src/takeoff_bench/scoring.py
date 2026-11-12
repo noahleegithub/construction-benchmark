@@ -432,6 +432,7 @@ def _score_geometry(pred, truth, iou_threshold: float) -> dict[str, Any]:
 
     # Score: each ground-truth instance's best IoU, zero when missed.
     best_per_gt = [max(ious[i][j] for i in range(len(pred))) for j in range(len(truth))]
+    best_index = [max(range(len(pred)), key=lambda i: ious[i][j]) for j in range(len(truth))]
     score = sum(best_per_gt) / len(best_per_gt)
 
     return {
@@ -445,6 +446,15 @@ def _score_geometry(pred, truth, iou_threshold: float) -> dict[str, Any]:
         "tp": tp,
         "fp": fp,
         "fn": fn,
+        "instances": [
+            {
+                "gt_index": index,
+                "best_iou": best_per_gt[index],
+                "matched": best_per_gt[index] >= iou_threshold,
+                "pred_index": best_index[index],
+            }
+            for index in range(len(truth))
+        ],
         "mean_iou_matched": (
             sum(matched_ious) / len(matched_ious) if matched_ious else None
         ),

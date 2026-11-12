@@ -31,6 +31,10 @@ class ProviderResult:
     latency_ms: int = 0
     usage: dict[str, Any] = field(default_factory=dict)
     cost_usd: float | None = None
+    response_id: str | None = None
+    model_returned: str | None = None
+    system_fingerprint: str | None = None
+    temperature_sent: bool | None = None
 
 
 class Provider:
@@ -97,6 +101,7 @@ class OpenAICompatProvider(Provider):
         self.max_tokens = int(config.get("max_tokens", 8000))
         self.token_param = config.get("token_param", "max_tokens")
         self.detail = config.get("detail", "high")
+        self.seed = config.get("seed")
         self.timeout = float(config.get("timeout", 300))
         self.input_cost = config.get("input_cost_per_mtok")
         self.output_cost = config.get("output_cost_per_mtok")
@@ -135,6 +140,8 @@ class OpenAICompatProvider(Provider):
         }
         if self.temperature is not None:
             payload["temperature"] = self.temperature
+        if self.seed is not None:
+            payload["seed"] = self.seed
         data = json.dumps(payload).encode("utf-8")
         headers = {
             "Content-Type": "application/json",
@@ -205,6 +212,10 @@ class OpenAICompatProvider(Provider):
             latency_ms=int((time.monotonic() - start) * 1000),
             usage=usage,
             cost_usd=cost,
+            response_id=body.get("id"),
+            model_returned=body.get("model"),
+            system_fingerprint=body.get("system_fingerprint"),
+            temperature_sent=self.temperature is not None,
         )
 
 

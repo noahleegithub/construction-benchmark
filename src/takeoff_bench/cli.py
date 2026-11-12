@@ -67,6 +67,16 @@ def build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument("--family")
     run_parser.add_argument("--item")
     run_parser.add_argument("--limit", type=int)
+    run_parser.add_argument(
+        "--variant",
+        default="baseline",
+        help="prompt variant: baseline, schema_first, compressed, schema_first_compressed, control_drop_constraints",
+    )
+    run_parser.add_argument(
+        "--cache-bust",
+        action="store_true",
+        help="append a unique ignored request id to each prompt to bypass gateway replay",
+    )
     run_parser.add_argument("--force", action="store_true")
     run_parser.add_argument("--dpi", type=int, default=150)
     run_parser.add_argument("--max-side", type=int, default=2400)
@@ -181,6 +191,8 @@ def cmd_run(args) -> int:
         max_side=args.max_side,
         provider_override=args.provider,
         runs_path=workspace / args.runs,
+        variant=args.variant,
+        cache_bust=args.cache_bust,
     )
     if not args.no_report:
         report.score_and_report(
