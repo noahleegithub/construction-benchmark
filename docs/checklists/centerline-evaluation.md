@@ -80,4 +80,5 @@ Per-task F1:
 - `runs.gateway.jsonl` — 28 model calls
 - `cost_report.md`, `costs.csv`
 - `validation.csv` — expected vs recovered counts
-- `overlay-*.png` — optional visual checks
+- `overlays/` — full-page prediction/ground-truth sheets, one per scored
+  (task, model) pair

@@ -39,7 +39,7 @@ built on top of those polygons because the semantic object is different.
 The earlier 900 mm failure score (0.487 for `gpt-5.6-sol`) is withdrawn. The task
 and its derived ground truth were removed from the active workspace; the audit
 pack and retired ground truth are preserved under
-`study/gateway/audit/t-4f1/`.
+`studies/area-tle-8k/audit/t-4f1/`.
 
 ## Next
 

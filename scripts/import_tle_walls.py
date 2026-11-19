@@ -9,7 +9,7 @@ task page and the recovered count so the count gap is never hidden.
 Usage:
     python scripts/import_tle_walls.py \
         --bundle "data/tle_raw/TLE-prod [dont-delete]" \
-        --out study/walls
+        --out studies/centerlines
 """
 
 from __future__ import annotations

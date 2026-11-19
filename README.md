@@ -23,6 +23,20 @@ read, diffed, and committed.
 - **Idempotent batches.** Re-running skips successful runs; provider errors are
   retried on the next invocation.
 
+## Study layout
+
+Shared drawing sheets and ground truth live under `study/`. Each result set
+lives under its own directory in `studies/`:
+
+- `studies/area-tle-*` — imported TLE area tasks and GPT-6 area matrix
+- `studies/centerlines/` — wall and door centerline tasks, with full-page
+  prediction/ground-truth overlays
+- `studies/door-threshold/` — door-threshold detection overlays and per-door
+  crop grids
+- `studies/prompt-sensitivity/` — stopped prompt-variant gate study
+
+See `studies/README.md` for the index.
+
 ## Install
 
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).

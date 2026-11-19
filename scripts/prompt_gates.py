@@ -2,9 +2,9 @@
 
 Usage:
     python scripts/prompt_gates.py \
-      --baseline study/prompt/base32 \
-      --noise study/prompt/noise \
-      --control study/prompt/control
+      --baseline studies/prompt-sensitivity/base32 \
+      --noise studies/prompt-sensitivity/noise \
+      --control studies/prompt-sensitivity/control
 """
 
 from __future__ import annotations

@@ -16,7 +16,7 @@ import pymupdf
 from PIL import Image, ImageDraw, ImageFont
 from shapely.geometry import Polygon
 
-ROOT = Path("study/gateway")
+ROOT = Path("studies/area-tle-8k")
 SHEET = Path("study/sheets/t-4f1-door-threshold-areas.pdf")
 GT = Path("study/gt/t-4f1-door-threshold-areas.json")
 OUT = ROOT / "audit" / "t-4f1"

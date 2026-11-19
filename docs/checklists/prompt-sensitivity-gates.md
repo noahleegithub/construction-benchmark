@@ -54,10 +54,10 @@ This is a methods result, not a claim that prompts do not matter.
 
 ## Files
 
-- `study/prompt/base32/` — baseline runs and scores
-- `study/prompt/noise/` — cached, invalid repeats
-- `study/prompt/noise2/` — cache-busted partial rerun
-- `study/prompt/control/` — positive control
+- `studies/prompt-sensitivity/base32/` — baseline runs and scores
+- `studies/prompt-sensitivity/noise/` — cached, invalid repeats
+- `studies/prompt-sensitivity/noise2/` — cache-busted partial rerun
+- `studies/prompt-sensitivity/control/` — positive control
 - `scripts/prompt_gates.py` — gate tables
 - `src/takeoff_bench/prompts.py`, `runner.py`, `providers.py`, `scoring.py` —
   variant registry, cache-bust nonce, prompt/config/response metadata, and
