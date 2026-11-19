@@ -8,6 +8,8 @@ Definitions, stated once so results are reproducible:
 * ``precision``, ``recall`` and ``f1`` use one-to-one greedy matching at
   ``iou_threshold`` (default 0.5), pairs taken in descending IoU order.
 * Polylines are buffered by ``line_width / 2`` and scored as polygons.
+* Segments are matched one-to-one when both endpoints fall within
+  ``endpoint_tolerance`` in normalized page units; score is segment F1.
 * Points are matched within ``tolerance`` in normalized page units.
 * Text is normalized (case, whitespace, trailing punctuation) and scored
   exact; a similarity ratio is reported alongside.
@@ -26,6 +28,7 @@ from shapely.validation import make_valid
 
 DEFAULT_IOU_THRESHOLD = 0.5
 DEFAULT_LINE_WIDTH = 0.0015
+DEFAULT_ENDPOINT_TOLERANCE = 0.012
 DEFAULT_POINT_TOLERANCE = 0.01
 
 
@@ -35,6 +38,7 @@ def score_item(
     *,
     iou_threshold: float = DEFAULT_IOU_THRESHOLD,
     line_width: float = DEFAULT_LINE_WIDTH,
+    endpoint_tolerance: float = DEFAULT_ENDPOINT_TOLERANCE,
     point_tolerance: float = DEFAULT_POINT_TOLERANCE,
     quantity_tolerance: float = 0.05,
 ) -> dict[str, Any]:
@@ -49,6 +53,10 @@ def score_item(
     if kind == "polylines":
         return score_polylines(
             prediction, gt, iou_threshold=iou_threshold, line_width=line_width
+        )
+    if kind == "segments":
+        return score_segments(
+            prediction, gt, endpoint_tolerance=endpoint_tolerance
         )
     if kind == "points":
         return score_points(prediction, gt, tolerance=point_tolerance)
@@ -88,6 +96,105 @@ def score_polylines(
     result = _score_geometry(pred, truth, iou_threshold)
     result["line_width"] = line_width
     return result
+
+
+def score_segments(
+    prediction: dict[str, Any],
+    gt: dict[str, Any],
+    *,
+    endpoint_tolerance: float = DEFAULT_ENDPOINT_TOLERANCE,
+) -> dict[str, Any]:
+    """Match wall/door centerline segments by both endpoints.
+
+    Endpoint order is ignored. A pair is credited only when both of its
+    endpoints are within ``endpoint_tolerance`` of the expert segment's
+    endpoints, which is the convention stated in the TLE wall tasks.
+    """
+    pred = [_segment(entry) for entry in prediction.get("segments", [])]
+    truth = [_segment(entry) for entry in gt.get("segments", [])]
+    pred = [segment for segment in pred if segment is not None]
+    truth = [segment for segment in truth if segment is not None]
+
+    if not pred:
+        result = _empty_score("segments", n_gt=len(truth))
+        result["endpoint_tolerance"] = endpoint_tolerance
+        return result
+    if not truth:
+        result = _empty_score("segments")
+        result["endpoint_tolerance"] = endpoint_tolerance
+        return result
+
+    pairs: list[tuple[float, int, int]] = []
+    for i, candidate in enumerate(pred):
+        for j, target in enumerate(truth):
+            distance = _segment_distance(candidate, target)
+            if distance <= endpoint_tolerance:
+                pairs.append((distance, i, j))
+    pairs.sort(key=lambda item: (item[0], item[1], item[2]))
+
+    used_pred: set[int] = set()
+    used_gt: set[int] = set()
+    matched: list[float] = []
+    for distance, i, j in pairs:
+        if i in used_pred or j in used_gt:
+            continue
+        used_pred.add(i)
+        used_gt.add(j)
+        matched.append(distance)
+
+    tp = len(matched)
+    fp, fn = len(pred) - tp, len(truth) - tp
+    precision = tp / len(pred) if pred else 0.0
+    recall = tp / len(truth) if truth else 0.0
+    return {
+        "score": _f1(precision, recall),
+        "precision": precision,
+        "recall": recall,
+        "f1": _f1(precision, recall),
+        "n_pred": len(pred),
+        "n_gt": len(truth),
+        "count_ratio": len(pred) / len(truth) if truth else None,
+        "tp": tp,
+        "fp": fp,
+        "fn": fn,
+        "mean_endpoint_distance": sum(matched) / len(matched) if matched else None,
+        "endpoint_tolerance": endpoint_tolerance,
+    }
+
+
+def _segment(entry: Any) -> tuple[tuple[float, float], tuple[float, float]] | None:
+    if isinstance(entry, dict):
+        points = entry.get("points")
+        if not isinstance(points, list) and all(
+            key in entry for key in ("x1", "y1", "x2", "y2")
+        ):
+            points = [
+                [entry["x1"], entry["y1"]],
+                [entry["x2"], entry["y2"]],
+            ]
+    else:
+        points = entry
+    if not isinstance(points, list) or len(points) != 2:
+        return None
+    try:
+        first = (float(points[0][0]), float(points[0][1]))
+        second = (float(points[1][0]), float(points[1][1]))
+    except (TypeError, ValueError, IndexError):
+        return None
+    return first, second
+
+
+def _segment_distance(
+    a: tuple[tuple[float, float], tuple[float, float]],
+    b: tuple[tuple[float, float], tuple[float, float]],
+) -> float:
+    direct = max(_distance(a[0], b[0]), _distance(a[1], b[1]))
+    reverse = max(_distance(a[0], b[1]), _distance(a[1], b[0]))
+    return min(direct, reverse)
+
+
+def _distance(a: tuple[float, float], b: tuple[float, float]) -> float:
+    return ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5
 
 
 def score_points(

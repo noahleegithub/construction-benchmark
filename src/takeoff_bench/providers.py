@@ -61,6 +61,7 @@ class StubProvider(Provider):
         out = {
             "polygons": {"instances": []},
             "polylines": {"lines": []},
+            "segments": {"segments": []},
             "points": {"points": []},
             "count": {"count": 0},
             "text": {"answer": ""},

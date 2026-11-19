@@ -1,0 +1,8 @@
+item_id,expected_count,recovered_count,status
+t-4c4-wall-centerlines,447,453,approximate
+t-888-wall-centerlines,123,121,approximate
+t-door-centerline-contractor,16,16,exact
+t-wall-centerline-3218,281,292,approximate
+t-wall-centerline-a5-4,343,349,approximate
+t-wall-centerline-ocala,80,77,approximate
+t-wall-centerline-page-10,105,106,approximate

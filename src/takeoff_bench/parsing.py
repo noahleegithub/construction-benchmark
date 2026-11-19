@@ -59,6 +59,13 @@ def coerce_prediction(value: Any, output_type: str) -> dict[str, Any]:
         entries = _entries(value, "lines", "polylines")
         return {"type": "polylines", "lines": [_geometry(e) for e in entries]}
 
+    if output_type == "segments":
+        entries = _entries(value, "segments", "wall_segments")
+        segments = []
+        for entry in entries:
+            segments.append({"points": _segment_points(entry)})
+        return {"type": "segments", "segments": segments}
+
     if output_type == "points":
         entries = _entries(value, "points")
         points = []
@@ -159,3 +166,37 @@ def _geometry(entry: Any) -> dict[str, Any]:
     if isinstance(entry, dict) and isinstance(entry.get("points"), list):
         return entry
     raise ValueError(f"bad geometry entry: {entry!r}")
+
+
+def _segment_points(entry: Any) -> list[list[float]]:
+    """Accept points, [x1,y1,x2,y2], or x1/y1/x2/y2 objects."""
+    if isinstance(entry, dict):
+        if isinstance(entry.get("points"), list):
+            points = entry["points"]
+        elif all(key in entry for key in ("x1", "y1", "x2", "y2")):
+            points = [
+                [entry["x1"], entry["y1"]],
+                [entry["x2"], entry["y2"]],
+            ]
+        elif isinstance(entry.get("segment"), (list, dict)):
+            return _segment_points(entry["segment"])
+        else:
+            raise ValueError(f"bad segment entry: {entry!r}")
+    elif isinstance(entry, list) and len(entry) == 4 and all(
+        isinstance(value, (int, float)) for value in entry
+    ):
+        points = [[entry[0], entry[1]], [entry[2], entry[3]]]
+    else:
+        raise ValueError(f"bad segment entry: {entry!r}")
+
+    if (
+        not isinstance(points, list)
+        or len(points) != 2
+        or any(
+            not (isinstance(point, list) and len(point) == 2)
+            or any(not isinstance(value, (int, float)) for value in point)
+            for point in points
+        )
+    ):
+        raise ValueError(f"a segment needs exactly two numeric points: {entry!r}")
+    return [[float(points[0][0]), float(points[0][1])], [float(points[1][0]), float(points[1][1])]]

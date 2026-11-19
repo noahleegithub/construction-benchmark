@@ -97,7 +97,7 @@ Use it before trusting any aggregate number.
 | `page` | 1-based page number |
 | `question` | the instruction shown to the model |
 | `convention` | the measurement convention for this item, in one or two sentences |
-| `output_type` | `polygons`, `polylines`, `points`, `count`, `text`, `quantities`, or `compliance` |
+| `output_type` | `polygons`, `polylines`, `segments`, `points`, `count`, `text`, `quantities`, or `compliance` |
 | `gt` | ground-truth JSON path relative to the workspace |
 | `notes` | optional; not sent to the model |
 
@@ -127,6 +127,18 @@ Polylines:
 
 ```json
 {"type": "polylines", "lines": [{"label": "wall-a", "points": [[0.1, 0.2], [0.9, 0.2]]}]}
+```
+
+Segments (wall/door centerlines; both endpoints must land near the expert
+endpoints, endpoint order ignored, tolerance 0.012 page units):
+
+```json
+{
+  "type": "segments",
+  "segments": [
+    {"id": "wall-1", "label": "centerline", "points": [[0.10, 0.20], [0.90, 0.20]]}
+  ]
+}
 ```
 
 Points:

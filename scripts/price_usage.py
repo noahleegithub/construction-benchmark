@@ -16,10 +16,11 @@ import yaml
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("workspace", type=Path)
+    parser.add_argument("--models", default="models.yaml")
     args = parser.parse_args()
     workspace = args.workspace
 
-    models = yaml.safe_load((workspace / "models.yaml").read_text())["models"]
+    models = yaml.safe_load((workspace / args.models).read_text())["models"]
     rates = {
         model["id"]: (
             float(model["input_cost_per_mtok"]),

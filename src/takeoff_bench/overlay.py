@@ -101,6 +101,11 @@ def _draw_geometry(draw, payload: dict[str, Any], size, color, width: int, dashe
             points = _scaled(entry.get("points", []), width_px, height_px)
             if len(points) >= 2:
                 _line(draw, points, color, width, dashed)
+    elif kind == "segments":
+        for entry in payload.get("segments", []):
+            points = _scaled(entry.get("points", []), width_px, height_px)
+            if len(points) >= 2:
+                _line(draw, points, color, width, dashed)
     elif kind == "points":
         radius = max(4, width * 2)
         for x, y in _scaled(payload.get("points", []), width_px, height_px):

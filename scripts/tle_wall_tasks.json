@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "task_id": "t-4c4-wall-centerlines",
+      "predicate": "centerline",
+      "expected_count": 447,
+      "difficulty": "hard",
+      "question": "Trace the centerlines of the walls on this floor plan.",
+      "convention": "A wall centerline runs midway between its two drawn faces, along the length of the wall. Trace structural and partition walls only. Do not trace furniture, fixtures, casework, doors, windows, stairs, grid lines, dimension strings, leaders, hatching, room tags, or title-block linework. Trace each wall once, no matter how many rooms it separates. Start and end a segment where the wall run ends or where it meets another wall. Put a vertex at every corner, jog, and junction. Keep the centerline continuous through door and window openings. Do not merge collinear runs across junctions."
+    },
+    {
+      "task_id": "t-888-wall-centerlines",
+      "predicate": "centerline",
+      "expected_count": 123,
+      "difficulty": "medium",
+      "question": "Trace the centerlines of the walls on this floor plan.",
+      "convention": "A wall centerline runs midway between its two drawn faces, along the length of the wall. Trace structural and partition walls only. Do not trace furniture, fixtures, casework, doors, windows, stairs, grid lines, dimension strings, leaders, hatching, room tags, or title-block linework. Trace each wall once, no matter how many rooms it separates. Start and end a segment where the wall run ends or where it meets another wall. Put a vertex at every corner, jog, and junction. Keep the centerline continuous through door and window openings. Do not merge collinear runs across junctions."
+    },
+    {
+      "task_id": "t-door-centerline-contractor",
+      "predicate": "door_centerline",
+      "expected_count": 16,
+      "difficulty": "medium",
+      "question": "Extract the door centerline for the door contractor, cutting each door threshold in half.",
+      "convention": "Return one line segment per door centerline. Each segment runs through the middle of the door opening and splits the threshold thickness equally between the two adjacent spaces. Follow the door openings on the plan sheet."
+    },
+    {
+      "task_id": "t-wall-centerline-3218",
+      "predicate": "centerline",
+      "expected_count": 281,
+      "difficulty": "medium",
+      "question": "Trace the wall centerline for the drywaller on this floor plan.",
+      "convention": "A wall centerline runs midway between its two drawn faces, along the length of the wall. Trace structural and partition drywall walls only. Do not trace furniture, fixtures, casework, doors, windows, stairs, grid lines, dimension strings, leaders, hatching, room tags, or title-block linework. Trace each wall once. Start and end a segment where the wall run ends or where it meets another wall. Put a vertex at every corner, jog, and junction. Keep the centerline continuous through door and window openings. Do not merge collinear runs across junctions."
+    },
+    {
+      "task_id": "t-wall-centerline-a5-4",
+      "predicate": "centerline",
+      "expected_count": 343,
+      "difficulty": "medium",
+      "question": "Trace the wall centerline for the drywaller on this floor plan.",
+      "convention": "A wall centerline runs midway between its two drawn faces, along the length of the wall. Trace structural and partition drywall walls only. Do not trace furniture, fixtures, casework, doors, windows, stairs, grid lines, dimension strings, leaders, hatching, room tags, or title-block linework. Trace each wall once. Start and end a segment where the wall run ends or where it meets another wall. Put a vertex at every corner, jog, and junction. Keep the centerline continuous through door and window openings. Do not merge collinear runs across junctions."
+    },
+    {
+      "task_id": "t-wall-centerline-ocala",
+      "predicate": "centerline",
+      "expected_count": 80,
+      "difficulty": "medium",
+      "question": "Trace the wall centerline for the drywaller on this floor plan.",
+      "convention": "A wall centerline runs midway between its two drawn faces, along the length of the wall. Trace structural and partition drywall walls only. Do not trace furniture, fixtures, casework, doors, windows, stairs, grid lines, dimension strings, leaders, hatching, room tags, or title-block linework. Trace each wall once. Start and end a segment where the wall run ends or where it meets another wall. Put a vertex at every corner, jog, and junction. Keep the centerline continuous through door and window openings. Do not merge collinear runs across junctions."
+    },
+    {
+      "task_id": "t-wall-centerline-page-10",
+      "predicate": "centerline",
+      "expected_count": 105,
+      "difficulty": "medium",
+      "question": "Trace the wall centerline for the drywaller on this floor plan.",
+      "convention": "A wall centerline runs midway between its two drawn faces, along the length of the wall. Trace structural and partition drywall walls only. Do not trace furniture, fixtures, casework, doors, windows, stairs, grid lines, dimension strings, leaders, hatching, room tags, or title-block linework. Trace each wall once. Start and end a segment where the wall run ends or where it meets another wall. Put a vertex at every corner, jog, and junction. Keep the centerline continuous through door and window openings. Do not merge collinear runs across junctions."
+    }
+  ]
+}

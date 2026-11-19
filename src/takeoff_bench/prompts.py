@@ -21,6 +21,7 @@ SCHEMAS = {
         '"points": [[x, y], ...]}]}'
     ),
     "polylines": '{"lines": [{"label": "optional-label", "points": [[x, y], ...]}]}',
+    "segments": '{"segments": [{"x1": x, "y1": y, "x2": x, "y2": y}]}',
     "points": '{"points": [[x, y], ...]}',
     "count": '{"count": <integer>}',
     "text": '{"answer": "<verbatim answer>"}',
@@ -44,6 +45,11 @@ NOTES = {
     "polylines": (
         "Emit one polyline per real-world instance. Give every vertex needed to "
         "follow the line; do not simplify to a bounding box."
+    ),
+    "segments": (
+        "Emit one straight segment per wall run, broken where the run ends or "
+        "where another wall meets it. Both endpoints must land on the expert "
+        "segment's endpoints; do not merge collinear runs across junctions."
     ),
     "points": (
         "Emit one point per real-world instance. Include every instance on the "

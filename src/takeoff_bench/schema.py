@@ -12,7 +12,17 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-OUTPUT_TYPES = ("polygons", "polylines", "points", "count", "text", "quantities", "compliance")
+OUTPUT_TYPES = (
+    "polygons",
+    "polylines",
+    "segments",
+    "points",
+    "count",
+    "text",
+    "quantities",
+    "compliance",
+)
+
 
 REQUIRED_COLUMNS = (
     "item_id",
@@ -109,8 +119,8 @@ def validate_gt(item_id: str, gt: dict[str, Any], output_type: str) -> None:
     if kind != output_type:
         raise ItemError(f"{item_id}: gt type {kind!r} does not match output_type {output_type!r}")
 
-    if kind in ("polygons", "polylines"):
-        key = "instances" if kind == "polygons" else "lines"
+    if kind in ("polygons", "polylines", "segments"):
+        key = {"polygons": "instances", "polylines": "lines", "segments": "segments"}[kind]
         entries = gt.get(key)
         if not isinstance(entries, list) or not entries:
             raise ItemError(f"{item_id}: gt needs a non-empty {key!r} list")

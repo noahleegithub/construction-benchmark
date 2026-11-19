@@ -8,6 +8,7 @@ from takeoff_bench.scoring import (
     score_polygons,
     score_polylines,
     score_quantities,
+    score_segments,
     score_text,
 )
 
@@ -56,6 +57,50 @@ def test_polylines_perfect():
     gt = {"type": "polylines", "lines": [{"points": [[0.1, 0.1], [0.9, 0.1]]}]}
     result = score_polylines(gt, gt)
     assert result["score"] == 1.0
+
+
+def test_segments_perfect_and_reversed():
+    gt = {
+        "type": "segments",
+        "segments": [
+            {"points": [[0.1, 0.1], [0.9, 0.1]]},
+            {"points": [[0.1, 0.1], [0.1, 0.9]]},
+        ],
+    }
+    pred = {
+        "type": "segments",
+        "segments": [
+            {"points": [[0.1, 0.9], [0.1, 0.1]]},
+            {"points": [[0.9, 0.1], [0.1, 0.1]]},
+        ],
+    }
+    result = score_segments(pred, gt)
+    assert result["score"] == 1.0
+    assert result["tp"] == 2
+    assert result["mean_endpoint_distance"] == 0.0
+
+
+def test_segments_endpoint_failure_and_extra():
+    gt = {"type": "segments", "segments": [{"points": [[0.1, 0.1], [0.9, 0.1]]}]}
+    pred = {
+        "type": "segments",
+        "segments": [
+            {"points": [[0.1, 0.1], [0.8, 0.1]]},
+            {"points": [[0.1, 0.5], [0.9, 0.5]]},
+        ],
+    }
+    result = score_segments(pred, gt)
+    assert result["tp"] == 0
+    assert result["fp"] == 2
+    assert result["fn"] == 1
+    assert result["score"] == 0.0
+
+
+def test_parse_segments_native_shape():
+    parsed = parsing.coerce_prediction(
+        {"segments": [{"x1": 0, "y1": 0, "x2": 1, "y2": 1}]}, "segments"
+    )
+    assert parsed["segments"][0]["points"] == [[0.0, 0.0], [1.0, 1.0]]
 
 
 def test_points_precision_and_recall():
