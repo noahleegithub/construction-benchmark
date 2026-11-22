@@ -12,6 +12,7 @@ items, model outputs, scores, and figures.
 | `area-tle-gpt6/` | GPT-6.0/6.1 area matrix, 4 models, 32k, costs | final area result |
 | `centerlines/` | TLE wall/door centerline tasks, 4 models, 7 items | approximate GT |
 | `door-threshold/` | `t-4f1` door-threshold detection overlays, 4 models | geometry only |
+| `ocg-decisions/` | Valen decision models on single OCG layers, 14 tasks, 898 layers, 3 models | unlabelled model judgments |
 | `prompt-sensitivity/` | Prompt variants, noise floor, positive control | stopped at failed gate |
 
 `centerlines/overlays/` and `door-threshold/overlays/` contain full-page sheets:
@@ -25,3 +26,7 @@ because the threshold polygons are not clear-width measurements.
 `area-tle-archive/` is the imported TLE bundle; it is kept because it contains
 the 19-model, 132-run reference set. The active GPT-6 study is
 `area-tle-gpt6/`.
+
+`ocg-decisions/` asks the free Valen decisions API whether each single OCG layer
+is useful for its TLE task. See `docs/checklists/ocg-layer-decisions.md`; these
+are model judgments without human labels.
