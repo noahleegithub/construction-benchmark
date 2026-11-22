@@ -62,6 +62,11 @@ toggling groups at a 100 dpi render changed:
 That makes it possible to render clean wall/door linework with dimensions,
 hatch, furniture, notes, grid, and title block removed.
 
+## Layer decisions
+
+A separate experiment asks the Valen decision API whether each single layer is
+useful for its task: `docs/checklists/ocg-layer-decisions.md`.
+
 ## Caveats
 
 - OCG presence is not a clean semantic segmentation. Several `AR-WALL*` and
