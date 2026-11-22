@@ -17,6 +17,22 @@ JSON or CSV. No file or label leaves the browser.
 
 ## Run
 
+### Double-click / one command
+
+The folder includes a stdlib-only launcher:
+
+```bash
+python3 start.py
+```
+
+On Windows use `start.bat`; on macOS/Linux use `./start.sh`. It chooses a free
+port, serves this folder, and opens the browser.
+
+To send it to a colleague, zip the entire `tools/labeling` folder. They need
+Python 3, but no packages and no network access. `vendor/` contains PDF.js.
+
+### Manual server
+
 From the repository root:
 
 ```bash
