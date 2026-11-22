@@ -33,6 +33,8 @@ lives under its own directory in `studies/`:
   prediction/ground-truth overlays
 - `studies/door-threshold/` — door-threshold detection overlays and per-door
   crop grids
+- `studies/ocg-decisions/` — single-OCG-layer usefulness decisions
+- `studies/page-decisions/` — synthetic multi-sheet page-relevance decisions
 - `studies/prompt-sensitivity/` — stopped prompt-variant gate study
 
 See `studies/README.md` for the index.
