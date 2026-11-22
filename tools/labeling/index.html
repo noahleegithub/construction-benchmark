@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawing Labeler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <strong>Drawing Labeler</strong>
+        <span>Sheet and layer relevance</span>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="importBtn" class="button ghost" type="button">Import labels</button>
+      <button id="exportJsonBtn" class="button primary" type="button">Export JSON</button>
+      <button id="exportCsvBtn" class="button" type="button">CSV</button>
+      <input id="importInput" type="file" accept="application/json,.json" hidden>
+    </div>
+  </header>
+
+  <main class="shell">
+    <aside class="sidebar">
+      <section class="panel upload-panel">
+        <div id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="Upload a PDF">
+          <input id="fileInput" type="file" accept="application/pdf,.pdf" hidden>
+          <span class="drop-icon" aria-hidden="true">PDF</span>
+          <strong>Drop a plan PDF</strong>
+          <span>or click to choose</span>
+        </div>
+        <div id="fileMeta" class="file-meta" hidden>
+          <div class="file-name" id="fileName"></div>
+          <div class="file-sub" id="fileSub"></div>
+          <button id="clearFileBtn" class="text-button" type="button">Load another</button>
+        </div>
+      </section>
+
+      <section class="panel task-panel">
+        <label for="taskInput">Task prompt</label>
+        <textarea id="taskInput" rows="4" placeholder="Paste the task the plan should support, e.g. Trace every light fixture on the drawing."></textarea>
+        <div class="hint">This prompt is included in the export. It is not sent anywhere.</div>
+      </section>
+
+      <div class="mode-tabs" role="tablist" aria-label="Labeling mode">
+        <button id="pagesTab" class="mode-tab active" data-mode="pages" role="tab" type="button" aria-selected="true">Sheets</button>
+        <button id="layersTab" class="mode-tab" data-mode="layers" role="tab" type="button" aria-selected="false" disabled>Layers</button>
+      </div>
+
+      <section class="panel list-panel">
+        <div class="list-head">
+          <div>
+            <strong id="listTitle">Sheets</strong>
+            <span id="listCount" class="muted">No PDF loaded</span>
+          </div>
+          <input id="filterInput" class="filter-input" type="search" placeholder="Filter…" aria-label="Filter list">
+        </div>
+        <div id="pageList" class="page-list"></div>
+        <div id="layerList" class="layer-list" hidden></div>
+        <div id="listEmpty" class="empty-list" hidden>Load a PDF to begin.</div>
+      </section>
+
+      <section class="sidebar-foot">
+        <div class="progress-line">
+          <span id="progressText">0 labeled</span>
+          <span id="fileState" class="muted">No file</span>
+        </div>
+        <button id="resetBtn" class="text-button danger" type="button">Clear labels for this file</button>
+        <div class="shortcut-hint">Keys: <kbd>R</kbd> relevant · <kbd>N</kbd> not · <kbd>U</kbd> unsure · <kbd>←</kbd><kbd>→</kbd> page</div>
+      </section>
+    </aside>
+
+    <section class="workspace" aria-label="PDF viewer">
+      <div class="viewer-toolbar">
+        <div class="toolbar-left">
+          <button id="prevBtn" class="icon-button" type="button" aria-label="Previous page">←</button>
+          <span id="pageIndicator" class="page-indicator">—</span>
+          <button id="nextBtn" class="icon-button" type="button" aria-label="Next page">→</button>
+        </div>
+        <div class="toolbar-center" id="previewLabel">No page loaded</div>
+        <div class="toolbar-right">
+          <button id="zoomOutBtn" class="icon-button" type="button" aria-label="Zoom out">−</button>
+          <span id="zoomLabel" class="zoom-label">100%</span>
+          <button id="zoomInBtn" class="icon-button" type="button" aria-label="Zoom in">+</button>
+          <button id="fitBtn" class="button tiny" type="button">Fit</button>
+          <button id="showAllBtn" class="button tiny" type="button" hidden>Show all layers</button>
+        </div>
+      </div>
+
+      <div id="stage" class="stage">
+        <div id="emptyState" class="empty-state">
+          <div class="empty-art" aria-hidden="true"></div>
+          <h2>Load a drawing to label</h2>
+          <p>Upload a multi-page PDF to mark relevant sheets, or a layered PDF to mark relevant OCG layers.</p>
+        </div>
+        <canvas id="pdfCanvas" aria-label="PDF page preview"></canvas>
+      </div>
+
+      <div class="viewer-foot">
+        <span id="viewerStatus">Local-only. Files never leave this browser.</span>
+        <span id="labelSummary" class="label-summary"></span>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

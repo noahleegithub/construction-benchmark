@@ -39,6 +39,19 @@ lives under its own directory in `studies/`:
 
 See `studies/README.md` for the index.
 
+## Labeling tool
+
+`tools/labeling/` is a local-only browser tool for labeling relevant sheets in
+a multi-page PDF or relevant OCG layers in a layered PDF. It runs with vendored
+PDF.js and exports JSON/CSV:
+
+```bash
+python3 -m http.server 8765 --bind 0.0.0.0
+# open http://<host>:8765/tools/labeling/
+```
+
+See `tools/labeling/README.md`.
+
 ## Install
 
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/).
