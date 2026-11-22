@@ -13,6 +13,7 @@ items, model outputs, scores, and figures.
 | `centerlines/` | TLE wall/door centerline tasks, 4 models, 7 items | approximate GT |
 | `door-threshold/` | `t-4f1` door-threshold detection overlays, 4 models | geometry only |
 | `ocg-decisions/` | Valen decision models on single OCG layers, 14 tasks, 898 layers, 3 models | unlabelled model judgments |
+| `page-decisions/` | Valen page-relevance decisions on synthetic 8-page packets, 33 tasks, 3 models | synthetic labels |
 | `prompt-sensitivity/` | Prompt variants, noise floor, positive control | stopped at failed gate |
 
 `centerlines/overlays/` and `door-threshold/overlays/` contain full-page sheets:
@@ -30,3 +31,8 @@ the 19-model, 132-run reference set. The active GPT-6 study is
 `ocg-decisions/` asks the free Valen decisions API whether each single OCG layer
 is useful for its TLE task. See `docs/checklists/ocg-layer-decisions.md`; these
 are model judgments without human labels.
+
+`page-decisions/` asks the same API whether a page is the source sheet for a
+task in a synthetic 8-page packet. See
+`docs/checklists/page-relevance-decisions.md`; the TLE release has only
+single-page PDFs, so the packets are constructed, not real plan sets.

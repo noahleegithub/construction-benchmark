@@ -38,27 +38,52 @@ project plan. A distractor can still contain useful drawing content.
 - **AUC**: probability that the target outranks a randomly chosen distractor.
 - **Margin**: target probability minus the highest distractor probability.
 
-## Results
+## Full run
 
-Run: `studies/page-decisions/summary.md`.
+33 tasks × 8 pages × 3 models = **792/792 successful requests**.
+
+| Model | Target recall | Distractor FPR | Accuracy | Mean rank | Rank-1 | AUC | Target p | Distractor p |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `valen-0.8b` | 1.000 | 0.853 | 0.254 | 3.45 | 10/33 | 0.647 | 0.672 | 0.605 |
+| `valen-2b` | 0.970 | 0.918 | 0.193 | 3.36 | 12/33 | 0.660 | 0.879 | 0.803 |
+| `valen-4b` | **0.818** | **0.446** | **0.587** | **2.48** | **19/33** | **0.786** | 0.796 | 0.457 |
+
+`valen-4b` is clearly the best of the three: it rejects about half the
+distractors, ranks the target first in 19 of 33 packets, and has the highest
+AUC. It is still not a reliable yes/no classifier: target recall is 0.818 and
+packet accuracy is only 0.587.
+
+`valen-2b` is the worst at the threshold: it finds 32/33 targets but accepts
+91.8% of distractors, so its page-level accuracy is 0.193. `valen-0.8b` accepts
+85.3% of distractors and gets 25.4% accuracy. Both behave like “is this a
+drawing?” classifiers rather than task-specific page selectors.
+
+The target is ranked first in only 10/33 (0.8B), 12/33 (2B), and 19/33 (4B)
+packets. The hardest cases are:
+
+| Task | 0.8B rank | 2B rank | 4B rank |
+|---|---:|---:|---:|
+| `t-2ce-symbol-instances` | 8 | 8 | 8 |
+| `t-wall-centerline-a5-4` | 8 | 6 | 7 |
+| `t-wall-centerline-ocala` | 8 | 7 | 4 |
+| `t-wall-centerline-page-10` | 6 | 4 | 3 |
+| `t-wall-perimeter-painters` | 8 | 7 | 4 |
+| `t-door-centerline-contractor` | 4 | 6 | 6 |
+
+On `t-012-tagged-light-fixtures`, `t-29b-floratam-sod-areas`,
+`t-4f1-door-threshold-areas`, and `t-corridor-net-area`, all three models rank
+the target first. That is not enough for page filtering because most distractors
+also receive yes.
 
 ### Pilot
 
-`t-012-tagged-light-fixtures`, 8-page packet, three models:
-
-| Model | Target p | Target rank | Max distractor | Yes rate |
-|---|---:|---:|---:|---:|
-| `valen-0.8b` | 0.795 | 1 | 0.750 | 8/8 |
-| `valen-2b` | 0.995 | 1 | 0.983 | 8/8 |
-| `valen-4b` | 0.996 | 1 | 0.991 | 7/8 |
-
-The target ranks first for all three models, but almost every distractor also
-gets yes. At a 0.5 threshold, this packet has accuracy 0.125 for 0.8B and 2B and
-0.250 for 4B. The models are ranking pages, not producing usable page-level
-yes/no decisions.
+The first 8-page pilot (`t-012`) showed the same pattern: target rank 1, but
+7/8 or 8/8 pages accepted at the 0.5 threshold. The full run confirms it.
 
 ## Caveat
 
 The packet labels are synthetic and the distractor set is not a real plan-set
-sample. The run is useful for testing whether a decision model can use task
-semantics to rank pages, not for claiming field accuracy.
+sample. The run tests whether a decision model can use task semantics to rank
+pages; it does not measure performance on a real multi-sheet project plan. A
+real plan also often has more than one relevant page (floor plan, enlarged
+detail, schedule, general notes), which this one-positive packet does not model.
