@@ -191,14 +191,14 @@ function updatePreviewLabel() {
     els.previewLabel.textContent = "No page loaded";
     return;
   }
-  const base = state.mode === "pages"
-    ? `Sheet ${state.currentPage} of ${state.numPages}`
-    : state.ocGroups.length
-      ? `Sheet ${state.currentPage} · layer preview`
-      : `Sheet ${state.currentPage} of ${state.numPages}`;
-  if (state.mode === "layers" && state.previewLayerId) {
-    const group = state.ocGroups.find((g) => g.id === state.previewLayerId);
-    els.previewLabel.textContent = `${base} · ${group ? group.name : state.previewLayerId}`;
+  const base = `Sheet ${state.currentPage} of ${state.numPages}`;
+  if (state.mode === "layers") {
+    if (state.previewLayerId) {
+      const group = state.ocGroups.find((g) => g.id === state.previewLayerId);
+      els.previewLabel.textContent = `${base} · layer preview · ${group ? group.name : state.previewLayerId}`;
+    } else {
+      els.previewLabel.textContent = `${base} · all layers`;
+    }
   } else {
     els.previewLabel.textContent = base;
   }
@@ -509,6 +509,22 @@ function setCurrentPage(page) {
   renderMain();
 }
 
+function moveLayer(delta) {
+  if (!state.ocGroups.length) return;
+  let index = state.ocGroups.findIndex((group) => group.id === state.previewLayerId);
+  if (index === -1) index = delta > 0 ? -1 : 0;
+  const next = Math.max(0, Math.min(state.ocGroups.length - 1, index + delta));
+  const group = state.ocGroups[next];
+  if (!group) return;
+  state.previewLayerId = group.id;
+  els.showAllBtn.hidden = false;
+  updateLayerRows();
+  updatePreviewLabel();
+  const row = els.layerList.querySelector(`.layer-row[data-id="${cssEscape(group.id)}"]`);
+  if (row) row.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  renderMain();
+}
+
 async function renderMain() {
   if (!state.pdf || !state.numPages) return;
   const token = ++state.renderToken;
@@ -799,10 +815,18 @@ function bindEvents() {
       }
       event.preventDefault();
     } else if (key === "arrowleft") {
-      setCurrentPage(state.currentPage - 1);
+      if (state.mode === "layers") moveLayer(-1);
+      else setCurrentPage(state.currentPage - 1);
       event.preventDefault();
     } else if (key === "arrowright") {
-      setCurrentPage(state.currentPage + 1);
+      if (state.mode === "layers") moveLayer(1);
+      else setCurrentPage(state.currentPage + 1);
+      event.preventDefault();
+    } else if (key === "arrowup") {
+      if (state.mode === "layers") moveLayer(-1);
+      event.preventDefault();
+    } else if (key === "arrowdown") {
+      if (state.mode === "layers") moveLayer(1);
       event.preventDefault();
     }
   });

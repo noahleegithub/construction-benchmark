@@ -9,6 +9,8 @@ Upload a PDF, enter the task prompt, and mark each sheet or layer as
 **Relevant**, **Not relevant**, or **Unsure**. The page or layer preview renders
 with PDF.js. In layer mode, clicking a layer name isolates that layer for
 preview; the label buttons on the row record whether that layer is relevant.
+The left/right or up/down arrow keys move through layers while Layers mode is
+active; in Sheets mode the left/right arrows move between pages.
 
 Labels are stored in `localStorage` for the current file and can be exported as
 JSON or CSV. No file or label leaves the browser.
