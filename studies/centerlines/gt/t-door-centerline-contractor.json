@@ -1,0 +1,229 @@
+{
+ "type": "segments",
+ "segments": [
+  {
+   "id": "t-door-centerline-contractor-0001",
+   "label": "wall",
+   "points": [
+    [
+     0.413319,
+     0.164394
+    ],
+    [
+     0.40157,
+     0.164394
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0002",
+   "label": "wall",
+   "points": [
+    [
+     0.395709,
+     0.171825
+    ],
+    [
+     0.395709,
+     0.184171
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0003",
+   "label": "wall",
+   "points": [
+    [
+     0.415799,
+     0.179511
+    ],
+    [
+     0.415799,
+     0.192199
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0004",
+   "label": "wall",
+   "points": [
+    [
+     0.717282,
+     0.23279
+    ],
+    [
+     0.708218,
+     0.23279
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0005",
+   "label": "wall",
+   "points": [
+    [
+     0.671007,
+     0.236782
+    ],
+    [
+     0.671007,
+     0.252802
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0006",
+   "label": "wall",
+   "points": [
+    [
+     0.415675,
+     0.23969
+    ],
+    [
+     0.415675,
+     0.255967
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0007",
+   "label": "wall",
+   "points": [
+    [
+     0.0734,
+     0.283132
+    ],
+    [
+     0.063848,
+     0.283132
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0008",
+   "label": "wall",
+   "points": [
+    [
+     0.415675,
+     0.274905
+    ],
+    [
+     0.415675,
+     0.288021
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0009",
+   "label": "wall",
+   "points": [
+    [
+     0.322074,
+     0.330523
+    ],
+    [
+     0.313926,
+     0.330523
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0010",
+   "label": "wall",
+   "points": [
+    [
+     0.37438,
+     0.332138
+    ],
+    [
+     0.37438,
+     0.344057
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0011",
+   "label": "wall",
+   "points": [
+    [
+     0.083581,
+     0.333148
+    ],
+    [
+     0.083581,
+     0.346519
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0012",
+   "label": "wall",
+   "points": [
+    [
+     0.310044,
+     0.355174
+    ],
+    [
+     0.30098,
+     0.355174
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0013",
+   "label": "wall",
+   "points": [
+    [
+     0.272073,
+     0.385184
+    ],
+    [
+     0.272073,
+     0.409663
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0014",
+   "label": "wall",
+   "points": [
+    [
+     0.237351,
+     0.385184
+    ],
+    [
+     0.237351,
+     0.409663
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0015",
+   "label": "wall",
+   "points": [
+    [
+     0.296611,
+     0.416452
+    ],
+    [
+     0.287059,
+     0.416452
+    ]
+   ]
+  },
+  {
+   "id": "t-door-centerline-contractor-0016",
+   "label": "wall",
+   "points": [
+    [
+     0.294785,
+     0.480335
+    ],
+    [
+     0.285477,
+     0.480335
+    ]
+   ]
+  }
+ ]
+}

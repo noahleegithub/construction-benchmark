@@ -1,0 +1,5 @@
+run_id,item_id,family,model_id,repeat,prompt_variant,status,score,tle_miou,precision,recall,f1,count_ratio,tp,fp,fn,n_pred,n_gt,mean_endpoint_distance,verdict_accuracy,measurement_accuracy,measure_error,evidence_rate,abstained,prompt_tokens,completion_tokens,total_tokens,cost_usd,error
+84cd3a6d6cdc,t-4f1-door-threshold-areas,door-threshold-areas,gw-gpt-6-astra,0,baseline,scored,0.3524443207029977,0.23524496653305443,0.3173076923076923,0.3173076923076923,0.3173076923076923,1.0,33,71,71,104,104,,,,,,,5294,11178,16472,,
+ba7b3b025a1f,t-4f1-door-threshold-areas,door-threshold-areas,gw-gpt-6-luna,0,baseline,scored,0.007340893753084605,0.0,0.0,0.0,0.0,0.6346153846153846,0,66,104,66,104,,,,,,,5294,5590,10884,,
+95c93296d478,t-4f1-door-threshold-areas,door-threshold-areas,gw-gpt-6-sol,0,baseline,scored,0.060177064161816445,0.0,0.0,0.0,0.0,0.7788461538461539,0,81,104,81,104,,,,,,,5294,5532,10826,,
+47b1a8178bde,t-4f1-door-threshold-areas,door-threshold-areas,gw-gpt-6.1-sol,0,baseline,scored,0.28127815827150504,0.18523311776208656,0.34444444444444444,0.2980769230769231,0.3195876288659794,0.8653846153846154,31,59,73,90,104,,,,,,,5294,8937,14231,,

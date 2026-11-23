@@ -1,0 +1,4 @@
+task_id,family,model,target_probability,target_yes,target_rank,target_margin,target_auc,distractor_mean,distractor_max,distractor_fpr,distractor_yes,packet_size,packet_accuracy,source_task_id
+t-012-tagged-light-fixtures,image-search,valen-0.8b,0.7952396101237076,True,1,0.044917931119478616,1.0,0.6148885326450229,0.750321679004229,1.0,7,8,0.125,t-012-tagged-light-fixtures
+t-012-tagged-light-fixtures,image-search,valen-2b,0.9945375173193599,True,1,0.011937051199727766,1.0,0.9263152768251771,0.9826004661196321,1.0,7,8,0.125,t-012-tagged-light-fixtures
+t-012-tagged-light-fixtures,image-search,valen-4b,0.9960628937986039,True,1,0.004740763494869293,1.0,0.761790812508408,0.9913221303037346,0.8571428571428571,6,8,0.25,t-012-tagged-light-fixtures

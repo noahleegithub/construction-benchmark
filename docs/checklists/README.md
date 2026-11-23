@@ -64,6 +64,9 @@ benchmark ground truth: it describes what a reviewer checks, not the geometry
 or quantity expected on a particular sheet. It is useful for deriving review
 questions, failure taxonomies and task families.
 
+Experiment writeups live in [`../studies/`](../studies/README.md). The active
+result index is [`../../studies/README.md`](../../studies/README.md).
+
 ## Rights
 
 The Korean source workbooks were deleted after translation; no source file is

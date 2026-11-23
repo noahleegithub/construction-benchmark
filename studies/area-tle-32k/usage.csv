@@ -1,0 +1,7 @@
+model_id,item_id,family,runs,scored,completion,prompt_tokens,completion_tokens,total_tokens,cost_usd,score
+gw-gpt-5.6-luna,t-280-net-room-areas,net-room-areas,1,1,1.0,4938,3202,8140,,0.05003331978899139
+gw-gpt-5.6-luna,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,3811,9105,,0.003182327310400271
+gw-gpt-5.6-sol,t-280-net-room-areas,net-room-areas,1,1,1.0,4938,6539,11477,,0.0667775217553574
+gw-gpt-5.6-sol,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,7041,12335,,0.024427505681571614
+gw-gpt-6.1-sol,t-280-net-room-areas,net-room-areas,1,1,1.0,4938,8702,13640,,0.1300672107876349
+gw-gpt-6.1-sol,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,7365,12659,,0.25521397642466365

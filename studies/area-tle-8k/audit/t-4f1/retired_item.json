@@ -1,0 +1,7 @@
+{
+  "item_id": "t-4f1-door-clearance",
+  "status": "retired",
+  "reason": "Audit confirmed the TLE threshold polygons do not represent the clear door opening; all audited door openings pass the 900 mm rule. The derived failure ground truth is a false-positive set.",
+  "audit": "audit.csv",
+  "review": "audit_review.md"
+}

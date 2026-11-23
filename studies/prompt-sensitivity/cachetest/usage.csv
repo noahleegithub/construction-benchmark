@@ -1,0 +1,5 @@
+model_id,item_id,family,runs,scored,completion,prompt_tokens,completion_tokens,total_tokens,cost_usd,score
+cachetest,t-6bb-building-footprint,building-footprint,6,5,0.8333333333333334,31799,7923,39722,,0.5876082470894721
+cachetest-a,t-6bb-building-footprint,building-footprint,1,1,1.0,5287,1284,6571,,0.588741474150708
+cachetest-b,t-6bb-building-footprint,building-footprint,1,1,1.0,5287,1284,6571,,0.588741474150708
+cachetest-c,t-6bb-building-footprint,building-footprint,1,1,1.0,5287,1284,6571,,0.588741474150708

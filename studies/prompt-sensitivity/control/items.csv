@@ -1,0 +1,31 @@
+item_id,family,sheet,page,question,convention,output_type,gt,notes
+t-43e-net-room-areas,net-room-areas,sheets/t-43e-net-room-areas.pdf,1,Trace the **net floor area of every room** on the plan.,"Every enclosed, named or numbered space counts as a room, including corridors, closets, and restrooms. Do not trace the building outline, wall assemblies, or areas outside the building.
+
+Return **one closed polygon per room**.
+
+- **Boundary** — run the ring along the **inside face of the walls enclosing the room**. Net area excludes wall thickness, so the ring must sit on the room side of each wall, not on its centerline.
+- **Shape fidelity** — follow the drawn edge. Do not replace an irregular region with its bounding
+  box, and do not merge two neighbouring regions into one polygon.
+- **Vertices** — put a vertex at every corner and every change of direction. Approximate a
+  curved edge with enough short segments that the polygon visibly follows the curve.
+- **Separate regions** — regions that do not touch are separate lines, each with its own `label`.
+- **Outer ring only** — trace the outside boundary. Do not emit inner rings for holes such as
+  columns, shafts, or islands; a hole is not a separate polygon either.
+- **Scoring** — each polygon is matched to the expert polygon it overlaps by
+  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,
+  or box-shaped will not match.",polygons,gt/t-43e-net-room-areas.json,TLE medium task; GT recovered from vendor page annotations (region); expected 8
+t-b9c-net-room-areas,net-room-areas,sheets/t-b9c-net-room-areas.pdf,1,Trace the **net floor area of every room** on the plan.,"Every enclosed, named or numbered space counts as a room, including corridors, closets, and restrooms. Do not trace the building outline, wall assemblies, or areas outside the building.
+
+Return **one closed polygon per room**.
+
+- **Boundary** — run the ring along the **inside face of the walls enclosing the room**. Net area excludes wall thickness, so the ring must sit on the room side of each wall, not on its centerline.
+- **Shape fidelity** — follow the drawn edge. Do not replace an irregular region with its bounding
+  box, and do not merge two neighbouring regions into one polygon.
+- **Vertices** — put a vertex at every corner and every change of direction. Approximate a
+  curved edge with enough short segments that the polygon visibly follows the curve.
+- **Separate regions** — regions that do not touch are separate lines, each with its own `label`.
+- **Outer ring only** — trace the outside boundary. Do not emit inner rings for holes such as
+  columns, shafts, or islands; a hole is not a separate polygon either.
+- **Scoring** — each polygon is matched to the expert polygon it overlaps by
+  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,
+  or box-shaped will not match.",polygons,gt/t-b9c-net-room-areas.json,TLE hard task; GT recovered from vendor page annotations (region); expected 88

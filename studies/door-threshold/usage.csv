@@ -1,0 +1,5 @@
+model_id,item_id,family,runs,scored,completion,prompt_tokens,completion_tokens,total_tokens,cost_usd,score
+gw-gpt-6-astra,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,11178,16472,,0.3524443207029977
+gw-gpt-6-luna,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,5590,10884,,0.007340893753084605
+gw-gpt-6-sol,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,5532,10826,,0.060177064161816445
+gw-gpt-6.1-sol,t-4f1-door-threshold-areas,door-threshold-areas,1,1,1.0,5294,8937,14231,,0.28127815827150504

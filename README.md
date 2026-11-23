@@ -5,8 +5,8 @@ A small, open harness for benchmarking models on construction drawing takeoff.
 It is built for a narrow question: given one sheet and one question, how close
 is the model's geometry, count, text, or quantity to a documented ground truth?
 Everything else is deliberately out of scope. There is no database and no web
-server; the workspace is a folder of CSV, JSON, and JSONL files that can be
-read, diffed, and committed.
+server; the workspace is a folder of CSV, JSON, and JSONL files. Text results
+are tracked; drawing PDFs, rendered images, and overlays stay local.
 
 ## Design
 
@@ -36,21 +36,33 @@ lives under its own directory in `studies/`:
 - `studies/ocg-decisions/` — single-OCG-layer usefulness decisions
 - `studies/page-decisions/` — synthetic multi-sheet page-relevance decisions
 - `studies/prompt-sensitivity/` — stopped prompt-variant gate study
+- `studies/archive/` — pilots, smoke tests, and run logs
 
-See `studies/README.md` for the index.
+See `studies/README.md` for the index and `docs/studies/` for the long-form
+writeups. Source PDFs and rendered images are local-only; result text is
+tracked.
+
+### What is tracked
+
+- `study/gt/`, `study/items.csv`, `study/models.yaml`, and notes: tracked
+- `study/sheets/`: local-only PDFs; not committed
+- `studies/`: tracked `README`, reports, CSV/JSONL results, and model YAML
+- `studies/*/images/`, `studies/*/overlays/`, caches, and logs: local-only
+- `data/`, archives, and label exports: ignored
+
+The decision-API studies (`ocg-decisions`, `page-decisions`) are result sets,
+not `takeoff-bench` scoring workspaces; they have no `items.csv`.
 
 ## Labeling tool
 
-`tools/labeling/` is a local-only browser tool for labeling relevant sheets in
-a multi-page PDF or relevant OCG layers in a layered PDF. It runs with vendored
-PDF.js and exports JSON/CSV:
+The sheet/layer labeler is a separate project:
 
-```bash
-python3 -m http.server 8765 --bind 0.0.0.0
-# open http://<host>:8765/tools/labeling/
-```
+- Source: https://github.com/noahleegithub/drawing-labeler-relevance
+- Project page: https://noahleegithub.github.io/drawing-labeler-relevance/
 
-See `tools/labeling/README.md`.
+It is a local-only browser tool: uploaded PDFs stay in the browser, labels
+export as JSON/CSV, and there is no upload endpoint. This repository no longer
+carries a second copy of the app.
 
 ## Install
 

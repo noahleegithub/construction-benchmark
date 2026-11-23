@@ -1,0 +1,16 @@
+item_id,family,sheet,page,question,convention,output_type,gt,notes
+t-6bb-building-footprint,building-footprint,sheets/t-6bb-building-footprint.pdf,1,Trace the **footprint of the building** on the plan.,"The footprint is the enclosed extent of the building as one region. Do not trace individual rooms, and do not include site paving, walks, driveways, or landscape outside the building. Trace a separate polygon only if the sheet clearly shows more than one detached building.
+
+Return **one closed polygon per building**.
+
+- **Boundary** — run the ring along the **outside face of the exterior walls**, following every jog and recess in the perimeter.
+- **Shape fidelity** — follow the drawn edge. Do not replace an irregular region with its bounding
+  box, and do not merge two neighbouring regions into one polygon.
+- **Vertices** — put a vertex at every corner and every change of direction. Approximate a
+  curved edge with enough short segments that the polygon visibly follows the curve.
+- **Separate regions** — regions that do not touch are separate lines, each with its own `label`.
+- **Outer ring only** — trace the outside boundary. Do not emit inner rings for holes such as
+  columns, shafts, or islands; a hole is not a separate polygon either.
+- **Scoring** — each polygon is matched to the expert polygon it overlaps by
+  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,
+  or box-shaped will not match.",polygons,gt/t-6bb-building-footprint.json,TLE easy task; GT recovered from vendor page annotations (largest_footprint); expected 1

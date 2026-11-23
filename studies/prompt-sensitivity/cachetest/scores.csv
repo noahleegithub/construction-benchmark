@@ -1,0 +1,10 @@
+run_id,item_id,family,model_id,repeat,prompt_variant,status,score,tle_miou,precision,recall,f1,count_ratio,tp,fp,fn,n_pred,n_gt,verdict_accuracy,measurement_accuracy,measure_error,evidence_rate,abstained,prompt_tokens,completion_tokens,total_tokens,cost_usd,error
+a80fdca78e37,t-6bb-building-footprint,building-footprint,cachetest,0,baseline,scored,0.588741474150708,0.588741474150708,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5287,1284,6571,,
+e60a8fe52da6,t-6bb-building-footprint,building-footprint,cachetest,1,baseline,scored,0.588741474150708,0.588741474150708,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5287,1284,6571,,
+c7b373aa4132,t-6bb-building-footprint,building-footprint,cachetest,2,baseline,scored,0.588741474150708,0.588741474150708,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5287,1284,6571,,
+f5a814d76fea,t-6bb-building-footprint,building-footprint,cachetest-a,0,baseline,scored,0.588741474150708,0.588741474150708,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5287,1284,6571,,
+95e9ecf1e2d0,t-6bb-building-footprint,building-footprint,cachetest-b,0,baseline,scored,0.588741474150708,0.588741474150708,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5287,1284,6571,,
+75bb546b8721,t-6bb-building-footprint,building-footprint,cachetest-c,0,baseline,scored,0.588741474150708,0.588741474150708,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5287,1284,6571,,
+5ce277c5baf1,t-6bb-building-footprint,building-footprint,cachetest,0,baseline,scored,0.5855357252401542,0.5855357252401542,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5311,1491,6802,,
+66f0ee993cd6,t-6bb-building-footprint,building-footprint,cachetest,1,baseline,parse_error,,,,,,,,,,,,,,,,,5314,1086,6400,,no JSON value found in response
+66dfd3fd5ee2,t-6bb-building-footprint,building-footprint,cachetest,2,baseline,scored,0.5862810877550826,0.5862810877550826,1.0,1.0,1.0,1.0,1,0,0,1,1,,,,,,5313,1494,6807,,

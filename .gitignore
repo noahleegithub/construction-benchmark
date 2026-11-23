@@ -1,14 +1,30 @@
+# Python / local environment
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
 .cache/
 .env
-runs.jsonl
-scores.csv
-report.md
-demo/
+.hermes/
+dist/
+
+# Inputs that must not be redistributed or committed
 data/
-study/
-studies/
+study/sheets/
+study/labeler-test/
+study/.cache/
+demo/
+
+# Result images, rendered caches, and logs are local artifacts
+studies/**/images/
+studies/**/overlays/
+studies/**/.cache/
+studies/**/sheets
+studies/**/*.png
+studies/**/*.pdf
+studies/**/*.log
 *.zip
+
+# Personal label exports
+*-labels.json
+*-labels.csv

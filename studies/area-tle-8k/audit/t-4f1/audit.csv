@@ -1,0 +1,67 @@
+sample_id,kind,source_index,width_in,width_mm,verdict,borderline,x0,y0,x1,y1,crop_file,audit_width_mm,audit_verdict,audit_notes
+F01,fail,7,35.00,889.0,fail,yes,0.612351,0.295110,0.621032,0.297193,crops/F01.png,900,pass,door stop is inside polygon
+F02,fail,8,35.00,888.9,fail,yes,0.295635,0.295110,0.304315,0.297193,crops/F02.png,900,pass,door stop is inside polygon
+F03,fail,11,35.00,889.0,fail,yes,0.675595,0.296846,0.684276,0.299276,crops/F03.png,900,pass,door stop is inside polygon
+F04,fail,12,35.00,888.9,fail,yes,0.354167,0.301012,0.362847,0.303443,crops/F04.png,900,pass,door stop is inside polygon
+F05,fail,13,35.00,888.9,fail,yes,0.479167,0.301359,0.487847,0.303443,crops/F05.png,900,pass,door stop is inside polygon
+F06,fail,14,35.00,888.9,fail,yes,0.494792,0.301359,0.503472,0.303443,crops/F06.png,900,pass,door stop is inside polygon
+F07,fail,15,35.00,889.0,fail,yes,0.553819,0.301359,0.562500,0.303443,crops/F07.png,900,pass,door stop is inside polygon
+F08,fail,16,35.00,889.0,fail,yes,0.569444,0.301359,0.578125,0.303443,crops/F08.png,900,pass,door stop is inside polygon
+F09,fail,18,35.00,888.9,fail,yes,0.415923,0.303095,0.424603,0.305179,crops/F09.png,900,pass,door stop is inside polygon
+F10,fail,19,35.00,888.9,fail,yes,0.305804,0.298582,0.307292,0.310734,crops/F10.png,900,pass,door stop is inside polygon
+F11,fail,20,35.00,888.9,fail,yes,0.609375,0.298582,0.610863,0.310734,crops/F11.png,900,pass,door stop is inside polygon
+F12,fail,23,35.00,888.9,fail,yes,0.563988,0.304831,0.565476,0.316983,crops/F12.png,900,pass,door stop is inside polygon
+F13,fail,24,35.00,888.9,fail,yes,0.351190,0.304831,0.352679,0.316983,crops/F13.png,900,pass,door stop is inside polygon
+F14,fail,25,35.00,888.9,fail,yes,0.489335,0.304831,0.491071,0.316983,crops/F14.png,900,pass,door stop is inside polygon
+F15,fail,26,34.99,888.9,fail,yes,0.660218,0.307609,0.662202,0.319760,crops/F15.png,900,pass,door stop is inside polygon
+F16,fail,27,34.99,888.9,fail,yes,0.254216,0.307609,0.256200,0.319760,crops/F16.png,900,pass,door stop is inside polygon
+F17,fail,28,35.00,888.9,fail,yes,0.437996,0.314205,0.439980,0.326357,crops/F17.png,900,pass,door stop is inside polygon
+F18,fail,29,30.00,762.0,fail,no,0.311012,0.343716,0.318452,0.346147,crops/F18.png,900,pass,polygon has clear gap and does not completely cover opening
+F19,fail,35,35.00,889.0,fail,yes,0.569444,0.349966,0.578125,0.352049,crops/F19.png,900,pass,door stop is inside polygon
+F20,fail,48,34.99,888.9,fail,yes,0.358879,0.370103,0.360615,0.382254,crops/F20.png,900,pass,door stop is inside polygon
+F21,fail,49,34.99,888.9,fail,yes,0.481151,0.370103,0.483135,0.382254,crops/F21.png,900,pass,door stop is inside polygon
+F22,fail,50,34.99,888.9,fail,yes,0.555804,0.370103,0.557788,0.382254,crops/F22.png,900,pass,door stop is inside polygon
+F23,fail,59,34.99,888.9,fail,yes,0.555804,0.417668,0.557788,0.429819,crops/F23.png,900,pass,door stop is inside polygon
+F24,fail,60,34.00,863.5,fail,no,0.358879,0.418015,0.360863,0.429819,crops/F24.png,900,pass,polygon matches other doors but width is shorter for unknown reason
+F25,fail,62,35.00,888.9,fail,yes,0.297619,0.423917,0.299355,0.436069,crops/F25.png,900,pass,door stop is inside polygon
+F26,fail,72,35.00,889.0,fail,yes,0.596726,0.453428,0.605407,0.456205,crops/F26.png,900,pass,door stop is inside polygon
+F27,fail,73,34.00,863.5,fail,no,0.311012,0.453428,0.319444,0.456205,crops/F27.png,900,pass,polygon is slightly too short and does not cover whole opening
+F28,fail,77,35.00,889.0,fail,yes,0.662946,0.471482,0.671627,0.473912,crops/F28.png,900,pass,door stop is inside polygon
+F29,fail,78,34.99,888.9,fail,yes,0.437996,0.473565,0.439980,0.485716,crops/F29.png,900,pass,door stop is inside polygon
+F30,fail,79,35.00,888.9,fail,yes,0.254216,0.479814,0.256200,0.491966,crops/F30.png,900,pass,door stop is inside polygon
+F31,fail,81,35.00,888.9,fail,yes,0.563988,0.482939,0.565476,0.495091,crops/F31.png,900,pass,door stop is inside polygon
+F32,fail,82,35.00,888.9,fail,yes,0.350942,0.482939,0.352679,0.495091,crops/F32.png,900,pass,door stop is inside polygon
+F33,fail,83,34.99,888.9,fail,yes,0.672371,0.484328,0.674107,0.496479,crops/F33.png,900,pass,door stop is inside polygon
+F34,fail,84,35.00,888.9,fail,yes,0.415923,0.494743,0.424603,0.496826,crops/F34.png,900,pass,door stop is inside polygon
+F35,fail,85,35.00,889.0,fail,yes,0.553819,0.496479,0.562500,0.498562,crops/F35.png,900,pass,door stop is inside polygon
+F36,fail,86,35.00,888.9,fail,yes,0.354167,0.496479,0.362847,0.498562,crops/F36.png,900,pass,door stop is inside polygon
+F37,fail,88,35.00,888.9,fail,yes,0.479167,0.496479,0.487847,0.498562,crops/F37.png,900,pass,door stop is inside polygon
+F38,fail,89,35.00,889.0,fail,yes,0.569444,0.496479,0.578125,0.498562,crops/F38.png,900,pass,door stop is inside polygon
+F39,fail,91,35.00,888.9,fail,yes,0.305804,0.488841,0.307292,0.500993,crops/F39.png,900,pass,door stop is inside polygon
+F40,fail,92,35.00,888.9,fail,yes,0.621528,0.489188,0.623016,0.501340,crops/F40.png,900,pass,door stop is inside polygon
+F41,fail,93,35.00,888.9,fail,yes,0.232391,0.500993,0.241071,0.503076,crops/F41.png,900,pass,door stop is inside polygon
+F42,fail,94,35.00,888.9,fail,yes,0.295635,0.502729,0.304315,0.504812,crops/F42.png,900,pass,door stop is inside polygon
+F43,fail,95,35.00,888.9,fail,yes,0.311260,0.502729,0.319940,0.504812,crops/F43.png,900,pass,door stop is inside polygon
+F44,fail,96,35.00,889.0,fail,yes,0.598214,0.502729,0.606895,0.504812,crops/F44.png,900,pass,door stop is inside polygon
+F45,fail,97,25.99,660.3,fail,no,0.672619,0.500646,0.674107,0.509672,crops/F45.png,660.3,fail,door is a smaller closet door and should not be included
+F46,fail,98,34.00,863.6,fail,no,0.662946,0.511061,0.671379,0.513144,crops/F46.png,900,pass,polygon matches other doors but width is shorter for unknown reason
+P01,pass,1,38.00,965.1,pass,no,0.275050,0.257614,0.284474,0.260391,crops/P01.png,965.1,pass,no note
+P02,pass,99,50.00,1270.0,pass,no,0.678571,0.520782,0.690972,0.523213,crops/P02.png,1270.0,pass,this is a double closet door
+P03,pass,100,37.00,939.8,pass,no,0.374008,0.532934,0.383185,0.535712,crops/P03.png,939.8,pass,no note
+P04,pass,2,37.00,939.8,pass,no,0.632192,0.257614,0.641369,0.260738,crops/P04.png,939.8,pass,no note
+P05,pass,42,61.99,1574.7,pass,no,0.481399,0.343716,0.483135,0.365242,crops/P05.png,1574.7,pass,this is a double closet door for washer and dryer
+P06,pass,68,36.00,914.3,pass,yes,0.232143,0.453081,0.241071,0.455511,crops/P06.png,914.3,pass,no note
+P07,pass,101,37.00,939.8,pass,no,0.533482,0.532934,0.542659,0.535712,crops/P07.png,939.8,pass,no note
+P08,pass,43,61.99,1574.7,pass,no,0.358879,0.343716,0.360615,0.365242,crops/P08.png,1574.7,pass,this is a double closet door for washer and dryer
+P09,pass,47,36.00,914.3,pass,yes,0.621032,0.376699,0.629960,0.379824,crops/P09.png,914.3,pass,no note
+P10,pass,33,71.99,1828.6,pass,no,0.202877,0.321844,0.205109,0.346841,crops/P10.png,1828.6,pass,this is a double closet door
+P11,pass,4,38.00,965.2,pass,no,0.533234,0.263863,0.542659,0.266641,crops/P11.png,965.2,pass,no note
+P12,pass,32,72.99,1854.0,pass,no,0.711558,0.321496,0.713542,0.346841,crops/P12.png,1854.0,pass,this is a double closet door and should be the same width as P10
+P13,pass,103,38.00,965.1,pass,no,0.275050,0.539183,0.284474,0.541961,crops/P13.png,965.1,pass,no note
+P14,pass,64,36.00,914.3,pass,yes,0.415923,0.446831,0.424851,0.449262,crops/P14.png,914.3,pass,no note
+P15,pass,69,60.99,1549.2,pass,no,0.556052,0.434680,0.557540,0.455858,crops/P15.png,1549.2,pass,this is a double closet door for washer and dryer should be the same as P05 and P08
+P16,pass,5,38.00,965.2,pass,no,0.373760,0.263863,0.383185,0.266988,crops/P16.png,965.2,pass,no note
+P17,pass,67,36.00,914.3,pass,yes,0.338294,0.447526,0.347222,0.449956,crops/P17.png,914.3,pass,no note
+P18,pass,102,38.00,965.2,pass,no,0.458581,0.533281,0.468006,0.535712,crops/P18.png,965.2,pass,no note
+P19,pass,3,37.00,939.8,pass,no,0.458829,0.263863,0.468006,0.266641,crops/P19.png,939.8,pass,no note
+P20,pass,41,61.99,1574.7,pass,no,0.556052,0.343716,0.557788,0.365242,crops/P20.png,1574.7,pass,this is a double closet door for washer and dryer

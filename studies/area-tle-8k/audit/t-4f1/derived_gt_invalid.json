@@ -1,0 +1,699 @@
+{
+  "type": "compliance",
+  "criteria": {
+    "clear_width_mm": 900.0,
+    "measure_tolerance_mm": 50.0
+  },
+  "instances": [
+    {
+      "id": "t-4f1-fail-001",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.612351,
+          0.29511,
+          0.621032,
+          0.297193
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-002",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.295635,
+          0.29511,
+          0.304315,
+          0.297193
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-003",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.675595,
+          0.296846,
+          0.684276,
+          0.299276
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-004",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.354167,
+          0.301012,
+          0.362847,
+          0.303443
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-005",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.479167,
+          0.301359,
+          0.487847,
+          0.303443
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-006",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.494792,
+          0.301359,
+          0.503472,
+          0.303443
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-007",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.553819,
+          0.301359,
+          0.5625,
+          0.303443
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-008",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.569444,
+          0.301359,
+          0.578125,
+          0.303443
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-009",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.415923,
+          0.303095,
+          0.424603,
+          0.305179
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-010",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.305804,
+          0.298582,
+          0.307292,
+          0.310734
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-011",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.609375,
+          0.298582,
+          0.610863,
+          0.310734
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-012",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.563988,
+          0.304831,
+          0.565476,
+          0.316983
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-013",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.35119,
+          0.304831,
+          0.352679,
+          0.316983
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-014",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.489335,
+          0.304831,
+          0.491071,
+          0.316983
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-015",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.660218,
+          0.307609,
+          0.662202,
+          0.31976
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-016",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.254216,
+          0.307609,
+          0.2562,
+          0.31976
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-017",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.437996,
+          0.314205,
+          0.43998,
+          0.326357
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-018",
+      "measure": 762.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.311012,
+          0.343716,
+          0.318452,
+          0.346147
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-019",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.569444,
+          0.349966,
+          0.578125,
+          0.352049
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-020",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.358879,
+          0.370103,
+          0.360615,
+          0.382254
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-021",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.481151,
+          0.370103,
+          0.483135,
+          0.382254
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-022",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.555804,
+          0.370103,
+          0.557788,
+          0.382254
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-023",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.555804,
+          0.417668,
+          0.557788,
+          0.429819
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-024",
+      "measure": 863.5,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.358879,
+          0.418015,
+          0.360863,
+          0.429819
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-025",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.297619,
+          0.423917,
+          0.299355,
+          0.436069
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-026",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.596726,
+          0.453428,
+          0.605407,
+          0.456205
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-027",
+      "measure": 863.5,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.311012,
+          0.453428,
+          0.319444,
+          0.456205
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-028",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.662946,
+          0.471482,
+          0.671627,
+          0.473912
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-029",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.437996,
+          0.473565,
+          0.43998,
+          0.485716
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-030",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.254216,
+          0.479814,
+          0.2562,
+          0.491966
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-031",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.563988,
+          0.482939,
+          0.565476,
+          0.495091
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-032",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.350942,
+          0.482939,
+          0.352679,
+          0.495091
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-033",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.672371,
+          0.484328,
+          0.674107,
+          0.496479
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-034",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.415923,
+          0.494743,
+          0.424603,
+          0.496826
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-035",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.553819,
+          0.496479,
+          0.5625,
+          0.498562
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-036",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.354167,
+          0.496479,
+          0.362847,
+          0.498562
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-037",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.479167,
+          0.496479,
+          0.487847,
+          0.498562
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-038",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.569444,
+          0.496479,
+          0.578125,
+          0.498562
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-039",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.305804,
+          0.488841,
+          0.307292,
+          0.500993
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-040",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.621528,
+          0.489188,
+          0.623016,
+          0.50134
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-041",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.232391,
+          0.500993,
+          0.241071,
+          0.503076
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-042",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.295635,
+          0.502729,
+          0.304315,
+          0.504812
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-043",
+      "measure": 888.9,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.31126,
+          0.502729,
+          0.31994,
+          0.504812
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-044",
+      "measure": 889.0,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.598214,
+          0.502729,
+          0.606895,
+          0.504812
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-045",
+      "measure": 660.3,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.672619,
+          0.500646,
+          0.674107,
+          0.509672
+        ]
+      }
+    },
+    {
+      "id": "t-4f1-fail-046",
+      "measure": 863.6,
+      "unit": "mm",
+      "verdict": "fail",
+      "evidence": {
+        "sheet": "A1-13A",
+        "region": [
+          0.662946,
+          0.511061,
+          0.671379,
+          0.513144
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+item_id,family,sheet,page,question,convention,output_type,gt,notes
+t-4f1-door-threshold-areas,door-threshold-areas,sheets/t-4f1-door-threshold-areas.pdf,1,Trace the **threshold area of every door** on the plan — the patch of floor inside the door opening itself.,"Every door opening in the plan counts, including doors in interior partitions and exterior doors. Do not trace the door leaf, its swing arc, the rooms on either side, or openings with no door.
+
+Return **one closed polygon per door opening**.
+
+- **Boundary** — run the ring across the **opening between the two jambs**, spanning the full wall thickness, so the polygon is a small rectangle sitting inside the wall.
+- **Shape fidelity** — follow the drawn edge. Do not replace an irregular region with its bounding
+  box, and do not merge two neighbouring regions into one polygon.
+- **Vertices** — put a vertex at every corner and every change of direction. Approximate a
+  curved edge with enough short segments that the polygon visibly follows the curve.
+- **Separate regions** — regions that do not touch are separate lines, each with its own `label`.
+- **Outer ring only** — trace the outside boundary. Do not emit inner rings for holes such as
+  columns, shafts, or islands; a hole is not a separate polygon either.
+- **Scoring** — each polygon is matched to the expert polygon it overlaps by
+  intersection-over-union, so a boundary that is roughly the right shape but offset, oversized,
+  or box-shaped will not match.",polygons,gt/t-4f1-door-threshold-areas.json,TLE hard task; GT recovered from vendor page annotations (door_polygon); expected 104

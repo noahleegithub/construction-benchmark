@@ -1,0 +1,1083 @@
+{
+ "type": "segments",
+ "segments": [
+  {
+   "id": "t-wall-centerline-ocala-0001",
+   "label": "Demising",
+   "points": [
+    [
+     0.511905,
+     0.279139
+    ],
+    [
+     0.511905,
+     0.387462
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0002",
+   "label": "Demising",
+   "points": [
+    [
+     0.511905,
+     0.387462
+    ],
+    [
+     0.514881,
+     0.387462
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0003",
+   "label": "Demising",
+   "points": [
+    [
+     0.514881,
+     0.387462
+    ],
+    [
+     0.515377,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0004",
+   "label": "Exterior",
+   "points": [
+    [
+     0.511905,
+     0.279139
+    ],
+    [
+     0.553571,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0005",
+   "label": "Exterior",
+   "points": [
+    [
+     0.553571,
+     0.116655
+    ],
+    [
+     0.553571,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0006",
+   "label": "Exterior",
+   "points": [
+    [
+     0.553571,
+     0.116655
+    ],
+    [
+     0.670139,
+     0.116655
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0007",
+   "label": "Exterior",
+   "points": [
+    [
+     0.214286,
+     0.279139
+    ],
+    [
+     0.214286,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0008",
+   "label": "Exterior",
+   "points": [
+    [
+     0.214286,
+     0.829086
+    ],
+    [
+     0.274306,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0009",
+   "label": "Exterior",
+   "points": [
+    [
+     0.273739,
+     0.845751
+    ],
+    [
+     0.274306,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0010",
+   "label": "Demising",
+   "points": [
+    [
+     0.274306,
+     0.692294
+    ],
+    [
+     0.274306,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0011",
+   "label": "Exterior",
+   "points": [
+    [
+     0.599702,
+     0.093046
+    ],
+    [
+     0.599702,
+     0.12221
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0012",
+   "label": "Shaft",
+   "points": [
+    [
+     0.599702,
+     0.12221
+    ],
+    [
+     0.624008,
+     0.122905
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0013",
+   "label": "Exterior",
+   "points": [
+    [
+     0.624008,
+     0.093046
+    ],
+    [
+     0.624008,
+     0.122905
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0014",
+   "label": "Exterior",
+   "points": [
+    [
+     0.670139,
+     0.116655
+    ],
+    [
+     0.670139,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0015",
+   "label": "Exterior",
+   "points": [
+    [
+     0.670139,
+     0.279139
+    ],
+    [
+     0.6875,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0016",
+   "label": "Demising",
+   "points": [
+    [
+     0.372024,
+     0.465927
+    ],
+    [
+     0.390414,
+     0.465927
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0017",
+   "label": "Demising",
+   "points": [
+    [
+     0.389918,
+     0.521477
+    ],
+    [
+     0.390414,
+     0.465927
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0018",
+   "label": "Demising",
+   "points": [
+    [
+     0.371558,
+     0.405516
+    ],
+    [
+     0.372054,
+     0.474259
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0019",
+   "label": "Demising",
+   "points": [
+    [
+     0.390377,
+     0.279139
+    ],
+    [
+     0.390377,
+     0.405516
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0020",
+   "label": "Demising",
+   "points": [
+    [
+     0.371558,
+     0.405516
+    ],
+    [
+     0.390377,
+     0.405516
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0021",
+   "label": "Corridor",
+   "points": [
+    [
+     0.214286,
+     0.557584
+    ],
+    [
+     0.390377,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0022",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.320437,
+     0.474259
+    ],
+    [
+     0.320437,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0023",
+   "label": "Interior",
+   "points": [
+    [
+     0.320437,
+     0.521477
+    ],
+    [
+     0.389918,
+     0.521477
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0024",
+   "label": "Demising",
+   "points": [
+    [
+     0.214286,
+     0.474259
+    ],
+    [
+     0.390377,
+     0.474259
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0025",
+   "label": "Demising",
+   "points": [
+    [
+     0.265873,
+     0.474259
+    ],
+    [
+     0.265873,
+     0.505506
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0026",
+   "label": "Exterior",
+   "points": [
+    [
+     0.194444,
+     0.495785
+    ],
+    [
+     0.214286,
+     0.495785
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0027",
+   "label": "Corridor",
+   "points": [
+    [
+     0.390041,
+     0.521475
+    ],
+    [
+     0.390537,
+     0.62355
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0028",
+   "label": "Shaft",
+   "points": [
+    [
+     0.30506,
+     0.64577
+    ],
+    [
+     0.30506,
+     0.692294
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0029",
+   "label": "Demising",
+   "points": [
+    [
+     0.28621,
+     0.474259
+    ],
+    [
+     0.28621,
+     0.505506
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0030",
+   "label": "Exterior",
+   "points": [
+    [
+     0.214286,
+     0.279139
+    ],
+    [
+     0.232143,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0031",
+   "label": "Exterior",
+   "points": [
+    [
+     0.232143,
+     0.116655
+    ],
+    [
+     0.232143,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0032",
+   "label": "Exterior",
+   "points": [
+    [
+     0.232143,
+     0.116655
+    ],
+    [
+     0.37252,
+     0.116655
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0033",
+   "label": "Exterior",
+   "points": [
+    [
+     0.37252,
+     0.116655
+    ],
+    [
+     0.37252,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0034",
+   "label": "Exterior",
+   "points": [
+    [
+     0.37252,
+     0.279139
+    ],
+    [
+     0.390377,
+     0.279139
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0035",
+   "label": "Demising",
+   "points": [
+    [
+     0.214286,
+     0.692175
+    ],
+    [
+     0.389882,
+     0.692869
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0036",
+   "label": "Corridor",
+   "points": [
+    [
+     0.214286,
+     0.603413
+    ],
+    [
+     0.34127,
+     0.603413
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0037",
+   "label": "Demising",
+   "points": [
+    [
+     0.34127,
+     0.603413
+    ],
+    [
+     0.34127,
+     0.692988
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0038",
+   "label": "Exterior",
+   "points": [
+    [
+     0.390377,
+     0.329135
+    ],
+    [
+     0.511905,
+     0.329135
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0039",
+   "label": "Exterior",
+   "points": [
+    [
+     0.194444,
+     0.541614
+    ],
+    [
+     0.214286,
+     0.541614
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0040",
+   "label": "Corridor",
+   "points": [
+    [
+     0.34127,
+     0.62355
+    ],
+    [
+     0.390537,
+     0.62355
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0041",
+   "label": "Demising",
+   "points": [
+    [
+     0.389882,
+     0.692869
+    ],
+    [
+     0.390377,
+     0.62355
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0042",
+   "label": "Demising",
+   "points": [
+    [
+     0.511905,
+     0.502729
+    ],
+    [
+     0.679563,
+     0.502729
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0043",
+   "label": "Exterior",
+   "points": [
+    [
+     0.679563,
+     0.502729
+    ],
+    [
+     0.687458,
+     0.503518
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0044",
+   "label": "Shaft",
+   "points": [
+    [
+     0.679563,
+     0.477731
+    ],
+    [
+     0.679563,
+     0.502729
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0045",
+   "label": "Exterior",
+   "points": [
+    [
+     0.679563,
+     0.477731
+    ],
+    [
+     0.6875,
+     0.477731
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0046",
+   "label": "Exterior",
+   "points": [
+    [
+     0.592262,
+     0.829086
+    ],
+    [
+     0.592262,
+     0.845751
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0047",
+   "label": "Exterior",
+   "points": [
+    [
+     0.592262,
+     0.829086
+    ],
+    [
+     0.6875,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0048",
+   "label": "Demising",
+   "points": [
+    [
+     0.498512,
+     0.617995
+    ],
+    [
+     0.498512,
+     0.620773
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0049",
+   "label": "Demising",
+   "points": [
+    [
+     0.498512,
+     0.617995
+    ],
+    [
+     0.511905,
+     0.617995
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0050",
+   "label": "Exterior",
+   "points": [
+    [
+     0.390377,
+     0.804088
+    ],
+    [
+     0.390377,
+     0.826308
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0051",
+   "label": "Exterior",
+   "points": [
+    [
+     0.390377,
+     0.804088
+    ],
+    [
+     0.511905,
+     0.804783
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0052",
+   "label": "Demising",
+   "points": [
+    [
+     0.511905,
+     0.464538
+    ],
+    [
+     0.511905,
+     0.826308
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0053",
+   "label": "Demising",
+   "points": [
+    [
+     0.594866,
+     0.559668
+    ],
+    [
+     0.688039,
+     0.559668
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0054",
+   "label": "Interior",
+   "points": [
+    [
+     0.646825,
+     0.502729
+    ],
+    [
+     0.646825,
+     0.559668
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0055",
+   "label": "Kitchen",
+   "points": [
+    [
+     0.59437,
+     0.502727
+    ],
+    [
+     0.594866,
+     0.559668
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0056",
+   "label": "Demising",
+   "points": [
+    [
+     0.511905,
+     0.636743
+    ],
+    [
+     0.527282,
+     0.636743
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0057",
+   "label": "Demising",
+   "points": [
+    [
+     0.566468,
+     0.476342
+    ],
+    [
+     0.566964,
+     0.502729
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0058",
+   "label": "Demising",
+   "points": [
+    [
+     0.618552,
+     0.64577
+    ],
+    [
+     0.618552,
+     0.672157
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0059",
+   "label": "Kitchen",
+   "points": [
+    [
+     0.551091,
+     0.502729
+    ],
+    [
+     0.551091,
+     0.531198
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0060",
+   "label": "Kitchen",
+   "points": [
+    [
+     0.551091,
+     0.531198
+    ],
+    [
+     0.594742,
+     0.531198
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0061",
+   "label": "Demising",
+   "points": [
+    [
+     0.656746,
+     0.476342
+    ],
+    [
+     0.656746,
+     0.502729
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0062",
+   "label": "Demising",
+   "points": [
+    [
+     0.605655,
+     0.672157
+    ],
+    [
+     0.605655,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0063",
+   "label": "Demising",
+   "points": [
+    [
+     0.605655,
+     0.750621
+    ],
+    [
+     0.687465,
+     0.750621
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0064",
+   "label": "Demising",
+   "points": [
+    [
+     0.511905,
+     0.672157
+    ],
+    [
+     0.687996,
+     0.672157
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0065",
+   "label": "Demising",
+   "points": [
+    [
+     0.498512,
+     0.529115
+    ],
+    [
+     0.511905,
+     0.529809
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0066",
+   "label": "Demising",
+   "points": [
+    [
+     0.498512,
+     0.529115
+    ],
+    [
+     0.498512,
+     0.532587
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0067",
+   "label": "Demising",
+   "points": [
+    [
+     0.498512,
+     0.532587
+    ],
+    [
+     0.511905,
+     0.532587
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0068",
+   "label": "Demising",
+   "points": [
+    [
+     0.594742,
+     0.559668
+    ],
+    [
+     0.594742,
+     0.672157
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0069",
+   "label": "Exterior",
+   "points": [
+    [
+     0.389881,
+     0.831169
+    ],
+    [
+     0.390377,
+     0.845751
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0070",
+   "label": "Exterior",
+   "points": [
+    [
+     0.273739,
+     0.845751
+    ],
+    [
+     0.390377,
+     0.845751
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0071",
+   "label": "Exterior",
+   "points": [
+    [
+     0.511409,
+     0.831169
+    ],
+    [
+     0.511409,
+     0.845751
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0072",
+   "label": "Exterior",
+   "points": [
+    [
+     0.511409,
+     0.845751
+    ],
+    [
+     0.592262,
+     0.845751
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0073",
+   "label": "Exterior",
+   "points": [
+    [
+     0.6875,
+     0.755482
+    ],
+    [
+     0.6875,
+     0.829086
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0074",
+   "label": "Exterior",
+   "points": [
+    [
+     0.6875,
+     0.279139
+    ],
+    [
+     0.6875,
+     0.477731
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0075",
+   "label": "Exterior",
+   "points": [
+    [
+     0.687458,
+     0.503518
+    ],
+    [
+     0.688039,
+     0.559668
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0076",
+   "label": "Exterior",
+   "points": [
+    [
+     0.687465,
+     0.750621
+    ],
+    [
+     0.687996,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-ocala-0077",
+   "label": "Exterior",
+   "points": [
+    [
+     0.687996,
+     0.563834
+    ],
+    [
+     0.687996,
+     0.672157
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+model_id,item_id,family,runs,scored,completion,prompt_tokens,completion_tokens,total_tokens,cost_usd,score
+gw-gpt-5.6-luna,t-280-net-room-areas,net-room-areas,5,5,1.0,24690,21205,45895,,0.08118362979865693
+gw-gpt-5.6-luna,t-6bb-building-footprint,building-footprint,5,5,1.0,26435,14540,40975,,0.6069456187189196
+gw-gpt-5.6-luna,t-b9c-net-room-areas,net-room-areas,5,5,1.0,26455,15590,42045,,0.09633635649823483
+gw-gpt-5.6-sol,t-280-net-room-areas,net-room-areas,5,5,1.0,24690,21455,46145,,0.07091366053704903
+gw-gpt-5.6-sol,t-6bb-building-footprint,building-footprint,5,5,1.0,26435,16645,43080,,0.5976119039941243
+gw-gpt-5.6-sol,t-b9c-net-room-areas,net-room-areas,5,5,1.0,26455,21245,47700,,0.1285449730148111
+gw-gpt-6.1-sol,t-280-net-room-areas,net-room-areas,5,5,1.0,24690,42405,67095,,0.1372595087862436
+gw-gpt-6.1-sol,t-6bb-building-footprint,building-footprint,5,5,1.0,26435,9110,35545,,0.585828648961768
+gw-gpt-6.1-sol,t-b9c-net-room-areas,net-room-areas,5,5,1.0,26455,52535,78990,,0.7424810910278197

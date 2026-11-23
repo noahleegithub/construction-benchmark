@@ -1,0 +1,5 @@
+models:
+  - id: oracle
+    provider: oracle
+  - id: stub
+    provider: stub

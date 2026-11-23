@@ -1,0 +1,1489 @@
+{
+ "type": "segments",
+ "segments": [
+  {
+   "id": "t-wall-centerline-page-10-0001",
+   "label": "Demising",
+   "points": [
+    [
+     0.309896,
+     0.486741
+    ],
+    [
+     0.409722,
+     0.486741
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0002",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309608,
+     0.424839
+    ],
+    [
+     0.310045,
+     0.620118
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0003",
+   "label": "Demising",
+   "points": [
+    [
+     0.309461,
+     0.42608
+    ],
+    [
+     0.380208,
+     0.42543
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0004",
+   "label": "Demising",
+   "points": [
+    [
+     0.348958,
+     0.425573
+    ],
+    [
+     0.348958,
+     0.486741
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0005",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309896,
+     0.62014
+    ],
+    [
+     0.309896,
+     0.760696
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0006",
+   "label": "Exterior",
+   "points": [
+    [
+     0.310045,
+     0.620118
+    ],
+    [
+     0.314236,
+     0.619489
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0007",
+   "label": "Exterior",
+   "points": [
+    [
+     0.300781,
+     0.760696
+    ],
+    [
+     0.309896,
+     0.760696
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0008",
+   "label": "Exterior",
+   "points": [
+    [
+     0.300781,
+     0.760696
+    ],
+    [
+     0.300781,
+     0.826419
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0009",
+   "label": "Exterior",
+   "points": [
+    [
+     0.300781,
+     0.826419
+    ],
+    [
+     0.309896,
+     0.82707
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0010",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309896,
+     0.760696
+    ],
+    [
+     0.316406,
+     0.760046
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0011",
+   "label": "Shaft",
+   "points": [
+    [
+     0.316406,
+     0.760046
+    ],
+    [
+     0.316406,
+     0.826419
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0012",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309896,
+     0.82707
+    ],
+    [
+     0.316406,
+     0.826419
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0013",
+   "label": "Corridor",
+   "points": [
+    [
+     0.314236,
+     0.619489
+    ],
+    [
+     0.410082,
+     0.619489
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0014",
+   "label": "Corridor",
+   "points": [
+    [
+     0.409648,
+     0.417765
+    ],
+    [
+     0.410082,
+     0.619489
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0015",
+   "label": "Exterior",
+   "points": [
+    [
+     0.314236,
+     0.619489
+    ],
+    [
+     0.314236,
+     0.710591
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0016",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309896,
+     0.823166
+    ],
+    [
+     0.309896,
+     0.879128
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0017",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309896,
+     0.879128
+    ],
+    [
+     0.435465,
+     0.879128
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0018",
+   "label": "Exterior",
+   "points": [
+    [
+     0.435032,
+     0.837482
+    ],
+    [
+     0.435465,
+     0.879128
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0019",
+   "label": "Exterior",
+   "points": [
+    [
+     0.300781,
+     0.823166
+    ],
+    [
+     0.309896,
+     0.823166
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0020",
+   "label": "Exterior",
+   "points": [
+    [
+     0.302951,
+     0.76395
+    ],
+    [
+     0.303411,
+     0.826607
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0021",
+   "label": "Exterior",
+   "points": [
+    [
+     0.302951,
+     0.76395
+    ],
+    [
+     0.314236,
+     0.76395
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0022",
+   "label": "Shaft",
+   "points": [
+    [
+     0.314236,
+     0.76395
+    ],
+    [
+     0.314236,
+     0.822515
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0023",
+   "label": "Exterior",
+   "points": [
+    [
+     0.309896,
+     0.823166
+    ],
+    [
+     0.314236,
+     0.822515
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0024",
+   "label": "Corridor",
+   "points": [
+    [
+     0.435032,
+     0.837482
+    ],
+    [
+     0.444878,
+     0.837482
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0025",
+   "label": "Exterior",
+   "points": [
+    [
+     0.444878,
+     0.837482
+    ],
+    [
+     0.444878,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0026",
+   "label": "Exterior",
+   "points": [
+    [
+     0.43533,
+     0.853099
+    ],
+    [
+     0.444878,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0027",
+   "label": "Corridor",
+   "points": [
+    [
+     0.380208,
+     0.417765
+    ],
+    [
+     0.409648,
+     0.417765
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0028",
+   "label": "Exterior",
+   "points": [
+    [
+     0.34375,
+     0.061819
+    ],
+    [
+     0.34375,
+     0.171791
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0029",
+   "label": "Exterior",
+   "points": [
+    [
+     0.335938,
+     0.171791
+    ],
+    [
+     0.34375,
+     0.171791
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0030",
+   "label": "Demising",
+   "points": [
+    [
+     0.335938,
+     0.171791
+    ],
+    [
+     0.335938,
+     0.347957
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0031",
+   "label": "Corridor",
+   "points": [
+    [
+     0.335938,
+     0.347957
+    ],
+    [
+     0.435499,
+     0.347305
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0032",
+   "label": "Corridor",
+   "points": [
+    [
+     0.380208,
+     0.347487
+    ],
+    [
+     0.380208,
+     0.486741
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0033",
+   "label": "Exterior",
+   "points": [
+    [
+     0.458767,
+     0.061819
+    ],
+    [
+     0.458767,
+     0.171791
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0034",
+   "label": "Exterior",
+   "points": [
+    [
+     0.458767,
+     0.171791
+    ],
+    [
+     0.469184,
+     0.171791
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0035",
+   "label": "Exterior",
+   "points": [
+    [
+     0.469184,
+     0.171791
+    ],
+    [
+     0.469184,
+     0.348137
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0036",
+   "label": "Exterior",
+   "points": [
+    [
+     0.43533,
+     0.347487
+    ],
+    [
+     0.469184,
+     0.348137
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0037",
+   "label": "Exterior",
+   "points": [
+    [
+     0.435064,
+     0.437939
+    ],
+    [
+     0.435499,
+     0.347305
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0038",
+   "label": "Exterior",
+   "points": [
+    [
+     0.43533,
+     0.417765
+    ],
+    [
+     0.500434,
+     0.417765
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0039",
+   "label": "Exterior",
+   "points": [
+    [
+     0.500434,
+     0.417765
+    ],
+    [
+     0.500434,
+     0.664389
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0040",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.475028
+    ],
+    [
+     0.434896,
+     0.495201
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0041",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.495201
+    ],
+    [
+     0.500434,
+     0.495201
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0042",
+   "label": "Corridor",
+   "points": [
+    [
+     0.459635,
+     0.495201
+    ],
+    [
+     0.459635,
+     0.542704
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0043",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.522531
+    ],
+    [
+     0.434896,
+     0.542704
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0044",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.542704
+    ],
+    [
+     0.500434,
+     0.542704
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0045",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.664389
+    ],
+    [
+     0.500434,
+     0.664389
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0046",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.612376
+    ],
+    [
+     0.434896,
+     0.681959
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0047",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.681959
+    ],
+    [
+     0.444878,
+     0.682609
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0048",
+   "label": "Corridor",
+   "points": [
+    [
+     0.444878,
+     0.664389
+    ],
+    [
+     0.444878,
+     0.682609
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0049",
+   "label": "Corridor",
+   "points": [
+    [
+     0.434896,
+     0.612376
+    ],
+    [
+     0.510851,
+     0.613027
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0050",
+   "label": "Exterior",
+   "points": [
+    [
+     0.510851,
+     0.613027
+    ],
+    [
+     0.510851,
+     0.640312
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0051",
+   "label": "Exterior",
+   "points": [
+    [
+     0.444878,
+     0.843338
+    ],
+    [
+     0.500434,
+     0.843989
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0052",
+   "label": "Corridor",
+   "points": [
+    [
+     0.5,
+     0.681959
+    ],
+    [
+     0.500434,
+     0.664389
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0053",
+   "label": "Corridor",
+   "points": [
+    [
+     0.5,
+     0.681959
+    ],
+    [
+     0.511719,
+     0.681959
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0054",
+   "label": "Exterior",
+   "points": [
+    [
+     0.500434,
+     0.837482
+    ],
+    [
+     0.500434,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0055",
+   "label": "Exterior",
+   "points": [
+    [
+     0.500434,
+     0.852448
+    ],
+    [
+     0.510417,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0056",
+   "label": "Exterior",
+   "points": [
+    [
+     0.510417,
+     0.837482
+    ],
+    [
+     0.510417,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0057",
+   "label": "Exterior",
+   "points": [
+    [
+     0.500434,
+     0.837482
+    ],
+    [
+     0.510417,
+     0.837482
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0058",
+   "label": "Exterior",
+   "points": [
+    [
+     0.500434,
+     0.640312
+    ],
+    [
+     0.596788,
+     0.640312
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0059",
+   "label": "Exterior",
+   "points": [
+    [
+     0.510417,
+     0.843989
+    ],
+    [
+     0.586806,
+     0.843989
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0060",
+   "label": "Exterior",
+   "points": [
+    [
+     0.586806,
+     0.837482
+    ],
+    [
+     0.586806,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0061",
+   "label": "Exterior",
+   "points": [
+    [
+     0.586806,
+     0.852448
+    ],
+    [
+     0.596794,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0062",
+   "label": "Corridor",
+   "points": [
+    [
+     0.596348,
+     0.734017
+    ],
+    [
+     0.596794,
+     0.852448
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0063",
+   "label": "Shaft",
+   "points": [
+    [
+     0.586806,
+     0.837482
+    ],
+    [
+     0.596788,
+     0.837482
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0064",
+   "label": "Exterior",
+   "points": [
+    [
+     0.585938,
+     0.612982
+    ],
+    [
+     0.585938,
+     0.640312
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0065",
+   "label": "Exterior",
+   "points": [
+    [
+     0.585938,
+     0.612982
+    ],
+    [
+     0.596788,
+     0.612982
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0066",
+   "label": "Corridor",
+   "points": [
+    [
+     0.596788,
+     0.612982
+    ],
+    [
+     0.596788,
+     0.679356
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0067",
+   "label": "Corridor",
+   "points": [
+    [
+     0.596361,
+     0.737318
+    ],
+    [
+     0.667968,
+     0.73927
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0068",
+   "label": "Corridor",
+   "points": [
+    [
+     0.59592,
+     0.734017
+    ],
+    [
+     0.596354,
+     0.73727
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0069",
+   "label": "Corridor",
+   "points": [
+    [
+     0.586806,
+     0.734017
+    ],
+    [
+     0.596348,
+     0.734017
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0070",
+   "label": "Corridor",
+   "points": [
+    [
+     0.586806,
+     0.734017
+    ],
+    [
+     0.586806,
+     0.748983
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0071",
+   "label": "Corridor",
+   "points": [
+    [
+     0.586806,
+     0.748983
+    ],
+    [
+     0.596354,
+     0.748983
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0072",
+   "label": "Interior",
+   "points": [
+    [
+     0.640625,
+     0.726859
+    ],
+    [
+     0.640625,
+     0.780869
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0073",
+   "label": "Corridor",
+   "points": [
+    [
+     0.59592,
+     0.682609
+    ],
+    [
+     0.596788,
+     0.679356
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0074",
+   "label": "Corridor",
+   "points": [
+    [
+     0.59592,
+     0.682609
+    ],
+    [
+     0.597656,
+     0.682609
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0075",
+   "label": "Corridor",
+   "points": [
+    [
+     0.596788,
+     0.679356
+    ],
+    [
+     0.597656,
+     0.682609
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0076",
+   "label": "Corridor",
+   "points": [
+    [
+     0.596788,
+     0.679356
+    ],
+    [
+     0.640191,
+     0.678705
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0077",
+   "label": "Corridor",
+   "points": [
+    [
+     0.640191,
+     0.678705
+    ],
+    [
+     0.640625,
+     0.687164
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0078",
+   "label": "Corridor",
+   "points": [
+    [
+     0.640625,
+     0.687164
+    ],
+    [
+     0.665365,
+     0.687164
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0079",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.640325,
+     0.678706
+    ],
+    [
+     0.640759,
+     0.580446
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0080",
+   "label": "Corridor",
+   "points": [
+    [
+     0.66525,
+     0.739196
+    ],
+    [
+     0.665684,
+     0.640963
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0081",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.640625,
+     0.640963
+    ],
+    [
+     0.667969,
+     0.640963
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0082",
+   "label": "Exterior",
+   "points": [
+    [
+     0.640759,
+     0.580446
+    ],
+    [
+     0.755282,
+     0.580446
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0083",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.72309,
+     0.580446
+    ],
+    [
+     0.72309,
+     0.598666
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0084",
+   "label": "Interior",
+   "points": [
+    [
+     0.631076,
+     0.780869
+    ],
+    [
+     0.646267,
+     0.780869
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0085",
+   "label": "Interior",
+   "points": [
+    [
+     0.646267,
+     0.780869
+    ],
+    [
+     0.646701,
+     0.826419
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0086",
+   "label": "Interior",
+   "points": [
+    [
+     0.640625,
+     0.825769
+    ],
+    [
+     0.646701,
+     0.826419
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0087",
+   "label": "Interior",
+   "points": [
+    [
+     0.631076,
+     0.780869
+    ],
+    [
+     0.631076,
+     0.825769
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0088",
+   "label": "Interior",
+   "points": [
+    [
+     0.631076,
+     0.825769
+    ],
+    [
+     0.640625,
+     0.825769
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0089",
+   "label": "Interior",
+   "points": [
+    [
+     0.640625,
+     0.825769
+    ],
+    [
+     0.640625,
+     0.868066
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0090",
+   "label": "Exterior",
+   "points": [
+    [
+     0.640625,
+     0.868066
+    ],
+    [
+     0.667969,
+     0.868066
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0091",
+   "label": "Exterior",
+   "points": [
+    [
+     0.209635,
+     0.79974
+    ],
+    [
+     0.211372,
+     0.956564
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0092",
+   "label": "Exterior",
+   "points": [
+    [
+     0.209635,
+     0.79974
+    ],
+    [
+     0.210503,
+     0.625346
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0093",
+   "label": "Exterior",
+   "points": [
+    [
+     0.210503,
+     0.625346
+    ],
+    [
+     0.216146,
+     0.620791
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0094",
+   "label": "Exterior",
+   "points": [
+    [
+     0.216146,
+     0.620791
+    ],
+    [
+     0.309896,
+     0.622136
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0095",
+   "label": "Exterior",
+   "points": [
+    [
+     0.281684,
+     0.175695
+    ],
+    [
+     0.281684,
+     0.425573
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0096",
+   "label": "Exterior",
+   "points": [
+    [
+     0.281684,
+     0.425573
+    ],
+    [
+     0.309608,
+     0.424839
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0097",
+   "label": "Exterior",
+   "points": [
+    [
+     0.34375,
+     0.061819
+    ],
+    [
+     0.458767,
+     0.061819
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0098",
+   "label": "Exterior",
+   "points": [
+    [
+     0.639757,
+     0.918822
+    ],
+    [
+     0.640191,
+     0.872621
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0099",
+   "label": "Interior",
+   "points": [
+    [
+     0.671007,
+     0.738572
+    ],
+    [
+     0.755208,
+     0.739222
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0100",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.671007,
+     0.640312
+    ],
+    [
+     0.711806,
+     0.640963
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0101",
+   "label": "Exterior",
+   "points": [
+    [
+     0.671007,
+     0.868066
+    ],
+    [
+     0.755452,
+     0.867413
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0102",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.72222,
+     0.639851
+    ],
+    [
+     0.754585,
+     0.639195
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0103",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.711806,
+     0.640963
+    ],
+    [
+     0.722222,
+     0.639662
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0104",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.72222,
+     0.639851
+    ],
+    [
+     0.722656,
+     0.603221
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0105",
+   "label": "Exterior",
+   "points": [
+    [
+     0.754585,
+     0.639195
+    ],
+    [
+     0.755452,
+     0.867413
+    ]
+   ]
+  },
+  {
+   "id": "t-wall-centerline-page-10-0106",
+   "label": "Exterior",
+   "points": [
+    [
+     0.75434,
+     0.639011
+    ],
+    [
+     0.755282,
+     0.580446
+    ]
+   ]
+  }
+ ]
+}

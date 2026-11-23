@@ -1,0 +1,34 @@
+models:
+  - id: cachetest-a
+    provider: openai
+    model: gpt-6.1-sol
+    base_url: ${TAMU_GATEWAY_URL}
+    api_key_env: TAMU_API_KEY
+    temperature: 1.0
+    max_tokens: 32000
+    token_param: max_completion_tokens
+    detail: high
+    extra:
+      user: nonce-a
+  - id: cachetest-b
+    provider: openai
+    model: gpt-6.1-sol
+    base_url: ${TAMU_GATEWAY_URL}
+    api_key_env: TAMU_API_KEY
+    temperature: 1.0
+    max_tokens: 32000
+    token_param: max_completion_tokens
+    detail: high
+    extra:
+      user: nonce-b
+  - id: cachetest-c
+    provider: openai
+    model: gpt-6.1-sol
+    base_url: ${TAMU_GATEWAY_URL}
+    api_key_env: TAMU_API_KEY
+    temperature: 1.0
+    max_tokens: 32000
+    token_param: max_completion_tokens
+    detail: high
+    extra:
+      user: nonce-c

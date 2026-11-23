@@ -1,0 +1,6347 @@
+{
+ "type": "segments",
+ "segments": [
+  {
+   "id": "t-4c4-wall-centerlines-0001",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.674934
+    ],
+    [
+     0.298611,
+     0.674934
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0002",
+   "label": "Exterior",
+   "points": [
+    [
+     0.315972,
+     0.834641
+    ],
+    [
+     0.289187,
+     0.835335
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0003",
+   "label": "Exterior",
+   "points": [
+    [
+     0.287698,
+     0.681183
+    ],
+    [
+     0.289187,
+     0.835335
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0004",
+   "label": "Exterior",
+   "points": [
+    [
+     0.298611,
+     0.674934
+    ],
+    [
+     0.292163,
+     0.681183
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0005",
+   "label": "Exterior",
+   "points": [
+    [
+     0.292163,
+     0.681183
+    ],
+    [
+     0.287698,
+     0.681183
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0006",
+   "label": "Exterior",
+   "points": [
+    [
+     0.297619,
+     0.472176
+    ],
+    [
+     0.296131,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0007",
+   "label": "Exterior",
+   "points": [
+    [
+     0.296131,
+     0.557584
+    ],
+    [
+     0.31746,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0008",
+   "label": "Exterior",
+   "points": [
+    [
+     0.297619,
+     0.472176
+    ],
+    [
+     0.297123,
+     0.444401
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0009",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.467315
+    ],
+    [
+     0.31746,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0010",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.557584
+    ],
+    [
+     0.316964,
+     0.580499
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0011",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.184704
+    ],
+    [
+     0.328869,
+     0.184704
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0012",
+   "label": "Corridor",
+   "points": [
+    [
+     0.328869,
+     0.184704
+    ],
+    [
+     0.328869,
+     0.16665
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0013",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316468,
+     0.165956
+    ],
+    [
+     0.316964,
+     0.184704
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0014",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.184704
+    ],
+    [
+     0.31746,
+     0.25067
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0015",
+   "label": "Exterior",
+   "points": [
+    [
+     0.328869,
+     0.16665
+    ],
+    [
+     0.328869,
+     0.164567
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0016",
+   "label": "Exterior",
+   "points": [
+    [
+     0.328869,
+     0.164567
+    ],
+    [
+     0.316468,
+     0.165956
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0017",
+   "label": "Exterior",
+   "points": [
+    [
+     0.328869,
+     0.16665
+    ],
+    [
+     0.375992,
+     0.16665
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0018",
+   "label": "Exterior",
+   "points": [
+    [
+     0.289683,
+     0.165262
+    ],
+    [
+     0.316468,
+     0.165956
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0019",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.25067
+    ],
+    [
+     0.320933,
+     0.25067
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0020",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.25067
+    ],
+    [
+     0.320933,
+     0.267335
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0021",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.25067
+    ],
+    [
+     0.31746,
+     0.278445
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0022",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.467315
+    ],
+    [
+     0.328869,
+     0.467315
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0023",
+   "label": "Corridor",
+   "points": [
+    [
+     0.328869,
+     0.467315
+    ],
+    [
+     0.328869,
+     0.441624
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0024",
+   "label": "Corridor",
+   "points": [
+    [
+     0.328869,
+     0.441624
+    ],
+    [
+     0.390873,
+     0.442318
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0025",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.467315
+    ],
+    [
+     0.316964,
+     0.472176
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0026",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.446484
+    ],
+    [
+     0.316964,
+     0.467315
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0027",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.467315
+    ],
+    [
+     0.322421,
+     0.458289
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0028",
+   "label": "Shaft",
+   "points": [
+    [
+     0.390873,
+     0.442318
+    ],
+    [
+     0.404762,
+     0.442318
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0029",
+   "label": "Interior",
+   "points": [
+    [
+     0.390873,
+     0.442318
+    ],
+    [
+     0.390873,
+     0.449956
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0030",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.440929
+    ],
+    [
+     0.31746,
+     0.446484
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0031",
+   "label": "Exterior",
+   "points": [
+    [
+     0.297123,
+     0.444401
+    ],
+    [
+     0.31746,
+     0.446484
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0032",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.580499
+    ],
+    [
+     0.320437,
+     0.580499
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0033",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320437,
+     0.580499
+    ],
+    [
+     0.320437,
+     0.558279
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0034",
+   "label": "Corridor",
+   "points": [
+    [
+     0.320437,
+     0.558279
+    ],
+    [
+     0.387897,
+     0.558973
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0035",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.580499
+    ],
+    [
+     0.316964,
+     0.629105
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0036",
+   "label": "Corridor",
+   "points": [
+    [
+     0.387897,
+     0.558973
+    ],
+    [
+     0.411706,
+     0.558973
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0037",
+   "label": "Interior",
+   "points": [
+    [
+     0.387897,
+     0.558973
+    ],
+    [
+     0.387897,
+     0.605496
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0038",
+   "label": "Corridor",
+   "points": [
+    [
+     0.316964,
+     0.629105
+    ],
+    [
+     0.334325,
+     0.629105
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0039",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.629105
+    ],
+    [
+     0.31746,
+     0.690905
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0040",
+   "label": "Corridor",
+   "points": [
+    [
+     0.334325,
+     0.629105
+    ],
+    [
+     0.334325,
+     0.637438
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0041",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.690905
+    ],
+    [
+     0.31746,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0042",
+   "label": "Corridor",
+   "points": [
+    [
+     0.334325,
+     0.637438
+    ],
+    [
+     0.334325,
+     0.647159
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0043",
+   "label": "Corridor",
+   "points": [
+    [
+     0.334325,
+     0.647159
+    ],
+    [
+     0.320933,
+     0.647159
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0044",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.647159
+    ],
+    [
+     0.320933,
+     0.69021
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0045",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.69021
+    ],
+    [
+     0.31746,
+     0.690905
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0046",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.749927
+    ],
+    [
+     0.320933,
+     0.750621
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0047",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.750621
+    ],
+    [
+     0.320933,
+     0.733262
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0048",
+   "label": "Exterior",
+   "points": [
+    [
+     0.316964,
+     0.749927
+    ],
+    [
+     0.31746,
+     0.816587
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0049",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.816587
+    ],
+    [
+     0.319444,
+     0.816587
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0050",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.722152
+    ],
+    [
+     0.316964,
+     0.749927
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0051",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.722152
+    ],
+    [
+     0.320933,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0052",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.722152
+    ],
+    [
+     0.320933,
+     0.733262
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0053",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.733262
+    ],
+    [
+     0.334821,
+     0.733262
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0054",
+   "label": "Exterior",
+   "points": [
+    [
+     0.319444,
+     0.816587
+    ],
+    [
+     0.326389,
+     0.816587
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0055",
+   "label": "Corridor",
+   "points": [
+    [
+     0.326389,
+     0.816587
+    ],
+    [
+     0.325893,
+     0.834641
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0056",
+   "label": "Exterior",
+   "points": [
+    [
+     0.319444,
+     0.816587
+    ],
+    [
+     0.320933,
+     0.834641
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0057",
+   "label": "Exterior",
+   "points": [
+    [
+     0.325893,
+     0.834641
+    ],
+    [
+     0.374008,
+     0.836029
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0058",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.278445
+    ],
+    [
+     0.320933,
+     0.278445
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0059",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.278445
+    ],
+    [
+     0.320933,
+     0.267335
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0060",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.267335
+    ],
+    [
+     0.334821,
+     0.267335
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0061",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.278445
+    ],
+    [
+     0.31746,
+     0.311081
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0062",
+   "label": "Exterior",
+   "points": [
+    [
+     0.31746,
+     0.311081
+    ],
+    [
+     0.320933,
+     0.311081
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0063",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.311081
+    ],
+    [
+     0.320933,
+     0.325663
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0064",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.325663
+    ],
+    [
+     0.320933,
+     0.354826
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0065",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.325663
+    ],
+    [
+     0.298611,
+     0.326357
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0066",
+   "label": "Exterior",
+   "points": [
+    [
+     0.320933,
+     0.354826
+    ],
+    [
+     0.31994,
+     0.440929
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0067",
+   "label": "Corridor",
+   "points": [
+    [
+     0.320933,
+     0.354826
+    ],
+    [
+     0.387897,
+     0.354132
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0068",
+   "label": "Corridor",
+   "points": [
+    [
+     0.387897,
+     0.354132
+    ],
+    [
+     0.387897,
+     0.393017
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0069",
+   "label": "Corridor",
+   "points": [
+    [
+     0.334325,
+     0.637438
+    ],
+    [
+     0.387897,
+     0.637438
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0070",
+   "label": "Corridor",
+   "points": [
+    [
+     0.387897,
+     0.637438
+    ],
+    [
+     0.387897,
+     0.605496
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0071",
+   "label": "Exterior",
+   "points": [
+    [
+     0.322421,
+     0.458289
+    ],
+    [
+     0.31994,
+     0.440929
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0072",
+   "label": "Corridor",
+   "points": [
+    [
+     0.31994,
+     0.440929
+    ],
+    [
+     0.328869,
+     0.441624
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0073",
+   "label": "Corridor",
+   "points": [
+    [
+     0.387897,
+     0.393017
+    ],
+    [
+     0.411706,
+     0.393017
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0074",
+   "label": "Interior",
+   "points": [
+    [
+     0.387897,
+     0.393017
+    ],
+    [
+     0.387897,
+     0.440235
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0075",
+   "label": "Corridor",
+   "points": [
+    [
+     0.387897,
+     0.605496
+    ],
+    [
+     0.411706,
+     0.605496
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0076",
+   "label": "Exterior",
+   "points": [
+    [
+     0.373512,
+     0.831863
+    ],
+    [
+     0.374008,
+     0.836029
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0077",
+   "label": "Exterior",
+   "points": [
+    [
+     0.382937,
+     0.831169
+    ],
+    [
+     0.373512,
+     0.831863
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0078",
+   "label": "Exterior",
+   "points": [
+    [
+     0.374008,
+     0.836029
+    ],
+    [
+     0.380952,
+     0.835335
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0079",
+   "label": "Exterior",
+   "points": [
+    [
+     0.380952,
+     0.835335
+    ],
+    [
+     0.381448,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0080",
+   "label": "Exterior",
+   "points": [
+    [
+     0.381448,
+     0.865888
+    ],
+    [
+     0.444444,
+     0.864499
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0081",
+   "label": "Exterior",
+   "points": [
+    [
+     0.382937,
+     0.831169
+    ],
+    [
+     0.383433,
+     0.862416
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0082",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.831169
+    ],
+    [
+     0.382937,
+     0.752704
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0083",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.752704
+    ],
+    [
+     0.405258,
+     0.752704
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0084",
+   "label": "Exterior",
+   "points": [
+    [
+     0.444444,
+     0.864499
+    ],
+    [
+     0.454365,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0085",
+   "label": "Corridor",
+   "points": [
+    [
+     0.44494,
+     0.847834
+    ],
+    [
+     0.444444,
+     0.864499
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0086",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.170122
+    ],
+    [
+     0.382937,
+     0.242337
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0087",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.242337
+    ],
+    [
+     0.405754,
+     0.242337
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0088",
+   "label": "Exterior",
+   "points": [
+    [
+     0.505952,
+     0.132626
+    ],
+    [
+     0.381448,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0089",
+   "label": "Exterior",
+   "points": [
+    [
+     0.381448,
+     0.132626
+    ],
+    [
+     0.380952,
+     0.165956
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0090",
+   "label": "Exterior",
+   "points": [
+    [
+     0.380952,
+     0.165956
+    ],
+    [
+     0.375992,
+     0.165956
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0091",
+   "label": "Exterior",
+   "points": [
+    [
+     0.375992,
+     0.165956
+    ],
+    [
+     0.375496,
+     0.169428
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0092",
+   "label": "Exterior",
+   "points": [
+    [
+     0.375496,
+     0.169428
+    ],
+    [
+     0.382937,
+     0.170122
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0093",
+   "label": "Interior",
+   "points": [
+    [
+     0.443948,
+     0.151374
+    ],
+    [
+     0.443948,
+     0.135403
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0094",
+   "label": "Exterior",
+   "points": [
+    [
+     0.443948,
+     0.135403
+    ],
+    [
+     0.383433,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0095",
+   "label": "Exterior",
+   "points": [
+    [
+     0.383433,
+     0.136098
+    ],
+    [
+     0.382937,
+     0.170122
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0096",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.233311
+    ],
+    [
+     0.405754,
+     0.242337
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0097",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405754,
+     0.242337
+    ],
+    [
+     0.405754,
+     0.253447
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0098",
+   "label": "Exterior",
+   "points": [
+    [
+     0.50496,
+     0.105545
+    ],
+    [
+     0.505952,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0099",
+   "label": "Exterior",
+   "points": [
+    [
+     0.505952,
+     0.132626
+    ],
+    [
+     0.551091,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0100",
+   "label": "Interior",
+   "points": [
+    [
+     0.443948,
+     0.151374
+    ],
+    [
+     0.454861,
+     0.152068
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0101",
+   "label": "Interior",
+   "points": [
+    [
+     0.454861,
+     0.152068
+    ],
+    [
+     0.454365,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0102",
+   "label": "Exterior",
+   "points": [
+    [
+     0.454365,
+     0.136098
+    ],
+    [
+     0.50744,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0103",
+   "label": "Corridor",
+   "points": [
+    [
+     0.50744,
+     0.136098
+    ],
+    [
+     0.50744,
+     0.263169
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0104",
+   "label": "Corridor",
+   "points": [
+    [
+     0.50744,
+     0.263169
+    ],
+    [
+     0.484623,
+     0.262474
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0105",
+   "label": "Interior",
+   "points": [
+    [
+     0.443948,
+     0.151374
+    ],
+    [
+     0.444444,
+     0.233311
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0106",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.325663
+    ],
+    [
+     0.411706,
+     0.326357
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0107",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.325663
+    ],
+    [
+     0.382937,
+     0.272196
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0108",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.272196
+    ],
+    [
+     0.405258,
+     0.272196
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0109",
+   "label": "Shaft",
+   "points": [
+    [
+     0.434028,
+     0.325663
+    ],
+    [
+     0.411706,
+     0.326357
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0110",
+   "label": "Shaft",
+   "points": [
+    [
+     0.411706,
+     0.326357
+    ],
+    [
+     0.412202,
+     0.354132
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0111",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.272196
+    ],
+    [
+     0.405258,
+     0.281223
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0112",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.281223
+    ],
+    [
+     0.4375,
+     0.280528
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0113",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405754,
+     0.253447
+    ],
+    [
+     0.405258,
+     0.272196
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0114",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.741594
+    ],
+    [
+     0.405258,
+     0.752704
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0115",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.752704
+    ],
+    [
+     0.405258,
+     0.761731
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0116",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.761731
+    ],
+    [
+     0.412698,
+     0.761731
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0117",
+   "label": "Shaft",
+   "points": [
+    [
+     0.387897,
+     0.440235
+    ],
+    [
+     0.411706,
+     0.440235
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0118",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.411706,
+     0.440235
+    ],
+    [
+     0.411706,
+     0.393017
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0119",
+   "label": "Corridor",
+   "points": [
+    [
+     0.411706,
+     0.393017
+    ],
+    [
+     0.466766,
+     0.393017
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0120",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.411706,
+     0.558973
+    ],
+    [
+     0.411706,
+     0.605496
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0121",
+   "label": "Corridor",
+   "points": [
+    [
+     0.460317,
+     0.557584
+    ],
+    [
+     0.411706,
+     0.558973
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0122",
+   "label": "Corridor",
+   "points": [
+    [
+     0.411706,
+     0.605496
+    ],
+    [
+     0.466766,
+     0.606191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0123",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.404762,
+     0.442318
+    ],
+    [
+     0.459821,
+     0.442318
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0124",
+   "label": "Shaft",
+   "points": [
+    [
+     0.404762,
+     0.442318
+    ],
+    [
+     0.404762,
+     0.490924
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0125",
+   "label": "Shaft",
+   "points": [
+    [
+     0.390873,
+     0.449956
+    ],
+    [
+     0.390873,
+     0.472176
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0126",
+   "label": "Shaft",
+   "points": [
+    [
+     0.390873,
+     0.472176
+    ],
+    [
+     0.390873,
+     0.49023
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0127",
+   "label": "Shaft",
+   "points": [
+    [
+     0.390873,
+     0.49023
+    ],
+    [
+     0.404762,
+     0.490924
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0128",
+   "label": "Corridor",
+   "points": [
+    [
+     0.460317,
+     0.49023
+    ],
+    [
+     0.404762,
+     0.490924
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0129",
+   "label": "Shaft",
+   "points": [
+    [
+     0.459821,
+     0.442318
+    ],
+    [
+     0.479663,
+     0.442318
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0130",
+   "label": "Shaft",
+   "points": [
+    [
+     0.479663,
+     0.442318
+    ],
+    [
+     0.480159,
+     0.469399
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0131",
+   "label": "Shaft",
+   "points": [
+    [
+     0.459821,
+     0.442318
+    ],
+    [
+     0.460317,
+     0.468704
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0132",
+   "label": "Shaft",
+   "points": [
+    [
+     0.460317,
+     0.468704
+    ],
+    [
+     0.460317,
+     0.49023
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0133",
+   "label": "Corridor",
+   "points": [
+    [
+     0.480655,
+     0.489536
+    ],
+    [
+     0.460317,
+     0.49023
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0134",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.233311
+    ],
+    [
+     0.444444,
+     0.233311
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0135",
+   "label": "Shaft",
+   "points": [
+    [
+     0.444444,
+     0.233311
+    ],
+    [
+     0.443948,
+     0.253447
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0136",
+   "label": "Shaft",
+   "points": [
+    [
+     0.444444,
+     0.233311
+    ],
+    [
+     0.445437,
+     0.247198
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0137",
+   "label": "Shaft",
+   "points": [
+    [
+     0.437004,
+     0.253447
+    ],
+    [
+     0.4375,
+     0.280528
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0138",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.4375,
+     0.280528
+    ],
+    [
+     0.44494,
+     0.280528
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0139",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405754,
+     0.253447
+    ],
+    [
+     0.437004,
+     0.253447
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0140",
+   "label": "Corridor",
+   "points": [
+    [
+     0.405258,
+     0.71243
+    ],
+    [
+     0.405258,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0141",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.71243
+    ],
+    [
+     0.437004,
+     0.713819
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0142",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.722152
+    ],
+    [
+     0.405258,
+     0.741594
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0143",
+   "label": "Corridor",
+   "points": [
+    [
+     0.412202,
+     0.668685
+    ],
+    [
+     0.382937,
+     0.668685
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0144",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.668685
+    ],
+    [
+     0.382937,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0145",
+   "label": "Corridor",
+   "points": [
+    [
+     0.382937,
+     0.722152
+    ],
+    [
+     0.405258,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0146",
+   "label": "Shaft",
+   "points": [
+    [
+     0.405258,
+     0.741594
+    ],
+    [
+     0.4375,
+     0.741594
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0147",
+   "label": "Shaft",
+   "points": [
+    [
+     0.412202,
+     0.668685
+    ],
+    [
+     0.433532,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0148",
+   "label": "Shaft",
+   "points": [
+    [
+     0.412202,
+     0.668685
+    ],
+    [
+     0.411706,
+     0.640215
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0149",
+   "label": "Shaft",
+   "points": [
+    [
+     0.411706,
+     0.640215
+    ],
+    [
+     0.433532,
+     0.640215
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0150",
+   "label": "Shaft",
+   "points": [
+    [
+     0.4375,
+     0.741594
+    ],
+    [
+     0.443948,
+     0.742289
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0151",
+   "label": "Shaft",
+   "points": [
+    [
+     0.4375,
+     0.741594
+    ],
+    [
+     0.437004,
+     0.713819
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0152",
+   "label": "Shaft",
+   "points": [
+    [
+     0.412698,
+     0.761731
+    ],
+    [
+     0.437004,
+     0.761731
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0153",
+   "label": "Shaft",
+   "points": [
+    [
+     0.437004,
+     0.253447
+    ],
+    [
+     0.443948,
+     0.253447
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0154",
+   "label": "Shaft",
+   "points": [
+    [
+     0.434028,
+     0.325663
+    ],
+    [
+     0.44494,
+     0.325663
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0155",
+   "label": "Shaft",
+   "points": [
+    [
+     0.434028,
+     0.325663
+    ],
+    [
+     0.434028,
+     0.354826
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0156",
+   "label": "Shaft",
+   "points": [
+    [
+     0.412202,
+     0.354132
+    ],
+    [
+     0.434028,
+     0.354826
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0157",
+   "label": "Shaft",
+   "points": [
+    [
+     0.392857,
+     0.354826
+    ],
+    [
+     0.412202,
+     0.354132
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0158",
+   "label": "Corridor",
+   "points": [
+    [
+     0.466766,
+     0.393017
+    ],
+    [
+     0.480655,
+     0.393017
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0159",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480655,
+     0.393017
+    ],
+    [
+     0.480159,
+     0.438846
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0160",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480159,
+     0.438846
+    ],
+    [
+     0.460813,
+     0.436763
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0161",
+   "label": "Corridor",
+   "points": [
+    [
+     0.466766,
+     0.386768
+    ],
+    [
+     0.466766,
+     0.393017
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0162",
+   "label": "Shaft",
+   "points": [
+    [
+     0.459821,
+     0.529115
+    ],
+    [
+     0.437996,
+     0.529809
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0163",
+   "label": "Shaft",
+   "points": [
+    [
+     0.437996,
+     0.529809
+    ],
+    [
+     0.437996,
+     0.55689
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0164",
+   "label": "Shaft",
+   "points": [
+    [
+     0.437996,
+     0.55689
+    ],
+    [
+     0.460317,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0165",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480655,
+     0.55689
+    ],
+    [
+     0.460317,
+     0.557584
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0166",
+   "label": "Corridor",
+   "points": [
+    [
+     0.466766,
+     0.606191
+    ],
+    [
+     0.480655,
+     0.606885
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0167",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480655,
+     0.606885
+    ],
+    [
+     0.480655,
+     0.55689
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0168",
+   "label": "Corridor",
+   "points": [
+    [
+     0.466766,
+     0.606191
+    ],
+    [
+     0.467262,
+     0.639521
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0169",
+   "label": "Shaft",
+   "points": [
+    [
+     0.434028,
+     0.354826
+    ],
+    [
+     0.454365,
+     0.354826
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0170",
+   "label": "Shaft",
+   "points": [
+    [
+     0.433532,
+     0.640215
+    ],
+    [
+     0.433532,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0171",
+   "label": "Shaft",
+   "points": [
+    [
+     0.433532,
+     0.669379
+    ],
+    [
+     0.44494,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0172",
+   "label": "Shaft",
+   "points": [
+    [
+     0.433532,
+     0.640215
+    ],
+    [
+     0.454365,
+     0.640215
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0173",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.640215
+    ],
+    [
+     0.454365,
+     0.643687
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0174",
+   "label": "Shaft",
+   "points": [
+    [
+     0.467262,
+     0.639521
+    ],
+    [
+     0.454365,
+     0.640215
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0175",
+   "label": "Shaft",
+   "points": [
+    [
+     0.44494,
+     0.669379
+    ],
+    [
+     0.454365,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0176",
+   "label": "Shaft",
+   "points": [
+    [
+     0.44494,
+     0.669379
+    ],
+    [
+     0.445437,
+     0.697154
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0177",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.44494,
+     0.280528
+    ],
+    [
+     0.44494,
+     0.325663
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0178",
+   "label": "Shaft",
+   "points": [
+    [
+     0.44494,
+     0.325663
+    ],
+    [
+     0.454365,
+     0.326357
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0179",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.326357
+    ],
+    [
+     0.454365,
+     0.354826
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0180",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.354826
+    ],
+    [
+     0.46627,
+     0.354826
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0181",
+   "label": "Shaft",
+   "points": [
+    [
+     0.443948,
+     0.253447
+    ],
+    [
+     0.44494,
+     0.280528
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0182",
+   "label": "Shaft",
+   "points": [
+    [
+     0.437004,
+     0.761731
+    ],
+    [
+     0.443948,
+     0.761731
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0183",
+   "label": "Shaft",
+   "points": [
+    [
+     0.443948,
+     0.742289
+    ],
+    [
+     0.443948,
+     0.761731
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0184",
+   "label": "Corridor",
+   "points": [
+    [
+     0.443948,
+     0.761731
+    ],
+    [
+     0.44494,
+     0.847834
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0185",
+   "label": "Shaft",
+   "points": [
+    [
+     0.445437,
+     0.247198
+    ],
+    [
+     0.44494,
+     0.280528
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0186",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.44494,
+     0.280528
+    ],
+    [
+     0.485119,
+     0.281223
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0187",
+   "label": "Shaft",
+   "points": [
+    [
+     0.437004,
+     0.713819
+    ],
+    [
+     0.444444,
+     0.713819
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0188",
+   "label": "Shaft",
+   "points": [
+    [
+     0.444444,
+     0.713819
+    ],
+    [
+     0.443948,
+     0.742289
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0189",
+   "label": "Interior",
+   "points": [
+    [
+     0.445437,
+     0.247198
+    ],
+    [
+     0.484623,
+     0.247198
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0190",
+   "label": "Interior",
+   "points": [
+    [
+     0.484623,
+     0.247198
+    ],
+    [
+     0.484623,
+     0.262474
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0191",
+   "label": "Corridor",
+   "points": [
+    [
+     0.484623,
+     0.262474
+    ],
+    [
+     0.485119,
+     0.281223
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0192",
+   "label": "Corridor",
+   "points": [
+    [
+     0.44494,
+     0.847834
+    ],
+    [
+     0.454365,
+     0.847139
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0193",
+   "label": "Exterior",
+   "points": [
+    [
+     0.454365,
+     0.847139
+    ],
+    [
+     0.454365,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0194",
+   "label": "Exterior",
+   "points": [
+    [
+     0.454365,
+     0.865193
+    ],
+    [
+     0.459325,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0195",
+   "label": "Corridor",
+   "points": [
+    [
+     0.485119,
+     0.281223
+    ],
+    [
+     0.485119,
+     0.291638
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0196",
+   "label": "Corridor",
+   "points": [
+    [
+     0.485119,
+     0.291638
+    ],
+    [
+     0.50744,
+     0.292333
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0197",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.326357
+    ],
+    [
+     0.467758,
+     0.326357
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0198",
+   "label": "Corridor",
+   "points": [
+    [
+     0.467758,
+     0.326357
+    ],
+    [
+     0.467758,
+     0.349966
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0199",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.643687
+    ],
+    [
+     0.454365,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0200",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.669379
+    ],
+    [
+     0.454861,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0201",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454861,
+     0.669379
+    ],
+    [
+     0.454365,
+     0.669379
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0202",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.669379
+    ],
+    [
+     0.460813,
+     0.661741
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0203",
+   "label": "Shaft",
+   "points": [
+    [
+     0.463294,
+     0.697154
+    ],
+    [
+     0.465278,
+     0.697154
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0204",
+   "label": "Shaft",
+   "points": [
+    [
+     0.465278,
+     0.697154
+    ],
+    [
+     0.465278,
+     0.728401
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0205",
+   "label": "Shaft",
+   "points": [
+    [
+     0.465278,
+     0.728401
+    ],
+    [
+     0.445437,
+     0.727707
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0206",
+   "label": "Shaft",
+   "points": [
+    [
+     0.445437,
+     0.727707
+    ],
+    [
+     0.445437,
+     0.697154
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0207",
+   "label": "Shaft",
+   "points": [
+    [
+     0.467758,
+     0.670073
+    ],
+    [
+     0.463294,
+     0.697154
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0208",
+   "label": "Corridor",
+   "points": [
+    [
+     0.46627,
+     0.354826
+    ],
+    [
+     0.467758,
+     0.349966
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0209",
+   "label": "Shaft",
+   "points": [
+    [
+     0.467758,
+     0.349966
+    ],
+    [
+     0.50744,
+     0.35066
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0210",
+   "label": "Corridor",
+   "points": [
+    [
+     0.46627,
+     0.354826
+    ],
+    [
+     0.466766,
+     0.386768
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0211",
+   "label": "Shaft",
+   "points": [
+    [
+     0.454365,
+     0.643687
+    ],
+    [
+     0.462798,
+     0.64577
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0212",
+   "label": "Corridor",
+   "points": [
+    [
+     0.467262,
+     0.639521
+    ],
+    [
+     0.467758,
+     0.647159
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0213",
+   "label": "Corridor",
+   "points": [
+    [
+     0.462798,
+     0.64577
+    ],
+    [
+     0.467758,
+     0.647159
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0214",
+   "label": "Shaft",
+   "points": [
+    [
+     0.460813,
+     0.661741
+    ],
+    [
+     0.462798,
+     0.64577
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0215",
+   "label": "Shaft",
+   "points": [
+    [
+     0.467758,
+     0.647159
+    ],
+    [
+     0.490575,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0216",
+   "label": "Shaft",
+   "points": [
+    [
+     0.467758,
+     0.647159
+    ],
+    [
+     0.467758,
+     0.670073
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0217",
+   "label": "Exterior",
+   "points": [
+    [
+     0.459325,
+     0.865193
+    ],
+    [
+     0.516865,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0218",
+   "label": "Exterior",
+   "points": [
+    [
+     0.459325,
+     0.865193
+    ],
+    [
+     0.459821,
+     0.895746
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0219",
+   "label": "Exterior",
+   "points": [
+    [
+     0.516865,
+     0.865193
+    ],
+    [
+     0.52629,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0220",
+   "label": "Exterior",
+   "points": [
+    [
+     0.516865,
+     0.895746
+    ],
+    [
+     0.516865,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0221",
+   "label": "Corridor",
+   "points": [
+    [
+     0.525298,
+     0.765897
+    ],
+    [
+     0.52629,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0222",
+   "label": "Exterior",
+   "points": [
+    [
+     0.52629,
+     0.865193
+    ],
+    [
+     0.577877,
+     0.867276
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0223",
+   "label": "Interior",
+   "points": [
+    [
+     0.577877,
+     0.867276
+    ],
+    [
+     0.577381,
+     0.847139
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0224",
+   "label": "Shaft",
+   "points": [
+    [
+     0.460317,
+     0.468704
+    ],
+    [
+     0.480159,
+     0.469399
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0225",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480159,
+     0.469399
+    ],
+    [
+     0.480655,
+     0.489536
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0226",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480159,
+     0.528421
+    ],
+    [
+     0.459821,
+     0.529115
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0227",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480159,
+     0.528421
+    ],
+    [
+     0.480655,
+     0.55689
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0228",
+   "label": "Shaft",
+   "points": [
+    [
+     0.480655,
+     0.489536
+    ],
+    [
+     0.480159,
+     0.528421
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0229",
+   "label": "Shaft",
+   "points": [
+    [
+     0.50744,
+     0.35066
+    ],
+    [
+     0.573413,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0230",
+   "label": "Shaft",
+   "points": [
+    [
+     0.507937,
+     0.322191
+    ],
+    [
+     0.50744,
+     0.35066
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0231",
+   "label": "Shaft",
+   "points": [
+    [
+     0.490575,
+     0.648548
+    ],
+    [
+     0.522321,
+     0.649242
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0232",
+   "label": "Shaft",
+   "points": [
+    [
+     0.490575,
+     0.648548
+    ],
+    [
+     0.490575,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0233",
+   "label": "Shaft",
+   "points": [
+    [
+     0.460813,
+     0.661741
+    ],
+    [
+     0.467758,
+     0.670073
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0234",
+   "label": "Shaft",
+   "points": [
+    [
+     0.50744,
+     0.292333
+    ],
+    [
+     0.527282,
+     0.292333
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0235",
+   "label": "Shaft",
+   "points": [
+    [
+     0.527282,
+     0.292333
+    ],
+    [
+     0.527282,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0236",
+   "label": "Shaft",
+   "points": [
+    [
+     0.50744,
+     0.292333
+    ],
+    [
+     0.507937,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0237",
+   "label": "Shaft",
+   "points": [
+    [
+     0.522321,
+     0.649242
+    ],
+    [
+     0.522817,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0238",
+   "label": "Shaft",
+   "points": [
+    [
+     0.522817,
+     0.676323
+    ],
+    [
+     0.525298,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0239",
+   "label": "Shaft",
+   "points": [
+    [
+     0.52629,
+     0.647853
+    ],
+    [
+     0.522321,
+     0.649242
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0240",
+   "label": "Corridor",
+   "points": [
+    [
+     0.490575,
+     0.676323
+    ],
+    [
+     0.490575,
+     0.745761
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0241",
+   "label": "Shaft",
+   "points": [
+    [
+     0.490575,
+     0.676323
+    ],
+    [
+     0.525298,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0242",
+   "label": "Shaft",
+   "points": [
+    [
+     0.490575,
+     0.745761
+    ],
+    [
+     0.525298,
+     0.745761
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0243",
+   "label": "Shaft",
+   "points": [
+    [
+     0.490575,
+     0.745761
+    ],
+    [
+     0.490575,
+     0.765203
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0244",
+   "label": "Shaft",
+   "points": [
+    [
+     0.490575,
+     0.765203
+    ],
+    [
+     0.496032,
+     0.765203
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0245",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.525298,
+     0.745761
+    ],
+    [
+     0.526786,
+     0.756176
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0246",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.526786,
+     0.722152
+    ],
+    [
+     0.525298,
+     0.745761
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0247",
+   "label": "Shaft",
+   "points": [
+    [
+     0.496032,
+     0.765203
+    ],
+    [
+     0.519841,
+     0.765203
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0248",
+   "label": "Exterior",
+   "points": [
+    [
+     0.50496,
+     0.105545
+    ],
+    [
+     0.563492,
+     0.105545
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0249",
+   "label": "Exterior",
+   "points": [
+    [
+     0.551091,
+     0.132626
+    ],
+    [
+     0.56002,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0250",
+   "label": "Shaft",
+   "points": [
+    [
+     0.527282,
+     0.322191
+    ],
+    [
+     0.507937,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0251",
+   "label": "Shaft",
+   "points": [
+    [
+     0.527778,
+     0.35066
+    ],
+    [
+     0.527282,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0252",
+   "label": "Exterior",
+   "points": [
+    [
+     0.56002,
+     0.135403
+    ],
+    [
+     0.559524,
+     0.143042
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0253",
+   "label": "Exterior",
+   "points": [
+    [
+     0.559524,
+     0.143042
+    ],
+    [
+     0.572917,
+     0.143736
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0254",
+   "label": "Corridor",
+   "points": [
+    [
+     0.572917,
+     0.143736
+    ],
+    [
+     0.573413,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0255",
+   "label": "Corridor",
+   "points": [
+    [
+     0.573413,
+     0.351355
+    ],
+    [
+     0.577381,
+     0.352049
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0256",
+   "label": "Shaft",
+   "points": [
+    [
+     0.519841,
+     0.765203
+    ],
+    [
+     0.525298,
+     0.765897
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0257",
+   "label": "Interior",
+   "points": [
+    [
+     0.526786,
+     0.756176
+    ],
+    [
+     0.525298,
+     0.765897
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0258",
+   "label": "Bathroom",
+   "points": [
+    [
+     0.525298,
+     0.676323
+    ],
+    [
+     0.526786,
+     0.695071
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0259",
+   "label": "Shaft",
+   "points": [
+    [
+     0.52629,
+     0.647853
+    ],
+    [
+     0.525298,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0260",
+   "label": "Corridor",
+   "points": [
+    [
+     0.52629,
+     0.647853
+    ],
+    [
+     0.587798,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0261",
+   "label": "Shaft",
+   "points": [
+    [
+     0.526786,
+     0.695071
+    ],
+    [
+     0.533234,
+     0.695071
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0262",
+   "label": "Shaft",
+   "points": [
+    [
+     0.526786,
+     0.695071
+    ],
+    [
+     0.526786,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0263",
+   "label": "Interior",
+   "points": [
+    [
+     0.526786,
+     0.756176
+    ],
+    [
+     0.565476,
+     0.755482
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0264",
+   "label": "Interior",
+   "points": [
+    [
+     0.565476,
+     0.755482
+    ],
+    [
+     0.56498,
+     0.736039
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0265",
+   "label": "Shaft",
+   "points": [
+    [
+     0.526786,
+     0.722152
+    ],
+    [
+     0.53373,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0266",
+   "label": "Corridor",
+   "points": [
+    [
+     0.586806,
+     0.706875
+    ],
+    [
+     0.587798,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0267",
+   "label": "Corridor",
+   "points": [
+    [
+     0.587798,
+     0.648548
+    ],
+    [
+     0.660218,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0268",
+   "label": "Corridor",
+   "points": [
+    [
+     0.588294,
+     0.847139
+    ],
+    [
+     0.577381,
+     0.847139
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0269",
+   "label": "Shaft",
+   "points": [
+    [
+     0.533234,
+     0.695071
+    ],
+    [
+     0.53373,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0270",
+   "label": "Shaft",
+   "points": [
+    [
+     0.533234,
+     0.695071
+    ],
+    [
+     0.56498,
+     0.694377
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0271",
+   "label": "Shaft",
+   "points": [
+    [
+     0.56498,
+     0.694377
+    ],
+    [
+     0.56498,
+     0.706875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0272",
+   "label": "Shaft",
+   "points": [
+    [
+     0.53373,
+     0.722152
+    ],
+    [
+     0.56498,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0273",
+   "label": "Shaft",
+   "points": [
+    [
+     0.56498,
+     0.722152
+    ],
+    [
+     0.56498,
+     0.736039
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0274",
+   "label": "Shaft",
+   "points": [
+    [
+     0.56498,
+     0.736039
+    ],
+    [
+     0.587798,
+     0.736734
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0275",
+   "label": "Shaft",
+   "points": [
+    [
+     0.56498,
+     0.706875
+    ],
+    [
+     0.586806,
+     0.706875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0276",
+   "label": "Shaft",
+   "points": [
+    [
+     0.56498,
+     0.706875
+    ],
+    [
+     0.56498,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0277",
+   "label": "Exterior",
+   "points": [
+    [
+     0.56002,
+     0.132626
+    ],
+    [
+     0.56002,
+     0.135403
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0278",
+   "label": "Exterior",
+   "points": [
+    [
+     0.56002,
+     0.135403
+    ],
+    [
+     0.562996,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0279",
+   "label": "Exterior",
+   "points": [
+    [
+     0.563492,
+     0.105545
+    ],
+    [
+     0.562996,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0280",
+   "label": "Exterior",
+   "points": [
+    [
+     0.578373,
+     0.135403
+    ],
+    [
+     0.562996,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0281",
+   "label": "Corridor",
+   "points": [
+    [
+     0.578373,
+     0.135403
+    ],
+    [
+     0.577381,
+     0.352049
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0282",
+   "label": "Exterior",
+   "points": [
+    [
+     0.578373,
+     0.135403
+    ],
+    [
+     0.583333,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0283",
+   "label": "Interior",
+   "points": [
+    [
+     0.583333,
+     0.136098
+    ],
+    [
+     0.583333,
+     0.243032
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0284",
+   "label": "Shaft",
+   "points": [
+    [
+     0.587798,
+     0.736734
+    ],
+    [
+     0.586806,
+     0.706875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0285",
+   "label": "Corridor",
+   "points": [
+    [
+     0.587798,
+     0.736734
+    ],
+    [
+     0.588294,
+     0.847139
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0286",
+   "label": "Corridor",
+   "points": [
+    [
+     0.583333,
+     0.858944
+    ],
+    [
+     0.588294,
+     0.847139
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0287",
+   "label": "Corridor",
+   "points": [
+    [
+     0.582837,
+     0.351355
+    ],
+    [
+     0.577381,
+     0.352049
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0288",
+   "label": "Shaft",
+   "points": [
+    [
+     0.583333,
+     0.304137
+    ],
+    [
+     0.582837,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0289",
+   "label": "Shaft",
+   "points": [
+    [
+     0.644345,
+     0.349966
+    ],
+    [
+     0.582837,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0290",
+   "label": "Interior",
+   "points": [
+    [
+     0.583333,
+     0.243032
+    ],
+    [
+     0.621528,
+     0.243032
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0291",
+   "label": "Shaft",
+   "points": [
+    [
+     0.583333,
+     0.243032
+    ],
+    [
+     0.583333,
+     0.276362
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0292",
+   "label": "Shaft",
+   "points": [
+    [
+     0.583333,
+     0.276362
+    ],
+    [
+     0.583333,
+     0.304137
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0293",
+   "label": "Shaft",
+   "points": [
+    [
+     0.583333,
+     0.304137
+    ],
+    [
+     0.589782,
+     0.304137
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0294",
+   "label": "Shaft",
+   "points": [
+    [
+     0.644345,
+     0.322191
+    ],
+    [
+     0.644345,
+     0.349966
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0295",
+   "label": "Shaft",
+   "points": [
+    [
+     0.644345,
+     0.349966
+    ],
+    [
+     0.66369,
+     0.349966
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0296",
+   "label": "Interior",
+   "points": [
+    [
+     0.621528,
+     0.243032
+    ],
+    [
+     0.621528,
+     0.259697
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0297",
+   "label": "Interior",
+   "points": [
+    [
+     0.621528,
+     0.243032
+    ],
+    [
+     0.629464,
+     0.242337
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0298",
+   "label": "Corridor",
+   "points": [
+    [
+     0.621528,
+     0.259697
+    ],
+    [
+     0.644841,
+     0.259697
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0299",
+   "label": "Corridor",
+   "points": [
+    [
+     0.644841,
+     0.259697
+    ],
+    [
+     0.644841,
+     0.149291
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0300",
+   "label": "Corridor",
+   "points": [
+    [
+     0.621528,
+     0.259697
+    ],
+    [
+     0.621528,
+     0.276362
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0301",
+   "label": "Shaft",
+   "points": [
+    [
+     0.583333,
+     0.276362
+    ],
+    [
+     0.589782,
+     0.276362
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0302",
+   "label": "Shaft",
+   "points": [
+    [
+     0.589782,
+     0.276362
+    ],
+    [
+     0.621528,
+     0.276362
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0303",
+   "label": "Shaft",
+   "points": [
+    [
+     0.589782,
+     0.276362
+    ],
+    [
+     0.589782,
+     0.304137
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0304",
+   "label": "Shaft",
+   "points": [
+    [
+     0.589782,
+     0.304137
+    ],
+    [
+     0.621528,
+     0.304137
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0305",
+   "label": "Shaft",
+   "points": [
+    [
+     0.621528,
+     0.304137
+    ],
+    [
+     0.621528,
+     0.291638
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0306",
+   "label": "Shaft",
+   "points": [
+    [
+     0.660218,
+     0.648548
+    ],
+    [
+     0.68006,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0307",
+   "label": "Shaft",
+   "points": [
+    [
+     0.660218,
+     0.648548
+    ],
+    [
+     0.660218,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0308",
+   "label": "Shaft",
+   "points": [
+    [
+     0.621528,
+     0.276362
+    ],
+    [
+     0.621528,
+     0.291638
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0309",
+   "label": "Corridor",
+   "points": [
+    [
+     0.621528,
+     0.291638
+    ],
+    [
+     0.644345,
+     0.292333
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0310",
+   "label": "Exterior",
+   "points": [
+    [
+     0.589782,
+     0.865888
+    ],
+    [
+     0.594742,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0311",
+   "label": "Exterior",
+   "points": [
+    [
+     0.583333,
+     0.858944
+    ],
+    [
+     0.589782,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0312",
+   "label": "Exterior",
+   "points": [
+    [
+     0.594742,
+     0.865888
+    ],
+    [
+     0.652282,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0313",
+   "label": "Exterior",
+   "points": [
+    [
+     0.594742,
+     0.865888
+    ],
+    [
+     0.595238,
+     0.895746
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0314",
+   "label": "Exterior",
+   "points": [
+    [
+     0.652282,
+     0.865888
+    ],
+    [
+     0.660218,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0315",
+   "label": "Exterior",
+   "points": [
+    [
+     0.652282,
+     0.895746
+    ],
+    [
+     0.652282,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0316",
+   "label": "Corridor",
+   "points": [
+    [
+     0.660218,
+     0.70757
+    ],
+    [
+     0.660218,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0317",
+   "label": "Exterior",
+   "points": [
+    [
+     0.660218,
+     0.865888
+    ],
+    [
+     0.666171,
+     0.865888
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0318",
+   "label": "Corridor",
+   "points": [
+    [
+     0.644345,
+     0.136098
+    ],
+    [
+     0.644841,
+     0.149291
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0319",
+   "label": "Corridor",
+   "points": [
+    [
+     0.644841,
+     0.149291
+    ],
+    [
+     0.662698,
+     0.149291
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0320",
+   "label": "Exterior",
+   "points": [
+    [
+     0.662698,
+     0.149291
+    ],
+    [
+     0.662698,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0321",
+   "label": "Shaft",
+   "points": [
+    [
+     0.644345,
+     0.292333
+    ],
+    [
+     0.664187,
+     0.292333
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0322",
+   "label": "Shaft",
+   "points": [
+    [
+     0.664187,
+     0.292333
+    ],
+    [
+     0.66369,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0323",
+   "label": "Shaft",
+   "points": [
+    [
+     0.644345,
+     0.292333
+    ],
+    [
+     0.644345,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0324",
+   "label": "Exterior",
+   "points": [
+    [
+     0.632937,
+     0.13332
+    ],
+    [
+     0.63244,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0325",
+   "label": "Exterior",
+   "points": [
+    [
+     0.63244,
+     0.136098
+    ],
+    [
+     0.644345,
+     0.136098
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0326",
+   "label": "Exterior",
+   "points": [
+    [
+     0.583333,
+     0.136098
+    ],
+    [
+     0.632937,
+     0.13332
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0327",
+   "label": "Exterior",
+   "points": [
+    [
+     0.644345,
+     0.136098
+    ],
+    [
+     0.644841,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0328",
+   "label": "Exterior",
+   "points": [
+    [
+     0.644345,
+     0.136098
+    ],
+    [
+     0.655754,
+     0.138875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0329",
+   "label": "Shaft",
+   "points": [
+    [
+     0.66369,
+     0.322191
+    ],
+    [
+     0.644345,
+     0.322191
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0330",
+   "label": "Shaft",
+   "points": [
+    [
+     0.66369,
+     0.322191
+    ],
+    [
+     0.66369,
+     0.349966
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0331",
+   "label": "Shaft",
+   "points": [
+    [
+     0.66369,
+     0.349966
+    ],
+    [
+     0.72371,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0332",
+   "label": "Corridor",
+   "points": [
+    [
+     0.72371,
+     0.351355
+    ],
+    [
+     0.724702,
+     0.332606
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0333",
+   "label": "Exterior",
+   "points": [
+    [
+     0.72371,
+     0.132626
+    ],
+    [
+     0.724702,
+     0.332606
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0334",
+   "label": "Exterior",
+   "points": [
+    [
+     0.724702,
+     0.332606
+    ],
+    [
+     0.741567,
+     0.333301
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0335",
+   "label": "Exterior",
+   "points": [
+    [
+     0.741567,
+     0.333301
+    ],
+    [
+     0.741567,
+     0.348577
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0336",
+   "label": "Exterior",
+   "points": [
+    [
+     0.657242,
+     0.105545
+    ],
+    [
+     0.658234,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0337",
+   "label": "Exterior",
+   "points": [
+    [
+     0.658234,
+     0.132626
+    ],
+    [
+     0.662698,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0338",
+   "label": "Exterior",
+   "points": [
+    [
+     0.662698,
+     0.132626
+    ],
+    [
+     0.714782,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0339",
+   "label": "Exterior",
+   "points": [
+    [
+     0.657242,
+     0.105545
+    ],
+    [
+     0.714782,
+     0.105545
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0340",
+   "label": "Shaft",
+   "points": [
+    [
+     0.68006,
+     0.648548
+    ],
+    [
+     0.728175,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0341",
+   "label": "Shaft",
+   "points": [
+    [
+     0.680556,
+     0.676323
+    ],
+    [
+     0.68006,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0342",
+   "label": "Exterior",
+   "points": [
+    [
+     0.728175,
+     0.648548
+    ],
+    [
+     0.728175,
+     0.706875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0343",
+   "label": "Exterior",
+   "points": [
+    [
+     0.728175,
+     0.706875
+    ],
+    [
+     0.750992,
+     0.706875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0344",
+   "label": "Exterior",
+   "points": [
+    [
+     0.755456,
+     0.647853
+    ],
+    [
+     0.728175,
+     0.648548
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0345",
+   "label": "Shaft",
+   "points": [
+    [
+     0.660218,
+     0.676323
+    ],
+    [
+     0.680556,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0346",
+   "label": "Shaft",
+   "points": [
+    [
+     0.660218,
+     0.676323
+    ],
+    [
+     0.639881,
+     0.676323
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0347",
+   "label": "Shaft",
+   "points": [
+    [
+     0.639881,
+     0.676323
+    ],
+    [
+     0.639881,
+     0.706875
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0348",
+   "label": "Shaft",
+   "points": [
+    [
+     0.639881,
+     0.706875
+    ],
+    [
+     0.660218,
+     0.70757
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0349",
+   "label": "Shaft",
+   "points": [
+    [
+     0.680556,
+     0.676323
+    ],
+    [
+     0.680556,
+     0.6791
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0350",
+   "label": "Shaft",
+   "points": [
+    [
+     0.680556,
+     0.706875
+    ],
+    [
+     0.660218,
+     0.70757
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0351",
+   "label": "Shaft",
+   "points": [
+    [
+     0.680556,
+     0.706875
+    ],
+    [
+     0.680556,
+     0.6791
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0352",
+   "label": "Exterior",
+   "points": [
+    [
+     0.666171,
+     0.865888
+    ],
+    [
+     0.717758,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0353",
+   "label": "Exterior",
+   "points": [
+    [
+     0.666171,
+     0.865888
+    ],
+    [
+     0.667659,
+     0.87422
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0354",
+   "label": "Exterior",
+   "points": [
+    [
+     0.717758,
+     0.865193
+    ],
+    [
+     0.718254,
+     0.847139
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0355",
+   "label": "Exterior",
+   "points": [
+    [
+     0.718254,
+     0.847139
+    ],
+    [
+     0.728175,
+     0.847834
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0356",
+   "label": "Exterior",
+   "points": [
+    [
+     0.717758,
+     0.865193
+    ],
+    [
+     0.724702,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0357",
+   "label": "Exterior",
+   "points": [
+    [
+     0.728175,
+     0.736039
+    ],
+    [
+     0.728175,
+     0.847834
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0358",
+   "label": "Exterior",
+   "points": [
+    [
+     0.728175,
+     0.847834
+    ],
+    [
+     0.731151,
+     0.847834
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0359",
+   "label": "Exterior",
+   "points": [
+    [
+     0.72371,
+     0.855472
+    ],
+    [
+     0.728175,
+     0.847834
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0360",
+   "label": "Exterior",
+   "points": [
+    [
+     0.714782,
+     0.105545
+    ],
+    [
+     0.714782,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0361",
+   "label": "Exterior",
+   "points": [
+    [
+     0.714782,
+     0.132626
+    ],
+    [
+     0.72371,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0362",
+   "label": "Exterior",
+   "points": [
+    [
+     0.72371,
+     0.132626
+    ],
+    [
+     0.733135,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0363",
+   "label": "Exterior",
+   "points": [
+    [
+     0.733135,
+     0.132626
+    ],
+    [
+     0.755456,
+     0.132626
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0364",
+   "label": "Isolated",
+   "points": [
+    [
+     0.733135,
+     0.132626
+    ],
+    [
+     0.733135,
+     0.104156
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0365",
+   "label": "Exterior",
+   "points": [
+    [
+     0.741567,
+     0.348577
+    ],
+    [
+     0.741567,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0366",
+   "label": "Exterior",
+   "points": [
+    [
+     0.741567,
+     0.351355
+    ],
+    [
+     0.755456,
+     0.351355
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0367",
+   "label": "Exterior",
+   "points": [
+    [
+     0.734623,
+     0.342328
+    ],
+    [
+     0.741567,
+     0.348577
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0368",
+   "label": "Exterior",
+   "points": [
+    [
+     0.750992,
+     0.706875
+    ],
+    [
+     0.750992,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0369",
+   "label": "Exterior",
+   "points": [
+    [
+     0.750992,
+     0.706875
+    ],
+    [
+     0.750992,
+     0.693682
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0370",
+   "label": "Exterior",
+   "points": [
+    [
+     0.750992,
+     0.693682
+    ],
+    [
+     0.755456,
+     0.694377
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0371",
+   "label": "Exterior",
+   "points": [
+    [
+     0.728175,
+     0.736039
+    ],
+    [
+     0.750992,
+     0.736734
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0372",
+   "label": "Exterior",
+   "points": [
+    [
+     0.750992,
+     0.722152
+    ],
+    [
+     0.750992,
+     0.736734
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0373",
+   "label": "Corridor",
+   "points": [
+    [
+     0.750992,
+     0.736734
+    ],
+    [
+     0.750992,
+     0.755482
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0374",
+   "label": "Exterior",
+   "points": [
+    [
+     0.750992,
+     0.755482
+    ],
+    [
+     0.755456,
+     0.755482
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0375",
+   "label": "Exterior",
+   "points": [
+    [
+     0.750992,
+     0.722152
+    ],
+    [
+     0.755456,
+     0.722152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0376",
+   "label": "Exterior",
+   "points": [
+    [
+     0.292163,
+     0.319413
+    ],
+    [
+     0.287698,
+     0.319413
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0377",
+   "label": "Exterior",
+   "points": [
+    [
+     0.298611,
+     0.326357
+    ],
+    [
+     0.292163,
+     0.319413
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0378",
+   "label": "Exterior",
+   "points": [
+    [
+     0.287698,
+     0.319413
+    ],
+    [
+     0.287698,
+     0.168734
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0379",
+   "label": "Exterior",
+   "points": [
+    [
+     0.287698,
+     0.168734
+    ],
+    [
+     0.289683,
+     0.165262
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0380",
+   "label": "Exterior",
+   "points": [
+    [
+     0.459821,
+     0.895746
+    ],
+    [
+     0.516865,
+     0.895746
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0381",
+   "label": "Exterior",
+   "points": [
+    [
+     0.577877,
+     0.861721
+    ],
+    [
+     0.583333,
+     0.858944
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0382",
+   "label": "Exterior",
+   "points": [
+    [
+     0.595238,
+     0.895746
+    ],
+    [
+     0.652282,
+     0.895746
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0383",
+   "label": "Exterior",
+   "points": [
+    [
+     0.667659,
+     0.87422
+    ],
+    [
+     0.667659,
+     0.895746
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0384",
+   "label": "Exterior",
+   "points": [
+    [
+     0.667659,
+     0.895746
+    ],
+    [
+     0.724702,
+     0.895746
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0385",
+   "label": "Exterior",
+   "points": [
+    [
+     0.724702,
+     0.895746
+    ],
+    [
+     0.724702,
+     0.865193
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0386",
+   "label": "Exterior",
+   "points": [
+    [
+     0.724702,
+     0.865193
+    ],
+    [
+     0.72371,
+     0.855472
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0387",
+   "label": "Exterior",
+   "points": [
+    [
+     0.724702,
+     0.865193
+    ],
+    [
+     0.758929,
+     0.866582
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0388",
+   "label": "Exterior",
+   "points": [
+    [
+     0.724206,
+     0.346494
+    ],
+    [
+     0.734623,
+     0.342328
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0389",
+   "label": "Isolated",
+   "points": [
+    [
+     0.733135,
+     0.104156
+    ],
+    [
+     0.757937,
+     0.103462
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0390",
+   "label": "Corridor",
+   "points": [
+    [
+     0.691964,
+     0.443707
+    ],
+    [
+     0.69246,
+     0.458289
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0391",
+   "label": "Corridor",
+   "points": [
+    [
+     0.69246,
+     0.458289
+    ],
+    [
+     0.693948,
+     0.565917
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0392",
+   "label": "Corridor",
+   "points": [
+    [
+     0.628968,
+     0.437457
+    ],
+    [
+     0.633929,
+     0.432597
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0393",
+   "label": "Corridor",
+   "points": [
+    [
+     0.633929,
+     0.432597
+    ],
+    [
+     0.641369,
+     0.433291
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0394",
+   "label": "Corridor",
+   "points": [
+    [
+     0.68006,
+     0.568
+    ],
+    [
+     0.693948,
+     0.565917
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0395",
+   "label": "Corridor",
+   "points": [
+    [
+     0.693452,
+     0.588831
+    ],
+    [
+     0.693948,
+     0.565917
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0396",
+   "label": "Corridor",
+   "points": [
+    [
+     0.625992,
+     0.565917
+    ],
+    [
+     0.633433,
+     0.566611
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0397",
+   "label": "Corridor",
+   "points": [
+    [
+     0.633433,
+     0.566611
+    ],
+    [
+     0.66369,
+     0.565917
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0398",
+   "label": "Shaft",
+   "points": [
+    [
+     0.518849,
+     0.593692
+    ],
+    [
+     0.519345,
+     0.472176
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0399",
+   "label": "Shaft",
+   "points": [
+    [
+     0.519345,
+     0.472176
+    ],
+    [
+     0.520337,
+     0.556196
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0400",
+   "label": "Corridor",
+   "points": [
+    [
+     0.519345,
+     0.472176
+    ],
+    [
+     0.519841,
+     0.408988
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0401",
+   "label": "Corridor",
+   "points": [
+    [
+     0.625992,
+     0.586054
+    ],
+    [
+     0.625992,
+     0.565917
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0402",
+   "label": "Corridor",
+   "points": [
+    [
+     0.625992,
+     0.565917
+    ],
+    [
+     0.625992,
+     0.472176
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0403",
+   "label": "Shaft",
+   "points": [
+    [
+     0.577877,
+     0.555501
+    ],
+    [
+     0.578373,
+     0.588137
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0404",
+   "label": "Shaft",
+   "points": [
+    [
+     0.578373,
+     0.588137
+    ],
+    [
+     0.625992,
+     0.586054
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0405",
+   "label": "Shaft",
+   "points": [
+    [
+     0.551091,
+     0.593692
+    ],
+    [
+     0.578373,
+     0.588137
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0406",
+   "label": "Shaft",
+   "points": [
+    [
+     0.68006,
+     0.431208
+    ],
+    [
+     0.693452,
+     0.431902
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0407",
+   "label": "Shaft",
+   "points": [
+    [
+     0.68006,
+     0.431208
+    ],
+    [
+     0.68006,
+     0.438152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0408",
+   "label": "Shaft",
+   "points": [
+    [
+     0.68006,
+     0.431208
+    ],
+    [
+     0.679563,
+     0.404822
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0409",
+   "label": "Shaft",
+   "points": [
+    [
+     0.679563,
+     0.404822
+    ],
+    [
+     0.700397,
+     0.405516
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0410",
+   "label": "Corridor",
+   "points": [
+    [
+     0.577877,
+     0.432597
+    ],
+    [
+     0.577877,
+     0.555501
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0411",
+   "label": "Shaft",
+   "points": [
+    [
+     0.551091,
+     0.556196
+    ],
+    [
+     0.577877,
+     0.555501
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0412",
+   "label": "Corridor",
+   "points": [
+    [
+     0.551091,
+     0.404127
+    ],
+    [
+     0.577877,
+     0.404822
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0413",
+   "label": "Corridor",
+   "points": [
+    [
+     0.577877,
+     0.408988
+    ],
+    [
+     0.577877,
+     0.432597
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0414",
+   "label": "Demising",
+   "points": [
+    [
+     0.577877,
+     0.432597
+    ],
+    [
+     0.625992,
+     0.433291
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0415",
+   "label": "Shaft",
+   "points": [
+    [
+     0.518849,
+     0.593692
+    ],
+    [
+     0.535714,
+     0.593692
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0416",
+   "label": "Shaft",
+   "points": [
+    [
+     0.520337,
+     0.556196
+    ],
+    [
+     0.518849,
+     0.593692
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0417",
+   "label": "Demising",
+   "points": [
+    [
+     0.693452,
+     0.588831
+    ],
+    [
+     0.739583,
+     0.588831
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0418",
+   "label": "Demising",
+   "points": [
+    [
+     0.739583,
+     0.588831
+    ],
+    [
+     0.739583,
+     0.498562
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0419",
+   "label": "Demising",
+   "points": [
+    [
+     0.739583,
+     0.588831
+    ],
+    [
+     0.756448,
+     0.588831
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0420",
+   "label": "Corridor",
+   "points": [
+    [
+     0.577877,
+     0.404822
+    ],
+    [
+     0.641369,
+     0.404822
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0421",
+   "label": "Corridor",
+   "points": [
+    [
+     0.641369,
+     0.404822
+    ],
+    [
+     0.641369,
+     0.433291
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0422",
+   "label": "Corridor",
+   "points": [
+    [
+     0.577877,
+     0.404822
+    ],
+    [
+     0.577877,
+     0.408988
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0423",
+   "label": "Corridor",
+   "points": [
+    [
+     0.577877,
+     0.408988
+    ],
+    [
+     0.551091,
+     0.409682
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0424",
+   "label": "Shaft",
+   "points": [
+    [
+     0.739583,
+     0.431902
+    ],
+    [
+     0.739583,
+     0.472176
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0425",
+   "label": "Demising",
+   "points": [
+    [
+     0.739583,
+     0.472176
+    ],
+    [
+     0.739583,
+     0.498562
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0426",
+   "label": "Shaft",
+   "points": [
+    [
+     0.739087,
+     0.411071
+    ],
+    [
+     0.739583,
+     0.431902
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0427",
+   "label": "Shaft",
+   "points": [
+    [
+     0.700893,
+     0.431902
+    ],
+    [
+     0.739583,
+     0.431902
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0428",
+   "label": "Corridor",
+   "points": [
+    [
+     0.641369,
+     0.437457
+    ],
+    [
+     0.641369,
+     0.443012
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0429",
+   "label": "Corridor",
+   "points": [
+    [
+     0.641369,
+     0.443012
+    ],
+    [
+     0.628968,
+     0.443012
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0430",
+   "label": "Corridor",
+   "points": [
+    [
+     0.625992,
+     0.472176
+    ],
+    [
+     0.628968,
+     0.443012
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0431",
+   "label": "Shaft",
+   "points": [
+    [
+     0.535714,
+     0.556196
+    ],
+    [
+     0.551091,
+     0.556196
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0432",
+   "label": "Shaft",
+   "points": [
+    [
+     0.551091,
+     0.556196
+    ],
+    [
+     0.551091,
+     0.593692
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0433",
+   "label": "Corridor",
+   "points": [
+    [
+     0.68006,
+     0.568
+    ],
+    [
+     0.684524,
+     0.587443
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0434",
+   "label": "Demising",
+   "points": [
+    [
+     0.684524,
+     0.587443
+    ],
+    [
+     0.693452,
+     0.588831
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0435",
+   "label": "Shaft",
+   "points": [
+    [
+     0.520337,
+     0.556196
+    ],
+    [
+     0.535714,
+     0.556196
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0436",
+   "label": "Shaft",
+   "points": [
+    [
+     0.535714,
+     0.556196
+    ],
+    [
+     0.535714,
+     0.593692
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0437",
+   "label": "Corridor",
+   "points": [
+    [
+     0.519841,
+     0.408988
+    ],
+    [
+     0.551091,
+     0.409682
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0438",
+   "label": "Demising",
+   "points": [
+    [
+     0.739583,
+     0.498562
+    ],
+    [
+     0.758929,
+     0.497868
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0439",
+   "label": "Corridor",
+   "points": [
+    [
+     0.641369,
+     0.437457
+    ],
+    [
+     0.64881,
+     0.440235
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0440",
+   "label": "Shaft",
+   "points": [
+    [
+     0.64881,
+     0.440235
+    ],
+    [
+     0.68006,
+     0.438152
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0441",
+   "label": "Shaft",
+   "points": [
+    [
+     0.68006,
+     0.438152
+    ],
+    [
+     0.68006,
+     0.443012
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0442",
+   "label": "Corridor",
+   "points": [
+    [
+     0.68006,
+     0.443012
+    ],
+    [
+     0.691964,
+     0.443707
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0443",
+   "label": "Corridor",
+   "points": [
+    [
+     0.693452,
+     0.431902
+    ],
+    [
+     0.691964,
+     0.443707
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0444",
+   "label": "Corridor",
+   "points": [
+    [
+     0.66369,
+     0.565917
+    ],
+    [
+     0.68006,
+     0.568
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0445",
+   "label": "Demising",
+   "points": [
+    [
+     0.625992,
+     0.586054
+    ],
+    [
+     0.635417,
+     0.592998
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0446",
+   "label": "Shaft",
+   "points": [
+    [
+     0.693452,
+     0.431902
+    ],
+    [
+     0.700893,
+     0.431902
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0447",
+   "label": "Shaft",
+   "points": [
+    [
+     0.700397,
+     0.405516
+    ],
+    [
+     0.739087,
+     0.404822
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0448",
+   "label": "Shaft",
+   "points": [
+    [
+     0.739087,
+     0.404822
+    ],
+    [
+     0.739087,
+     0.411071
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0449",
+   "label": "Shaft",
+   "points": [
+    [
+     0.739087,
+     0.411071
+    ],
+    [
+     0.755456,
+     0.415237
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0450",
+   "label": "Corridor",
+   "points": [
+    [
+     0.641369,
+     0.433291
+    ],
+    [
+     0.641369,
+     0.437457
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0451",
+   "label": "Shaft",
+   "points": [
+    [
+     0.535714,
+     0.593692
+    ],
+    [
+     0.551091,
+     0.593692
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0452",
+   "label": "Isolated",
+   "points": [
+    [
+     0.635417,
+     0.592998
+    ],
+    [
+     0.641865,
+     0.590915
+    ]
+   ]
+  },
+  {
+   "id": "t-4c4-wall-centerlines-0453",
+   "label": "Shaft",
+   "points": [
+    [
+     0.700397,
+     0.405516
+    ],
+    [
+     0.700893,
+     0.431902
+    ]
+   ]
+  }
+ ]
+}
