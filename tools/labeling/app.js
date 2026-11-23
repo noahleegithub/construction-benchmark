@@ -1,7 +1,7 @@
-import * as pdfjsLib from "./vendor/pdf.min.js";
+import * as pdfjsLib from "./pdfjs/pdf.min.js";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  "./vendor/pdf.worker.min.js",
+  "./pdfjs/pdf.worker.min.js",
   import.meta.url
 ).href;
 

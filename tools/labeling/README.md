@@ -29,7 +29,7 @@ On Windows use `start.bat`; on macOS/Linux use `./start.sh`. It chooses a free
 port, serves this folder, and opens the browser.
 
 To send it to a colleague, zip the entire `tools/labeling` folder. They need
-Python 3, but no packages and no network access. `vendor/` contains PDF.js.
+Python 3, but no packages and no network access. `pdfjs/` contains PDF.js.
 
 ### Manual server
 
@@ -62,7 +62,7 @@ The CSV has one row per page or layer and the same fields.
 
 ## Notes
 
-- PDF.js is vendored under `vendor/` (`pdfjs-dist 4.10.38`); the tool works
+- PDF.js is vendored under `pdfjs/` (`pdfjs-dist 4.10.38`); the tool works
   without a CDN.
 - PDFs without OCGs show the Layers tab disabled.
 - The layer list is flat; nested OCG groups are displayed by their individual
